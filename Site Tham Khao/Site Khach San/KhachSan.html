@@ -1,0 +1,1082 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Khách Sạn</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Govihar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+
+<link rel="stylesheet" href="css/khachsan-style.css" type="text/css" media="screen" />
+
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+<!-- fonts -->
+
+<!-- //fonts -->	
+<script type="text/javascript">
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true   // 100% fit in a container
+			});
+		});
+			function showHideGB(){
+		var gb = document.getElementById("gb");
+		var w = gb.offsetWidth;
+		gb.opened ? moveGB(0, 30-w) : moveGB(20-w, 0);
+		gb.opened = !gb.opened;
+		}
+	function moveGB(x0, xf){
+		var gb = document.getElementById("gb");
+		var dx = Math.abs(x0-xf) > 10 ? 5 : 1;
+		var dir = xf>x0 ? 1 : -1;
+		var x = x0 + dx * dir;
+		gb.style.right = x.toString() + "px";
+		if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 10);}
+		}
+	</script>
+<!--pop-up-->
+<script src="js/menu_jquery.js"></script>
+<!--//pop-up-->	
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-grids">
+				<div class="logo">
+					<h1><a  href="index.html"><span>Khách Sạn</span> Việt</a></h1>
+				</div>
+				<!--navbar-header-->
+				<div class="header-dropdown">
+					<div class="emergency-grid">
+						<ul>
+							<li>Liên hệ: </li>
+							<li class="call">0165 967 1572</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="nav-top">
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="TrangChu.html">Trang Chủ</a></li>
+						<li class="active"><a href="KhachSan.html">Khách Sạn</a></li>
+						<li><a href="DatPhong.html">Đặt Phòng</a></li>
+						<li><a href="LienHe.html">Liên Hệ</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+					<!-- script-for-menu -->
+							 <script> 
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							
+							</script>
+						<!-- /script-for-menu -->
+				</div>
+				
+				
+				<!-- ĐĂng nhập -->
+				<div class="dropdown-grids">
+						<div id="loginContainer"><a href="#" id="loginButton"><span>Đăng nhập</span></a>
+							<div id="loginBox">                
+								<form id="loginForm">
+								<div class="sign">
+                                		<a href="#" id="signinButton">Đăng nhập</a>
+                                    	<a href="#" id="signupButton">Đăng kí</a>
+                               
+                                 	</div> 
+                                    <div class="signin">  
+									<div class="login-grids">
+										<div class="login-grid-left">
+											<fieldset id="body">
+												<fieldset>
+													<label for="email">Tên tài khoản</label>
+													<input type="text" name="email" id="email">
+												</fieldset>
+												<fieldset>
+													<label for="password">Mật khẩu</label>
+													<input type="password" name="password" id="password">
+												</fieldset>
+												<input type="submit" id="login" value="Đăng nhập">
+												<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Ghi nhớ tôi</i></label>
+											</fieldset>
+											<span><a href="#">Quên mật khẩu?</a></span>
+											<div class="or-grid">
+												<p>THÊM</p>
+											</div>
+											<div class="social-sits">
+												<div class="facebook-button">
+													<a href="#">Kết nối với Facebook</a>
+												</div>
+												<div class="chrome-button">
+													<a href="#">Kết nối với Google</a>
+												</div>
+											</div>
+										</div>
+									</div>
+                                    </div>
+                                    <div class="signup">
+                                    <div class="login-grids">
+										<div class="login-grid-left">
+											<fieldset id="body">
+                                            	<fieldset>
+													<label for="text">Họ và Tên</label>
+													<input type="text" name="hovsten" id="hovsten">
+												</fieldset>
+												<fieldset>
+													<label for="email">Email</label>
+													<input type="text" name="email" id="email">
+												</fieldset>
+												<fieldset>
+													<label for="password">Mật khẩu</label>
+													<input type="password" name="password" id="password">
+												</fieldset>
+                                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Gửi đến email thông tin dịch vụ liên quan.</i></label>				
+												<input type="submit" id="login" value="Đăng kí">
+                                                								
+											</fieldset>
+										</div>
+									</div>
+                                    </div>>
+								</form>
+							</div>
+						</div>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- ĐĂng nhập -->
+				
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+	
+	<!-- banner -->
+	<div class="banner">
+		<!-- container -->
+		<div class="container">
+			<div class="col-md-4 banner-left">
+				<section class="slider2">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="slider-info">
+									<img src="images/1.jpg" alt="">
+								</div>
+							</li>
+							<li>
+								<div class="slider-info">
+									<img src="images/2.jpg" alt="">
+								</div>
+							</li>
+							<li>	
+								<div class="slider-info">
+									<img src="images/3.jpg" alt="">
+								</div>
+							</li>
+							<li>	
+								<div class="slider-info">
+									<img src="images/4.jpg" alt="">
+								</div>
+							</li>
+							<li>	
+								<div class="slider-info">
+									<img src="images/2.jpg" alt="">
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!--FlexSlider-->
+			</div>
+			
+			
+			
+			
+			
+			
+			<div class="col-md-8 banner-right">
+				<div class="sap_tabs">	
+					<div class="booking-info about-booking-info">
+						<h2>Tìm & Đặt Phòng Khách Sạn</h2>
+					</div>
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">	
+						  <!---->		  	 
+									<div class="facts about-facts train-facts">
+										<div class="booking-form train-form">
+										<link rel="stylesheet" href="css/jquery-ui.css" />
+											<!---strat-date-piker---->
+											<script>
+												$(function() {
+													$( "#datepicker,#datepicker1" ).datepicker();
+												});
+											</script>
+											<!---/End-date-piker---->
+											<!-- Set here the key for your domain in order to hide the watermark on the web server -->
+											
+											<div class="online_reservation">
+													<div class="b_room">
+														<div class="booking_room">
+															<div class="reservation">
+																<ul>		
+																	<li  class="span1_of_1 desti about-desti">
+																		 <h5>Nơi đến</h5>
+																		 <div class="book_date">
+																			 <form>
+																				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+																				<input type="text" placeholder="Thành phố, địa điểm hoặc tên khác sạn" class="typeahead1 input-md form-control tt-input" required="">
+																			 </form>
+																		 </div>					
+																	 </li>
+																</ul>
+															</div>
+															<div class="reservation">
+																<ul>	
+																	 <li  class="span1_of_1">
+																		 <h5>Ngày Nhận Phòng</h5>
+																		 <div class="book_date">
+																		 <form>
+																			<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+																			<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
+																		</form>
+																		 </div>		
+																	 </li>
+																	 <li  class="span1_of_1 left">
+																		 <h5>Ngày Trả Phòng</h5>
+																		 <div class="book_date">
+																			 <form>
+																				<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+																				<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
+																			</form>
+																		 </div>					
+																	 </li>
+																	 <li class="span1_of_1 left adult">
+																		 <h5>Người lớn</h5>
+																		 <!----------start section_room----------->
+																		 <div class="section_room">
+																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
+																					<option value="null">1</option>
+																					<option value="null">2</option>         
+																					<option value="AX">3</option>
+																					<option value="AX">4</option>
+																					<option value="AX">5</option>
+																					<option value="AX">6</option>
+																			  </select>
+																		 </div>	
+																	</li>
+																	<li class="span1_of_1 left h-child">
+																		 <h5>Trẻ em (Dưới 18)</h5>
+																		 <!----------start section_room----------->
+																		 <div class="section_room">
+																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
+																					<option value="null">1</option>
+																					<option value="null">2</option>         
+																					<option value="AX">3</option>
+																					<option value="AX">4</option>
+																					<option value="AX">5</option>
+																					<option value="AX">6</option>
+																			  </select>
+																		 </div>	
+																	</li>
+																	<div class="clearfix"></div>
+																</ul>
+															</div>
+															
+															<div class="reservation">
+																<ul>
+																	<li class="span1_of_1 h-rooms">
+																		 <h5>Số phòng( 1 - 8)</h5>
+																		 <!----------start section_room----------->
+																		 <div class="section_room">
+																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
+																					<option value="null">1</option>
+																					<option value="null">2</option>         
+																					<option value="AX">3</option>
+																					<option value="AX">4</option>
+																					<option value="AX">5</option>
+																					<option value="AX">6</option>
+																			  </select>
+																		 </div>	
+																	</li>
+																	
+																	<li class="span1_of_1 h-money">
+																		 <h5>Mức giá</h5>
+																		 <!----------start section_room----------->
+																		 <div class="section_room">
+																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
+																					<option value="null">0 - 1.000.000 vnd</option>
+																					<option value="null">1.000.000 - 2.000.000 vnd</option>         
+																					<option value="AX">2.000.000 - 3.000.000 vnd</option>
+																					<option value="AX">3.000.000 - 5.000.000 vnd</option>
+																					<option value="AX">5.000.000 - 8.000.000 vnd</option>
+																					<option value="AX">8.000.000 - 20.000.000 vnd</option>
+																					<option value="AX">Hạng sang - VIP</option>
+																			  </select>
+																		 </div>	
+																	</li>
+																	<div class="clearfix"></div>
+																</ul>
+															</div>
+															
+															<div class="reservation">
+																<ul>
+																	
+																	<div class="clearfix"></div>
+																</ul>
+															</div>
+															<div class="reservation">
+																<ul>	
+																	 <li class="span1_of_3">
+																			<div class="date_btn">
+																				<form>
+																					<input type="submit" value="Tìm kiếm" />
+																				</form>
+																			</div>
+																	 </li>
+																	 <div class="clearfix"></div>
+																</ul>
+															</div>
+														</div>
+														<div class="clearfix"></div>
+													</div>
+											</div>
+											<!---->
+										</div>	
+									</div>
+					</div>			
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<!-- //container -->
+	</div>
+	
+	
+	<!-- //banner -->
+	<div class="move-text">
+		<div class="marquee">Đăng ký tài khoản với chúng tôi miễn phí.<a href="signup.html">Tại đây</a></div>
+		<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+        <script>
+		  $('.marquee').marquee({ pauseOnHover: true });
+		  //@ sourceURL=pen.js
+		</script>
+	</div>	
+						
+	
+	
+	<div><center>
+		<audio controls autoplay>
+			<source src="music.mp3" type="audio/mpeg">
+		</audio>
+	</center></div>
+	
+	<!--Content-->
+	<div class="banner-bottom">
+		<div class="container">
+		<div class="faqs-top-grids">
+				<div class="product-grids">					
+					<div class="col-md-3 product-left">	
+							<div class="h-class" style="margin-bottom: 25px;">
+								<div class ="h-class-title">
+								<h5>TÌM KIẾM THEO TÊN KHÁCH SẠN</h5>
+								</div>
+								<div class="h-class-content">
+									<div class="hotel-price" style="color:black;">
+									<div class="news-letter-grid">
+										<form>
+											<input type="text">
+											<input type="submit" value="Tìm kiếm">
+										</form>
+									</div>
+									</div>			
+								</div>									
+							</div>
+							
+							<div class="clearfix"> </div>
+							
+							
+							<div class="h-class">
+								<div class ="h-class-title">
+								<h5>XẾP HẠNG SAO</h5>
+								</div>
+								<div class="h-class-content">
+								<div class="hotel-price" style="color:black;">
+									<label class="check">
+										<input type="checkbox">
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="starTextLabel">(18)</span>
+									</label>
+									</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="starTextLabel">(28)</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>			
+										<span class="starTextLabel">(108)</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+										<span class="starTextLabel">(12)</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>				
+										<span class="starTextLabel">(1)</span>
+									</label>
+								</div>			
+								</div>									
+							</div>
+												
+							<div class="h-class p-day">
+								<div class="h-class-title">
+								<h5> GIÁ PHÒNG (1 ĐÊM)</h5>
+								</div>
+								<div class="h-class-content">
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">Nhỏ hơn 100.000 VNĐ (76)</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">100.000 VNĐ USD - 300.000 VNĐ (132)</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">300.000 VNĐ - 500.000 VNĐ(223)</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">500.000 VNĐ - 1.000.000 VNĐ (84)</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">Hơn 1.000.000 VNĐ (23)</span>
+									</label>
+								</div>
+								</div>
+							</div>
+							
+							<div class="h-class">
+								<div class="h-class-title">
+								<h5>KHU VỰC</h5>
+								</div>
+								<div class="h-class-content">
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId" checked="checked" data-track="HOT:SR:Area">
+										<span class="p-day-grid">Đà Nẳng</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Hà Nội</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Hồ Chí Minh</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Huế</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Nha Trang</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Phan Thiết</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Buôn Mê Thuột</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Quảng Bình</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
+										<span class="p-day-grid">Hải Phòng</span>
+									</label>
+								</div>								
+								</div>
+							</div>
+					
+							<div class="h-class p-day">
+								<div class="h-class-title">
+								<h5>LOẠI KHÁCH SẠN</h5>
+								</div>
+								<div class="h-class-content">
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
+										<span class="p-day-grid">Khu Nghĩ Dưỡng (67)</span>
+									</label>
+								</div>
+							
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="p-day-grid">Khách Sạn (84)</span>
+									</label>
+								</div>
+					
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="p-day-grid">Nhà Khách (24)</span>
+									</label>
+								</div>
+						
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="p-day-grid">Căn hộ (34)</span>
+									</label>
+								</div>
+								
+								<div class="hotel-price">
+									<label class="check">
+										<input type="checkbox">
+										<span class="p-day-grid">Nhà Trọ (32)</span>
+									</label>
+								</div>
+								</div>
+							</div>	
+					
+					</div>	
+					<div class="col-md-9 product-right">		
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn New Worl Sài Gòn</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Chợ Bến Thành, Quận 1, Hồ Chí Minh</p>
+											<p class="p-call">+84 08 4567 890</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(890) Đã xem</p>
+											<span class="p-offer">140.000 VNĐ</span><span class="p-last-price">230.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div><div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img1">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Majetic Sài Gòn</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Chợ Lớn, Quận 5, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 159 120</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(123) Đã xem</p>
+											<span class="p-offer">340.000 VNĐ</span><span class="p-last-price">430.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img2">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Windsor Plaza</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Chợ Lớn, Quận 5, Hồ Chí Minh</p>
+											<p class="p-call">+1 234 567 890</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(123) Đã xem</p>
+											<span class="p-offer">220.000 VNĐ</span><span class="p-last-price">310.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img3">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Golden Center</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Ngã Tư An Sương, Quận 12, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 236 090</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(289) Đã xem</p>
+											<span class="p-offer">500.000 VNĐ</span><span class="p-last-price">630.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img5">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Easy Center</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Ngã Tư Bà Điểm, Quận 12, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 236 090</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(289) Đã xem</p>
+											<span class="p-offer">400.000 VNĐ</span><span class="p-last-price">530.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img1">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn November</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>97B Cộng Hòa, Quận Tân Bình, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 654 090</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(289) Đã xem</p>
+											<span class="p-offer">900.000 VNĐ</span><span class="p-last-price">1.130.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img2">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Leona House</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Trung tâm quận 1, Quận 12, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 236 090</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(289) Đã xem</p>
+											<span class="p-offer">450.000 VNĐ</span><span class="p-last-price">530.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img1">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách sạn Lan Lan 2</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Chợ Bến Thành, Quận 1, Hồ Chí Minh</p>
+											<p class="p-call">+84 08 3567 890</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(123) Đã xem</p>
+											<span class="p-offer">1.380.000 VNĐ</span><span class="p-last-price">1.540.000 VNĐ</span>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="clearfix"> </div>
+								</div>	
+							</div>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img p-right-img2">
+											<a href="#"> </a>
+										</div>
+									</div>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="#">Khách Sạn Caravelle SaiGon</a>
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Trung Tâm Quận 1, Hồ Chí Minh</p>
+											<p class="p-call">+84 083 365 489</p>
+										</div>
+										<div class="col-md-6 p-right-right">
+											<h6>Đánh giá : 4.1/5</h6>
+											<p>(89) Đã xem</p>
+											<span class="p-offer">1.200.000 VNĐ</span><span class="p-last-price">1.500.000 VNĐ</span>
+										</div>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="clearfix"> </div>
+								</div>
+							</div>			
+						</div>					
+					<div class="clearfix"> </div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!--//Content-->
+	
+	
+	
+	
+	
+	<!-- popular-grids -->
+	<div class="popular-grids">
+		<!-- container -->
+		<div class="container">
+			<div class="popular-info">
+				<h3>KHÁCH SẠN PHỔ BIẾN</h3>
+			</div>
+			<!-- slider -->
+			<div class="slider">
+				<div class="arrival-grids">			 
+					 <ul id="flexiselDemo1">
+						 <li>
+							 <a href="#"><img src="images/a3.jpg" alt=""/>
+							 </a>
+						 </li>
+						 <li>
+							 <a href="#"><img src="images/a2.jpg" alt=""/>
+							 </a>
+						 </li>
+						 <li>
+							 <a href="#"><img src="images/a4.jpg" alt=""/>
+							 </a>
+						 </li>
+						 <li>
+							 <a href="#"><img src="images/a1.jpg" alt=""/>
+							 </a>
+						 </li>
+						</ul>
+						<script type="text/javascript">
+						 $(window).load(function() {			
+						  $("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,    		
+							pauseOnHover:true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: { 
+								portrait: { 
+									changePoint:480,
+									visibleItems: 1
+								}, 
+								landscape: { 
+									changePoint:640,
+									visibleItems: 2
+								},
+								tablet: { 
+									changePoint:768,
+									visibleItems: 3
+								}
+							}
+						});
+						});
+						</script>
+						<script type="text/javascript" src="js/jquery.flexisel.js"></script>			 
+				</div>
+			</div>
+			<!-- //slider -->
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- popular-grids -->
+	
+	
+	
+	
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-top-grids">
+				<!-- news-letter -->
+				<div class="news-letter">
+					<div class="news-letter-grids">
+						<div class="col-md-4 news-letter-grid">
+							<p>Tổng đài tư vấn miễn phí : <span>6969</span></p>
+						</div>
+						<div class="col-md-4 news-letter-grid">
+							<p class="mail">Gửi thư điện tử về : <a href="mailto:info@example.com">Dulichviet@hotel.vn</a></p>
+						</div>
+						<div class="col-md-4 news-letter-grid">
+							<form>
+								<input type="text" value="Nhận thông tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nhận thông tin';}" required="">
+								<input type="submit" value="Đăng kí">
+							</form>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- //news-letter -->
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+	<div class="footer-bottom-grids">
+		<!-- container -->
+		<div class="container">
+				<div class="footer-bottom-top-grids">
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Tải ứng dụng Du Lịch Việt trên di động:</h4>
+						<div class="d-apps">
+							<ul>
+								<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Chấp nhận thanh toán qua: </h4>
+						<div class="a-cards">
+							<ul>
+								<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Theo dõi chúng tôi: </h4>
+						<div class="social">
+							<ul>
+								<li><a href="#" class="facebook"> </a></li>
+								<li><a href="#" class="facebook twitter"> </a></li>
+								<li><a href="#" class="facebook chrome"> </a></li>
+								<li><a href="#" class="facebook dribbble"> </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="copyright">
+						<p>Bản quyền © 2015 Du Lịch Việt . Thiết kế bởi <a href="https://www.facebook.com/Hoang.Thien.Uit">Nhóm G11 - Môn: Giao Tiếp Người Máy</a></p>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+	<!-- Chat -->
+ 	<div id="gb">
+
+		<div class="gbtab" onclick="showHideGB()"><center>Hỗ trợ trực tiếp</center></div>
+
+			<div class="gbcontent">
+			<!-- BEGIN CBOX - www.cbox.ws - v001 -->
+				<div id="cboxdiv" style="text-align: center; line-height: 0">
+				<div><iframe frameborder="0" width="160" height="305" src=				"http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain7-461741" style="border:#EDDEDB 1px solid;" id="cboxmain7-461741"></iframe></div>
+				<div><iframe frameborder="0" width="200" height="75" src="http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform7-461741" style="border:#EDDEDB 1px solid;border-top:0px" id="cboxform7-461741"></iframe></div>
+			</div>
+			<!-- END CBOX -->
+			<div style="text-align:right">
+				<a href="javascript:showHideGB()">
+				[Đóng chatbox]
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Chat -->
+
+<script type="text/javascript">
+var gb = document.getElementById("gb");
+gb.style.right = (30-gb.offsetWidth).toString() + "px";
+</script>
+	
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+			});
+			$(window).load(function(){
+			$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			$('body').removeClass('loading');
+			}
+			});
+		});
+	</script>		
+</body>
+</html>

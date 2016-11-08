@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Liên Hệ</title>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Govihar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<!-- //js -->
+<!-- fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //fonts -->	
+<script type="text/javascript">
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true   // 100% fit in a container
+			});
+		});
+	function showHideGB(){
+		var gb = document.getElementById("gb");
+		var w = gb.offsetWidth;
+		gb.opened ? moveGB(0, 30-w) : moveGB(20-w, 0);
+		gb.opened = !gb.opened;
+		}
+	function moveGB(x0, xf){
+		var gb = document.getElementById("gb");
+		var dx = Math.abs(x0-xf) > 10 ? 5 : 1;
+		var dir = xf>x0 ? 1 : -1;
+		var x = x0 + dx * dir;
+		gb.style.right = x.toString() + "px";
+		if(x0!=xf){setTimeout("moveGB("+x+", "+xf+")", 10);}
+		}
+	</script>
+<!--pop-up-->
+<script src="js/menu_jquery.js"></script>
+<!--//pop-up-->	
+</head>
+<body>
+	
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-grids">
+				<div class="logo">
+					<h1><a  href="index.html"><span>Khách Sạn</span> Việt</a></h1>
+				</div>
+				<!--navbar-header-->
+				<div class="header-dropdown">
+					<div class="emergency-grid">
+						<ul>
+							<li>Liên hệ: </li>
+							<li class="call">0165 967 1572</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="nav-top">
+				<div class="top-nav">
+					<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<ul class="nav1">
+						<li><a href="TrangChu.html">Trang Chủ</a></li>
+						<li><a href="KhachSan.html">Khách Sạn</a></li>
+						<li><a href="DatPhong.html">Đặt Phòng</a></li>
+						<li class="active"><a href="LienHe.html">Liên Hệ</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+					<!-- script-for-menu -->
+							 <script> 
+							   $( "span.menu" ).click(function() {
+								 $( "ul.nav1" ).slideToggle( 300, function() {
+								 // Animation complete.
+								  });
+								 });
+							
+							</script>
+						<!-- /script-for-menu -->
+				</div>
+				
+				<!-- ĐĂng nhập -->
+				<div class="dropdown-grids">
+						<div id="loginContainer"><a href="#" id="loginButton"><span>Đăng nhập</span></a>
+							<div id="loginBox">                
+								<form id="loginForm">
+								<div class="sign">
+                                		<a href="#" id="signinButton">Đăng nhập</a>
+                                    	<a href="#" id="signupButton">Đăng kí</a>
+                               
+                                 	</div> 
+                                    <div class="signin">  
+									<div class="login-grids">
+										<div class="login-grid-left">
+											<fieldset id="body">
+												<fieldset>
+													<label for="email">Tên tài khoản</label>
+													<input type="text" name="email" id="email">
+												</fieldset>
+												<fieldset>
+													<label for="password">Mật khẩu</label>
+													<input type="password" name="password" id="password">
+												</fieldset>
+												<input type="submit" id="login" value="Đăng nhập">
+												<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Ghi nhớ tôi</i></label>
+											</fieldset>
+											<span><a href="#">Quên mật khẩu?</a></span>
+											<div class="or-grid">
+												<p>THÊM</p>
+											</div>
+											<div class="social-sits">
+												<div class="facebook-button">
+													<a href="#">Kết nối với Facebook</a>
+												</div>
+												<div class="chrome-button">
+													<a href="#">Kết nối với Google</a>
+												</div>
+											</div>
+										</div>
+									</div>
+                                    </div>
+                                    <div class="signup">
+                                    <div class="login-grids">
+										<div class="login-grid-left">
+											<fieldset id="body">
+                                            	<fieldset>
+													<label for="text">Họ và Tên</label>
+													<input type="text" name="hovsten" id="hovsten">
+												</fieldset>
+												<fieldset>
+													<label for="email">Email</label>
+													<input type="text" name="email" id="email">
+												</fieldset>
+												<fieldset>
+													<label for="password">Mật khẩu</label>
+													<input type="password" name="password" id="password">
+												</fieldset>
+                                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Gửi đến email thông tin dịch vụ liên quan.</i></label>				
+												<input type="submit" id="login" value="Đăng kí">
+                                                								
+											</fieldset>
+										</div>
+									</div>
+                                    </div>>
+								</form>
+							</div>
+						</div>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- ĐĂng nhập -->
+				
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+	
+	
+	
+	
+	
+	
+	
+		
+	<!--            ------ANH EM CODE Ở ĐÂY-------           -->
+	<div class="title-menu">
+    	<span style="color:#09F;">Liên Hệ / </span>
+        <span class="type-menu-col1">Giới Thiệu</span>
+        <span class="type-menu-col2">Điều kiện & Điều khoản</span>
+        <span class="type-menu-col3">Tuyển Dụng</span>
+        <span class="type-menu-col4">Giải Đáp</span>
+    </div>
+	<div class="content">
+    	<div class="menu-col">
+    		<ul>
+        		<li><a href="#" class="item-menu-row1">Giới Thiệu</a></li>
+                <li><a href="#" class="item-menu-row2">Điều kiện & Điều khoản</a></li>
+            	<li><a href="#" class="item-menu-row3">Tuyển Dụng</a></li>
+            	<li><a href="#" class="item-menu-row4">Giải Đáp</a></li>
+        	</ul>
+        </div>
+        <div class="item-content">
+        	<div class="p1">
+        	<p><h3>Giới Thiệu</h3></br>
+            Du Lịch Việt - hệ thống đặt phòng khách sạn trực tuyến, cung cấp giải pháp tối ưu giúp người dùng tìm kiếm và đặt phòng với hệ thống xác nhận và giữ phòng tức thời, phương thức thanh toán đa dạng, dịch vụ chăm sóc khách hàng 24/7.</br>
+
+Du Lịch Việt là thành viên của Tập đoàn TMG Việt Nam với hơn 20 năm kinh nghiệm trong lĩnh vực Du lịch – Khách sạn. TMG Việt Nam hiện đang sở hữu các thương hiệu nổi tiếng trên thị trường như Buffalo Tours, Hàng không Hải Âu, Victoria Hotels and Resorts, ÊMM,... Du Lịch Việt phục vụ khách hàng toàn cầu, đặc biệt khu vực Đông Nam Á, bao gồm các tổ chức, công ty, đơn vị, cá nhân có nhu cầu đi công tác, hội thảo, thăm người thân, du lịch, chữa bệnh, v.v…</br>
+
+Du Lịch Việt đã đạt giải thưởng The Guide 2013 dành cho Website Thương mại điện tử về du lịch tốt nhất Việt Nam.</br>
+
+Du Lịch Việt & các điểm ưu việt:</br>
+
+- Đáp ứng mọi yêu cầu có thể của khách hàng từ cá nhân tới tổ chức, không phân biệt vị trí địa lý.</br>
+
+- Cung cấp dịch vụ đa dạng, đầy đủ loại khách sạn, loại phòng ở phạm vi toàn cầu, với hệ thống khoảng 2.500 khách sạn tại Việt Nam & hơn 30.000 khách sạn quốc tế.</br>
+
+- Dịch vụ khách hàng nhiệt tâm, chu đáo 24/7.</br>
+
+- Thanh toán linh hoạt, nhanh chóng, an toàn.</br>
+
+- Luôn có chương trình ưu đãi, khuyến mại, giảm giá đặc biệt cho khách đoàn, công ty, tổ chức.</br><br>
+
+
+Ngoài ra, Du Lịch Việt cung cấp miễn phí hệ thống quản lý khách sạn (Property Management System - PMS) cho khách sạn vừa và nhỏ; mạng Extranet cho các khách sạn lớn, resort cao cấp trong và ngoài Việt Nam.
+			</p>
+            </div>
+            <div class="p2">
+            <p><h3>Điều kiện & Điều khoản</h3></br>
+            Khi thực hiện đặt phòng khách sạn, Quý Khách cần phải thỏa mãn những điều kiện sau:</br>
+
+1. Độ tuổi</br>
+Quý Khách phải từ 18 tuổi trở lên mới được phép tham gia đặt phòng trên trang web.</br>
+
+2. Thanh toán: </br>
+
+Quý Khách thanh toán tiền đặt phòng trên trang web bằng 1 trong 2 cách sau:</br>
+
+(a) Khách sạn tại Việt Nam:</br>
+
+Thẻ tín dụng hay thẻ ATM: tại thời điểm Quý Khách đồng ý thanh toán tiền đặt phòng bằng thẻ tín dụng hay thẻ ATM. Tổng chi phí (thông tin đính kèm) sẽ được thông báo tại trang đặt phòng trước khi Quý Khách nhấn nút “Thanh Toán”. Đối với thẻ tín dụng, dựa trên loại tiền tệ và quốc gia phát hành thẻ của Quý Khách, nhà cung cấp thẻ sẽ tính thêm chi phí tỉ giá và các mức phí khác với sự đồng ý của Quý Khách và nhà cung cấp thẻ; hoặc</br>
+Tiền mặt: tại thời điểm đặt phòng, Quý Khách đồng ý đặt cọc tiền phòng cho chúng tôi trên trang web bằng cách gọi điện thoại hay chuyển khoản tới ngân hàng ACB hay chi nhánh ACB trên trang đặt phòng, bạn sẽ nhận được mã số xác nhận đặt phòng; hay thanh toán bằng tiền mặt tại văn phòng Du Lịch Việt trong vòng 24h từ lúc thực hiện giao dịch.</br>
+(b) Khách sạn tại nước ngoài</br>
+
+Chỉ áp dụng thẻ tín dụng: tại thời điểm Quý Khách đồng ý thanh toán tiền đặt phòng bằng thẻ của mình. Tổng chi phí (thông tin đính kèm) sẽ được thông báo tại trang đặt phòng trước khi Quý Khách nhấn nút “Thanh Toán”. Dựa trên loại tiền tệ và quốc gia phát hành thẻ của Quý Khách, nhà cung cấp thẻ sẽ tính thêm chi phí tỉ giá và các mức phí khác với sự đồng ý của Quý Khách và nhà cung cấp thẻ.</br>
+
+
+3.Xác nhận thông tin đặt phòng:</br>
+
+Những thông tin đặt phòng sẽ được xác nhận lần cuối cùng khi chúng tôi gửi email cho Quý Khách để xác nhận thông tin đặt phòng .Thông tin cụ thể như: xác nhận phương thức thanh toán sẽ được chúng tôi gửi mail xác nhận.</br>
+
+Thông tin xác nhận lần cuối cùng chính xác là lúc Quý Khách đã thực hiện thanh toán tiền đặt phòng. Ngược lại, việc đặt phòng của Quý Khách có thể bị hủy bỏ nếu Quý Khách không thực hiện thanh toán trong vòng 24 giờ tính từ lúc đặt phòng trên trang Du Lịch Việt. Chúng tôi không thể chắc chắn bất kỳ thông tin đặt phòng nào cho đến khi chúng tôi gửi email xác nhận lần cuối.</br>
+
+4.Thực hiện thay đổi cho thông tin đặt phòng:</br>
+
+Nếu Quý Khách muốn thay đổi thông tin đặt phòng, vui lòng liên hệ Bộ Phận Chăm Sóc Khách Hàng qua số điện thoại 1900 1870. Chúng tôi sẽ cố gắng để hỗ trợ Quý Khách một cách tốt nhất, tuy nhiên chúng tôi không đảm bảo mọi yêu cầu thay đổi sẽ được thực hiện. Xin xem những thông tin ghi chú sau:</br>
+
+Những phòng đặt tại một số nhà cung cấp phòng, trong một thời điểm cụ thể, hoặc những loại phòng được đặt ở dạng đảm bảo là không thể hủy hoặc thay đổi, và những thông tin này được thể hiện trên trang đặt phòng hoặc chi tiết phòng của nhà cung cấp phòng (xem chính sách hủy phòng), quý vị nên xem thông tin này trước khi thực hiện việc đặt phòng.</br>
+
+Ngoài ra, chúng tôi cũng áp dụng 1 phí quản lý cho các yêu cầu thay đổi đặt phòng /thông tin hủy phòng được chấp nhận, (phí cộng thêm ngoài mức phí huỷ phòng của nhà cung cấp phòng), bấm vào đây để biết thêm phí quản lý.</br>
+
+Nếu việc thực hiện hủy phòng không thành công hoặc Quý Khách không thực hiện việc nhận phòng (check-in) đúng thời hạn so với đơn đặt phòng, Quý Khách sẽ phải thanh toán toàn bộ chi phí cho đơn đặt phòng đó.</br>
+
+5.Những yêu cầu đăng ký:</br>
+
+Chúng tôi không cung cấp thông tin chi tiết thẻ tín dụng của Quý Khách cho bất kỳ nhà cung cấp phòng nào và Quý Khách có thể được yêu cầu cung cấp thông tin có trên thẻ và chữ ký chủ thẻ tương ứng cho mục đích bảo đảm về các khoản phí phát sinh, nếu có. Người đăng ký phải từ 18 tuổi, để xác nhận thông tin khách hàng, nhân viên khách sạn sẽ yêu cầu trình bày giấy CMND hoặc hộ chiếu (passport) để đảm bảo thông tin khi đặt phòng là chính xác.</br>
+
+Ngoài ra, để hạn chế việc sử dụng thẻ tín dụng giả mạo, nhà cung cấp phòng có thể sẽ yêu cầu Quý Khách bổ sung giấy CMND hoặc hộ chiếu (passport) khi đặt phòng để xác nhận chủ thẻ. Một bản lưu của thẻ tín dụng / CMND hoặc hộ chiếu (passport) của Quý Khách cũng có thể được nhà cung cấp phòng giữ lại với mục đích loại trừ thẻ giả mạo, xác nhận nơi cấp thẻ tín dụng, trong trường hợp xảy ra sự cố. Những thông tin này có thể sẽ được nhân viên khách sạn cung cấp cho chúng tôi.</br>
+
+6.Thông tin trang web:</br>
+
+Chúng tôi nỗ lực cam kết tất cả thông tin chính xác sẽ được hiển thị trên trang web, tuy nhiên xin lưu ý các thông tin cũng được chỉnh sửa từ nhà cung cấp phòng, do đó chúng tôi không đảm bảo được những tất cả thông tin trên là chính xác hoàn toàn hoặc không có bất kỳ lỗi nào.Chúng tôi bảo lưu quyền thay đổi thông tin hiển thị trên trang web (bao gồm Điều khoản và Điều kiện này ) bất kỳ thời điểm nào mà không phải báo trước.</br>
+
+7.Trách nhiệm:</br>
+
+Những qui định hay giới hạn được miễn trừ:
+Chúng tôi sẽ không chịu trách nhiệm với bất kỳ thiệt hại, mất mát, trách nhiệm, khiếu nại hoặc khoản phí nào (bao gồm những nguyên nhân sau: sự bất cẩn gây hậu quả trực tiếp hay gián tiếp gây ra) được phát sinh từ trang web chúng tôi liên quan đến những sản phẩm hay những dịch vụ được thực hiện trên trang này.</br>
+
+Chúng tôi không bảo đảm hay là người đại diện cho những sản phẩm phòng ở hay dịch vụ nào trên trang web hoặc các trang kết nối. Ở đây trách nhiệm của chúng tôi chỉ cho phép thực hiện việc đặt phòng . Chúng tôi cam kết cho thuê phòng còn trống được cung cấp bởi các khách sạn thành viên, và không cho bán số phòng nhiều hơn số phòng chúng tôi có (chúng tôi không chịu trách nhiệm với lý do không có phòng trống vì khách sạn đã cho thuê vượt quá số phòng).</br>
+
+8.Mức độ công bằng:</br>
+
+Chúng tôi luôn mong muốn giải quyết những đề xuất hoặc thắc mắc một cách nhanh chóng và công bằng nhất. Mọi ý kiến đóng góp xin gửi về Bộ Phận Chăm Sóc Khách Hàng:</br>
+
+- Văn phòng tại Tp. Hồ Chí Minh: Lầu 2, Saigon Prime, 107-111 Nguyễn Đình Chiểu, Phường 6, Quận 3, Tp. Hồ Chí Minh, Việt Nam</br>
+
+- Văn phòng tại Hà Nội: Lầu 12, 70-72 Bà Triệu, Quận Hoàn Kiếm, Hà Nội, Việt Nam</br>
+
+- Điện thoại 1900 1870, hoặc gửi qua địa chỉ email TC@Du Lịch Việt</br>
+
+9.Bản quyền:</br>
+
+Những hình ảnh và nội dung trên Du Lịch Việt là không được phép sao chép hoặc được sử dụng lại với bất kỳ phiên bản nào khác mà chỉ được sử dụng trên trang web của chúng tôi.</br>
+
+10.Chung:</br>
+
+Tất cả những điều khoản và điều kiện được công nhận bởi pháp luật Việt Nam. Chúng tôi nhận những thanh toán từ khách sạn thành viên từ việc cung cấp dịch vụ phòng đặt phòng của chúng tôi. Mọi thắc mắc liên hệ Công ty Du Lịch Việt để xác nhận đặt phòng qua email. Thông tin chi tiết của chúng tôi về cách thức xử lý thông tin cá nhân xin Quý Khách tham khảo Chính sách quyền cá nhân.</br>
+
+            </p>
+            </div>
+            <div class="p3">
+            <p><h3>Thông tin tuyển dụng</h3></br>
+            	Hiện không có nhu cầu tuyển dụng.
+            </p>
+            </div>
+            
+            <div class="p4">
+            <p><h3>Câu hỏi thưởng gặp</h3></br>
+            	Giá Phòng</br>
+• Giá công bố là giá sau khi đã tính tất cả các phí phải không?</br>
+• Chúng tôi có được giảm giá nếu đặt số lượng phòng nhiều không?</br>
+
+
+Đặt Phòng</br>
+• Đặt phòng tại Du Lịch Việt tôi được lợi/tiền/quà tặng gì không?</br>
+• Tôi muốn đặt phòng cho tập thể hoặc cho gia đình từ 4 người nhưng tôi không biết tìm nhanh ở đâu. Phải xem từng loại phòng từng khách sạn thật mất thời gian!</br>
+
+
+Giá Phòng</br>
+
+2. Giá công bố là giá sau khi đã tính tất cả các phí phải không?</br>
+
+Giá công bố là giá khách sạn đưa ra cho các khách hàng đặt trực tiếp tại khách sạn. Giá này sẽ cao hơn 20-30% so với giá dành cho khách hàng đặt trực tuyến qua Du Lịch Việt.</br>
+
+3. Chúng tôi có được giảm giá nếu đặt số lượng phòng nhiều không?</br>
+
+Giá đăng trên Du Lịch Việt là giá đã được niêm yết và là giá ưu đãi Du Lịch Việt dành cho khách hàng. Tuy nhiên nếu bạn muốn đặt phòng với số lượng lớn, Du Lịch Việt sẽ cố gắng thương lượng với phía khách sạn và đưa ra giá hợp lí. Chúng tôi cũng có chương trình Thẻ VIVU  giúp bạn càng đặt nhiều, tiết kiệm càng lớn.</br>
+
+ 
+
+Đặt Phòng</br>
+
+4. Đặt phòng tại Du Lịch Việt tôi được lợi/tiền/quà tặng gì không?</br>
+
+Rất nhiều! Đây là một lợi thế của Du Lịch Việt so với các hình thức đặt phòng khác. Bạn có thể trở thành khách hàng thân thiết của Du Lịch Việt, nhận nhiều lợi ích giảm giá, tích điểm, quà may mắn hay tham gia các chương trình khuyến mại thường xuyên của chúng tôi. Hãy vào facebook của Du Lịch Việt  nhé.</br>
+
+5. Tôi muốn đặt phòng cho tập thể hoặc cho gia đình từ 4 người nhưng tôi không biết tìm nhanh ở đâu. Phải xem từng loại phòng từng khách sạn thật mất thời gian!</br>
+
+Bạn có thể tham khảo danh sách các khách sạn tốt nhất cho gia đình trên Cùng Du Lịch Việt , hay gọi đến đường dây nóng 6969 của Du Lịch Việt để được hỗ trợ cụ thể.</br>
+
+
+            </p>
+            </div>
+        </div>
+	</div>
+	
+		<!-- //banner -->
+	<div class="move-text">
+		<div class="marquee">Đăng ký tài khoản với chúng tôi miễn phí.<a href="signup.html">Tại đây</a></div>
+		<script type="text/javascript" src="js/jquery.marquee.min.js"></script>
+        <script>
+		  $('.marquee').marquee({ pauseOnHover: true });
+		  //@ sourceURL=pen.js
+		</script>
+	</div>	
+						
+	
+	
+	<div><center>
+		<audio controls autoplay>
+			<source src="music.mp3" type="audio/mpeg">
+		</audio>
+	</center></div>
+	
+	<div class="vide"></div>
+	<!-- footer -->
+	<div class="footer">
+		<!-- container -->
+		<div class="container">
+			<div class="footer-top-grids">
+				<!-- news-letter -->
+				<div class="news-letter">
+					<div class="news-letter-grids">
+						<div class="col-md-4 news-letter-grid">
+							<p>Tổng đài tư vấn miễn phí : <span>6969</span></p>
+						</div>
+						<div class="col-md-4 news-letter-grid">
+							<p class="mail">Gửi thư điện tử về : <a href="mailto:info@example.com">Dulichviet@hotel.vn</a></p>
+						</div>
+						<div class="col-md-4 news-letter-grid">
+							<form>
+								<input type="text" value="Nhận thông tin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nhận thông tin';}" required>
+								<input type="submit" value="Đăng kí">
+							</form>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<!-- //news-letter -->
+			</div>
+		</div>
+		<!-- //container -->
+	</div>
+	<!-- //footer -->
+	<div class="footer-bottom-grids">
+		<!-- container -->
+		<div class="container">
+				<div class="footer-bottom-top-grids">
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Tải ứng dụng Du Lịch Việt trên di động:</h4>
+						<div class="d-apps">
+							<ul>
+								<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Chấp nhận thanh toán qua: </h4>
+						<div class="a-cards">
+							<ul>
+								<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Theo dõi chúng tôi: </h4>
+						<div class="social">
+							<ul>
+								<li><a href="#" class="facebook"> </a></li>
+								<li><a href="#" class="facebook twitter"> </a></li>
+								<li><a href="#" class="facebook chrome"> </a></li>
+								<li><a href="#" class="facebook dribbble"> </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="copyright">
+						<p>Bản quyền © 2015 Du Lịch Việt . Thiết kế bởi <a href="https://www.facebook.com/Hoang.Thien.Uit">Nhóm G11 - Môn: Giao Tiếp Người Máy</a></p>
+					</div>
+				</div>
+		</div>
+	</div>
+	
+	<!-- Chat -->
+ 	<div id="gb">
+
+		<div class="gbtab" onclick="showHideGB()"><center>Hỗ trợ trực tiếp</center></div>
+
+			<div class="gbcontent">
+			<!-- BEGIN CBOX - www.cbox.ws - v001 -->
+				<div id="cboxdiv" style="text-align: center; line-height: 0">
+				<div><iframe frameborder="0" width="160" height="305" src=				"http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=main" marginheight="2" marginwidth="2" scrolling="auto" allowtransparency="yes" name="cboxmain7-461741" style="border:#EDDEDB 1px solid;" id="cboxmain7-461741"></iframe></div>
+				<div><iframe frameborder="0" width="200" height="75" src="http://www7.cbox.ws/box/?boxid=461741&boxtag=j5eqse&sec=form" marginheight="2" marginwidth="2" scrolling="no" allowtransparency="yes" name="cboxform7-461741" style="border:#EDDEDB 1px solid;border-top:0px" id="cboxform7-461741"></iframe></div>
+			</div>
+			<!-- END CBOX -->
+			<div style="text-align:right">
+				<a href="javascript:showHideGB()">
+				[Đóng chatbox]
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Chat -->
+
+<script type="text/javascript">
+var gb = document.getElementById("gb");
+gb.style.right = (30-gb.offsetWidth).toString() + "px";
+</script>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			SyntaxHighlighter.all();
+			});
+			$(window).load(function(){
+			$('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			$('body').removeClass('loading');
+			}
+			});
+		});
+	</script>
+    
+</div>		
+</body>
+</html>
