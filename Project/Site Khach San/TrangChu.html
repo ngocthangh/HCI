@@ -49,51 +49,110 @@
 					<li><a href="#">Liên Hệ</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Đăng Nhập</button>
 					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Đăng Kí</button>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModaldki">Đăng Nhập</button>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<!-- Đăng Nhập -->
+	<!-- Đăng Kí -->
 	<div id = "myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
 			<div class="dropdown-grids">
 				<div id="loginBox">                
 					<form id="loginForm">
-						<div class="sign">
-							<a href="#" id="signinButton" class="btn btn-info">Đăng nhập</a>
-						</div> 
+						<!--Form Đăng Kí -->
 						<div class="signin">  
 							<div class="login-grids">
 								<div class="login-grid-left">
 									<form>
 										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Họ và Tên Đệm:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Tên:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
 											<div class="form-group">
 												<label for="email" style="color: #0000FF">Email address:</label>
 												<input type="email" class="form-control" id="email">
 											</div>
 											<div class="form-group">
-												<label for="pwd">Password:</label>
+												<label for="pwd" style="color: #0000FF">Password:</label>
 												<input type="password" class="form-control" id="pwd">
 											</div>
-											<div class="checkbox">
-												<label><input type="checkbox"> Remember me</label>
+
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Nhập Lại Password:</label>
+												<input type="password" class="form-control" id="pwd">
 											</div>
-											<button type="submit" class="btn btn-default">Submit</button>
+
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
 										</form>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!-- End Form Đăng Kí -->
 					</div>
 				</div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
+	<!-- End Đăng Kí -->
 	<!-- Đăng Nhập -->
+	<div id = "myModaldki" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Nhập -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Remember me</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Nhập -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Nhập -->
 
 	<!-- End Menu -->
 	<div class="container">
