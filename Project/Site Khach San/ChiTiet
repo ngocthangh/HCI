@@ -318,15 +318,7 @@
     </div>
 </div>
 </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <hr>
     
     			<!--Đối Tác-->
 			<div class="container text-center">
@@ -360,11 +352,12 @@
 				</div>
 			</div><br>
 			<!--End Đối Tác-->
+    <hr>
 			<!--Liên Hệ-->
-			<div class="container-lien-he">
+			<div class="container text-center">
 				<h2 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
 				<div class="row">
-					<div class="col-sm-5">
+					<div class="col-sm-5 text-left">
 						<p>Nhóm 4- Giao Tiếp Người Máy</p>
 						<p><span class="glyphicon glyphicon-map-marker"></span> Trường Đại học Công Nghệ Thông Tin</p>
 						<p><span class="glyphicon glyphicon-phone"></span> 0969696969</p>
