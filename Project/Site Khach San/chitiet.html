@@ -30,9 +30,9 @@
 	</style>
 </head>
 <body>
-	<!-- Menu -->
+     <!-- Menu -->
 	<nav class="navbar navbar-inverse">
-		<div class="container-fluid"">
+		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 					<span class="icon-bar"></span>
@@ -55,7 +55,6 @@
 			</div>
 		</div>
 	</nav>
-
 	<!-- Đăng Kí -->
 	<div id = "myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -99,7 +98,7 @@
 											<div class="checkbox">
 												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
 											</div>
-											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Ký Tài Khoản</button>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
 										</form>
 									</div>
 								</div>
@@ -153,208 +152,183 @@
 		</div>
 	</div>
 	<!-- End Đăng Nhập -->
+    
+    
+    
+    
+    
+    <div class="container">
+<div class="row">
+  <div class="col-sm-8">
+    <!-- Carousel -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-	<!-- End Menu -->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="Images/oscar/oscar4.jpg" alt="Chania">
+            </div>
+            <div class="item">
+              <img src="Images/oscar/oscar6.jpg" alt="Chania">
+            </div>
 
-					<!-- Slider Khách Sạn -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="Images/Anh-Khach-San-5.jpg" alt="Image">
-						</div>
+            <div class="item">
+              <img src="Images/oscar/oscar7.jpg" alt="Flower">
+            </div>
 
-						<div class="item">
-							<img src="Images/Anh-Khach-San-4.jpg" alt="Image">
-						</div>
-					</div>
-					<!-- End Slider Khách Sạn -->
-					<!-- Control slider -->
-					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-			<!-- End Control slider -->
-			<!--Tìm và đặt phòng-->
-			<div class="col-sm-4" >
-				<div class="well-4" >
-					<div class="col-sm-4-lable">
-						<h3>Tìm và đặt phòng khách sạn</h3>
-						<label class="control-noi-den">Nơi đến:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
-							<input type = "text" class = "form-control" placeholder="Thành Phố, Địa Điểm, Tên Khách Sạn">
-						</div>
+            <div class="item">
+              <img src="Images/oscar/oscar8.jpg" alt="Flower">
+            </div>
+        </div>
 
-						<label class="control-noi-den">Ngày Nhận Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
-
-						<label class="control-noi-den">Ngày Trả Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
-
-						<label class="control-noi-den">Số Khách:</label>
-						<div class = "input-group">
-							<label>Người lớn: </label>
-							<input type="number" name="nguoi-lon" min="0" max="10" >
-							<label>Trẻ em(dưới 18)</label>
-							<input type="number" name="tre-em" min="0" max="10">
-						</div>
-
-						<div class="form-group">
-							<label for="so-phong">Số Phòng:</label>
-							<select class="form-control" id="so-phong">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-							</select>
-							<label for="muc-gia">Mức giá</label>
-							<select class="form-control" id="muc-gia">
-								<option>0-200000 VNĐ</option>
-								<option>200000-500000 VNĐ</option>
-								<option>500000-750000 VNĐ</option>
-								<option>Trên 750000 VNĐ</option>
-							</select>
-						</div>
-						<div>
-							<button type="button" class="btn btn-primary">Tìm Kiếm</button
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-		</div>
-		<!--End Tìm và đặt phòng-->
-		<!--Khách sạn trong nước-->
-		<div class="container text-center">
-			<h3 style="color: #0000FF">CÁC KHÁCH SẠN TRONG NƯỚC</h3>
-			<br>
-			<div class="row">
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-1.jpg" class="img-responsive" style="width:100%"  alt="Image">
-					<p>Hồ Chí Minh - Ho Chi Minh City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-2.jpg" class="img-responsive" style="width:100%"  alt="Image">
-					<p>Hà Nội - Ha Noi City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-3.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Băngkok - BangKok City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-4.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Đà Lạt - Da Lat City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-Sapa.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Sa Pa - Sa Pa City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-DaNang.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Đà Nẵng - Da Nang City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-NhaTrang.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Nha Trang - Nha Trang City</p>
-				</div>
-
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-NhaTrang.jpg" class="img-responsive" style="width:100%" alt="Image">
-					<p>Vũng Tàu - Vung Tau City</p>
-				</div>
-			</div>
-			<hr>
-		</div>
-		<!--End Khách sạn trong nước-->
-		<!--Khách sạn nước ngoài-->
-		<div class="container text-center">
-			<h3 style="color: #0000FF">CÁC KHÁCH SẠN NƯỚC NGOÀI</h3>
-			<br>
-			<div class="row">
-				<div class="col-sm-3">
-					<img src="Images/Gioi-Thieu-My.png" class="img-responsive" style="width:100%"  alt="Image">
-					<p>Mỹ - United State<p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-Thieu-Anh.png" class="img-responsive" style="width:100%"  alt="Image">
-						<p>Anh - United Kingdom</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-Thieu-3.jpg" class="img-responsive" style="width:100%" alt="Image">
-						<p>Băngkok - Bangkok City</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-Thieu-Japan.png" class="img-responsive" style="width:100%" alt="Image">
-						<p>Tokyo - Japan</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-Thieu-Korea.png" class="img-responsive" style="width:100%" alt="Image">
-						<p>Korea</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-thieu-France.jpg" class="img-responsive" style="width:100%" alt="Image">
-						<p>France</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-thieu-Brazil.jpg" class="img-responsive" style="width:100%" alt="Image">
-						<p>Brazil</p>
-					</div>
-
-					<div class="col-sm-3">
-						<img src="Images/Gioi-thieu-Russia.jpg" class="img-responsive" style="width:100%" alt="Image">
-						<p>Russia</p>
-					</div>
-				</div>
-				<hr>
-			</div>
-			<!--End Khách sạn nước ngoài-->
-			<!--Số Trang- Pagination-->
-			<div class="container">
-				<ul class="pagination" style="margin-left: 400px">
-					<li><a href="#">Trang Đầu</a></li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li><a href="#">Trang Kế Tiếp</a></li>
-				</ul>
-			</div>
-			<!--End Số Trang- Pagination-->
-			<!--Đối Tác-->
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- End Carousel -->
+  </div>
+  <div class="col-sm-4">
+    <h1>Oscar Saigon Hotel</h1>
+    <div class="well">
+       <ul>
+           <li>68A Đại lộ Nguyễn Huệ, Quận 1, Quận 1 , Hồ Chí Minh, Việt Nam</li> 
+            <li>Rất Tốt 7,7 dựa trên 2928 đánh giá</li>
+        </ul>
+    </div>
+      <div class="well">
+       <ul>
+           <li>Vị trí đẹp</li> 
+            <li>Cực kỳ thuận tiện</li>
+           <li>Thái độ phục vụ rất tốt</li>
+        </ul>
+    </div>
+      <div class="well">
+       <ul>
+           <li>Vị trí đẹp</li> 
+            <li>Cực kỳ thuận tiện</li>
+           <li>Thái độ phục vụ rất tốt</li>
+        </ul>
+    </div>
+      <div class="col-sm-offset-3">
+        <button class="btn btn-primary btn-lg">Đặt Phòng Ngay</button>
+      </div>
+    
+  </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-sm-8">
+        <h2>Thông tin về Oscar Saigon Hotel</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">
+        <hr>
+        <h3>Mô tả</h3>
+    </div>
+    <div class="col-sm-10">
+        <hr>
+        <span>Khách sạn hiện đại, vị trí thuận tiện tại trung tâm kinh doanh và khu mua sắm của TP.HCM, có thể đi bộ tới các nhà hàng, cửa hàng, ngân hàng, và văn phòng hãng hàng không, bạn sẽ tìm thấy Oscar Saigon Hotel là nơi hoàn hảo cho kỳ nghỉ của bạn ở TP.HCM cho dù đó là công việc kinh doanh hay giải trí. Tất cả các phòng được trang bị đẹp tiêu chuẩn quốc tế, tiện nghi hiện đại như điều hòa và internet wifi. Nhà hát thành phố và sông Sài Gòn, Nhà thờ Đức Bà chỉ mất vài phút đi bộ. Một chuyến đi đến TP.HCM không thể hoàn hảo nếu không ghé thăm chợ Bến Thành cách khách sạn 5 phút.</span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">
+        <hr>
+        <h3>Điểm đặc trưng</h3>
+    </div>
+    <div class="col-sm-10">
+        <hr>
+        <ul>
+            <li>Truy cập Internet:</li>
+             miễn phí wifi tất cả các phòng  wifi công cộng
+            <li>Di chuyển:</li>
+             dịch vụ taxi  đưa đón sân bay
+            <li>Hoạt động và Thư giãn:</li>
+             bồn tắm nước nóng  dịch vụ vé  massage  phòng sauna  phòng tắm hơi  phòng thể dục  sân vườn  spa  tour du lịch
+            <li>Ăn uống:</li>
+             Dịch vụ phòng [24 giờ]  máy pha trà/cà phê  nhà hàng  nước đóng chai miễn phí  
+             phục vụ phòng  quán cà phê  quầy bar  quầy bar mini
+            <li>Dịch vụ và Sự thuận tiện:</li>
+             cửa hàng  dịch vụ giặt là  giữ hành lý  két sắt  khu vực hút thuốc  nhân viên hướng dẫn  thu đổi ngoại tệ
+            <li>Dành cho trẻ em:</li>
+             dịch vụ trông trẻ  phòng gia đình
+            <li>Được tham gia:</li>
+             an ninh (24 giờ)  cho phép vật nuôi  quầy lễ tân (24 giờ)  thang máy
+            <li>Ngôn ngữ sử dụng:</li>
+             Tiếng Việt  Tiếng Anh
+        </ul>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-2">
+        <hr>
+        <h3>Chính sách</h3>
+    </div>
+    <div class="col-sm-10">
+        <hr>
+        <span>Theo luật, một người nước ngoài không thể ở cùng phòng với một công dân Việt Nam mà không có giấy chứng nhận kết hôn. Khách sạn có     thể từ chối đặt phòng hoặc yêu cầu đặt một phòng thứ 2 trong trường hợp yêu cầu không được thực hiện.<br>
+            Trẻ em và giường phụ:<br>
+            Em bé 0-1 tuổi: Ở miễn phí nếu sử dụng giường sẵn có. Chú ý, nếu bạn cần cũi thì có thể phải trả thêm phí.<br>
+            Trẻ em 2-5 tuổi: Ở miễn phí nếu sử dụng giường sẵn có.<br>
+            <ul><li>Khách trên 5 tuổi được coi là người lớn. </li>
+                <li>Giường phụ tùy thuộc vào loại phòng bạn chọn, xin vui lòng kiểm tra thông tin phòng để biết thêm chi tiết.</li></ul>
+            Khi đặt trên 5 phòng, chính sách và điều khoản bổ sung có thể được áp dụng.</span>
+    </div>
+</div>
+        <div class="row">
+    <div class="col-sm-2">
+        <hr>
+        <h3>Thông tin hữu ích</h3>
+    </div>
+    <div class="col-sm-10">
+        <hr>
+        <span><pre>
+    Phí đưa đón sân bay: 55 USD
+    Phí bữa sáng (áp dụng khi không bao gồm trong giá phòng): 7 USD
+    Nhận phòng từ: 02:00 PM
+    Nhận phòng đến: 11:00 PM
+    Trả phòng từ: 11:30 AM
+    Trả phòng đến: 12:00 AM
+    Khoảng cách từ trung tâm thành phố: 1 km
+    Khoảng cách tới sân bay: 7.0 km
+    Phí Wifi/ Internet hàng ngày: 00 USD
+    Phòng / tầng không hút thuốc: Yes
+    Số lượng quán bar/lounge: 1
+    Số tầng khách sạn: 11
+    Số lượng nhà hàng: 2
+    Số lượng phòng: 107
+    Điện áp trong phòng: 220
+    Thời gian đến sân bay (phút): 30
+    Khách sạn được xây vào năm: 1990
+    Khách sạn được nâng cấp gần nhất vào: 2010</pre>
+        </span>
+    </div>
+</div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    			<!--Đối Tác-->
 			<div class="container text-center">
 				<h3 style="color: #0000FF">CÁC CÔNG TY LIÊN KẾT</h3>
 				<br>
@@ -419,7 +393,7 @@
 		<!--End Liên Hệ-->
 		<!--Footer-->
 		<footer class="container-fluid text-center">
-			<div class="container">
+			
 				<div class="footer-bottom-top-grids">
 					<div class="col-md-4 footer-bottom-left">
 						<h4>Tải ứng dụng trên di động:</h4>
@@ -457,12 +431,12 @@
 						<p>Bản quyền © 2016 Thế Giới Khách Sạn . Thiết kế bởi <a href="https://www.facebook.com/NguyenVanNguyen.UIT">Nhóm 4 - Môn: Giao Tiếp Người Máy</a></p>
 					</div>
 				</div>
-			</div>
+			
 		</footer>
 		<!-- End Footer -->
 		<!-- Chat -->
 		<div class="container">
-			<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:-110px;">
+			<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:900px;">
 				<div class="col-xs-12 col-md-12">
 					<div class="panel panel-default">
 						<div class="panel-heading top-bar">
@@ -554,10 +528,10 @@
 				</div>
 			</div>
 
+			
 		</div>
 		<!-- Chat -->
 
 
 	</body>
 	</html>
-
