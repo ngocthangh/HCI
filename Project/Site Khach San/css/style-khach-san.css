@@ -3033,3 +3033,118 @@ border:2px solid #990000;
 background:#F5F5F5;
 padding:10px;
 }
+
+/*CSS H1*/
+h1{
+    margin-left: 150px;
+    color: #0000FF;
+}
+/*CSS Nội dung*/
+.h-class h5{
+    padding-bottom: .5em;
+    color: #292929;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+span.starTextLabel {
+    color: #777;
+    font-size: 1em;
+    font-weight: 400;
+}   
+.check input[type=radio], .check input[type="checkbox"] {
+    width: 1.15384615em;
+    height: 1.15384615em;
+    vertical-align: top;
+}
+.hotel-price{
+    margin: 1em 0;
+}
+.product-right-grids{
+    border: solid 1px #F3F3F3;
+    margin-bottom: 2em;
+    margin-right: -210px;
+}
+.p-day{
+    margin:2em 0;
+}
+.hotel-price span.p-day-grid{
+    color: #777;
+    font-size: 1em;
+    font-weight: 400;
+}
+.p-left{
+    float:left;
+    width:30%;
+}
+.p-right{
+    float: left;
+    width: 70%;
+    padding: 1em 0;
+}
+.p-right-img a{
+    background: url(../images/1.jpg) no-repeat 0px 0px;
+    min-height: 150px;
+    background-size: cover;
+    display: block;
+}
+.p-right-img1 a{
+    background: url(../images/2.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    display: block;
+}
+.p-right-img2 a{
+    background: url(../images/3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    display: block;
+}
+.p-right-img3 a{
+    background: url(../images/4.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    display: block;
+}
+.p-right-left a{
+    color: #337ab7;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.p-right-left p{
+    color: #777;
+    font-size: .9em;
+    margin: .5em 0 0 0;
+    line-height: 1.8em;
+}
+.p-right-left p.p-call{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+.p-right-right{
+    text-align:right;
+}
+.p-right-right h6{
+    color: #6fd508;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0;
+}
+.p-right-right p{
+    color: #777;
+    font-size: .9em;
+    margin: .5em 0 0 0;
+    line-height: 1.8em;
+}
+.p-right-right span.p-offer{
+    color: #000;
+    font-size: 2.3em;
+}
+.p-right-right span.p-last-price{
+    text-decoration: line-through;
+    color: #777;
+    font-size: 1.4em;
+    display: block;
+}
