@@ -4,11 +4,11 @@
 	<title>Liên hệ | Site Khách Sạn</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/tim-khach-san.css">
 	<link rel="stylesheet" type="text/css" href="css/style-khach-san.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/javascript.js"></script>
 	<style>
 		/* Add a gray background color and some padding to the footer */
@@ -31,7 +31,128 @@
 	</style>
 </head>
 <body>
-	<div id="header"></div>
+	<!-- Menu -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="TrangChu.html">Site Khách Sạn</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="TrangChu.html">Trang Chủ</a></li>
+					<li><a href="KhachSan.html">Khách Sạn</a></li>
+					<li><a href="ThanhToan.html">Đặt Phòng</a></li>
+					<li><a href="LienHe.html">Liên Hệ</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Ký</button>
+					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Đăng Kí -->
+	<div id = "myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Kí -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Ký</div>
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Họ và Tên Đệm:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Tên:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Nhập Lại Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Kí -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Kí -->
+	<!-- Đăng Nhập -->
+	<div id = "myModaldki" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Nhập -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Remember me</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Nhập -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Nhập -->
 <div class="container-fluid">
   <div class="row content">
         <div class="col-sm-3 sidenav">
@@ -194,7 +315,212 @@
     </div>
 <hr>
 </div>
-<div id="footer"></div>
-<div id="chat"></div>
+<hr>
+    
+    			<!--Đối Tác-->
+			<div class="container text-center">
+				<h3 style="color: #0000FF">CÁC CÔNG TY LIÊN KẾT</h3>
+				<br>
+				<div class="row">
+					<div class="col-sm-2">
+						<img src="Images/lk-priceline.jpg" class="img-responsive" style="width:100%" alt="Image">
+						<p>PriceLine</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="Images/lk-kayak.jpg" class="img-responsive" style="width:100%" alt="Image">
+						<p>Kayak</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="Images/lk-rentalcars.png" class="img-responsive" style="width:100%" alt="Image">
+						<p>Rentalcars</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="Images/lk-booking.png" class="img-responsive" style="width:100%" alt="Image">
+						<p>Booking</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="Images/lk-open.jpg" class="img-responsive" style="width:100%" alt="Image">
+						<p>OpenTable</p>
+					</div>
+					<div class="col-sm-2">
+						<img src="Images/lk-agoda.png" class="img-responsive" style="width:100%" alt="Image">
+						<p>Agoda</p>
+					</div>
+				</div>
+			</div><br>
+			<!--End Đối Tác-->
+    <hr>
+			<!--Liên Hệ-->
+			<div class="container text-center">
+				<h2 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+				<div class="row">
+					<div class="col-sm-5 text-left">
+						<p>Nhóm 4- Giao Tiếp Người Máy</p>
+						<p><span class="glyphicon glyphicon-map-marker"></span> Trường Đại học Công Nghệ Thông Tin</p>
+						<p><span class="glyphicon glyphicon-phone"></span> 0969696969</p>
+						<p><span class="glyphicon glyphicon-envelope"></span> thegioikhachsan@gmail.com</p>
+					</div>
+
+					<div class="col-sm-7 slideanim">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="name" name="name" placeholder="Nhập đầy đủ họ và tên" type="text" required>
+							</div>
+							<div class="col-sm-6 form-group">
+								<input class="form-control" id="email" name="email" placeholder="Email của bạn..." type="email" required>
+							</div>
+						</div>
+						<textarea class="form-control" id="comments" name="comments" placeholder="Bạn cần hỗ trợ gì từ chúng tôi..." rows="5"></textarea><br>
+						<div class="row">
+							<div class="submit-contact">
+								<button class="btn btn-default pull-right" type="submit" style="color: #FFFFFF; background-color: #0000FF">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Liên Hệ-->
+		<!--Footer-->
+		<footer class="container-fluid text-center">
+			
+				<div class="footer-bottom-top-grids">
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Tải ứng dụng trên di động:</h4>
+						<div class="d-apps">
+							<ul>
+								<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Chấp nhận thanh toán qua: </h4>
+						<div class="a-cards">
+							<ul>
+								<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
+								<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 footer-bottom-left">
+						<h4>Theo dõi chúng tôi: </h4>
+						<div class="social">
+							<ul>
+								<li><a href="#" class="facebook"> </a></li>
+								<li><a href="#" class="facebook twitter"> </a></li>
+								<li><a href="#" class="facebook chrome"> </a></li>
+								<li><a href="#" class="facebook dribbble"> </a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="copyright">
+						<p>Bản quyền © 2016 Thế Giới Khách Sạn . Thiết kế bởi <a href="https://www.facebook.com/NguyenVanNguyen.UIT">Nhóm 4 - Môn: Giao Tiếp Người Máy</a></p>
+					</div>
+				</div>
+			
+		</footer>
+		<!-- End Footer -->
+		
+<!-- Chat -->
+		<div class="container">
+			<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:900px;">
+				<div class="col-xs-12 col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading top-bar">
+							<div class="col-md-8 col-xs-8">
+								<h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
+							</div>
+							<div class="col-md-4 col-xs-4" style="text-align: right;">
+								<a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+								<a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+							</div>
+						</div>
+						<div class="panel-body msg_container_base">
+							<div class="row msg_container base_sent">
+								<div class="col-md-10 col-xs-10">
+									<div class="messages msg_sent">
+										<p>Hello baby</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+							</div>
+							<div class="row msg_container base_receive">
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+								<div class="col-md-10 col-xs-10">
+									<div class="messages msg_receive">
+										<p>Hi Baby</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+							</div>
+							<div class="row msg_container base_receive">
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+								<div class="col-xs-10 col-md-10">
+									<div class="messages msg_receive">
+										<p>Bye Baby</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+							</div>
+							<div class="row msg_container base_sent">
+								<div class="col-xs-10 col-md-10">
+									<div class="messages msg_sent">
+										<p>Bye Baby</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+							</div>
+							<div class="row msg_container base_receive">
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+								<div class="col-xs-10 col-md-10">
+									<div class="messages msg_receive">
+										<p>Hoho</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+							</div>
+							<div class="row msg_container base_sent">
+								<div class="col-md-10 col-xs-10 ">
+									<div class="messages msg_sent">
+										<p>Hehe</p>
+										<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+									</div>
+								</div>
+								<div class="col-md-2 col-xs-2 avatar">
+									<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div class="input-group">
+								<input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+								<span class="input-group-btn">
+									<button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+		<!-- Chat -->
 </body>
 </html>

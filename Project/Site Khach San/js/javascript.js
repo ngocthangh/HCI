@@ -39,4 +39,5 @@ $(document).ready(function(e) {
     if ($('#chat').length) {
         $('#chat').load('partials/chat.html');
     }
+    
 });
