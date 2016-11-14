@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Liên hệ | Site Khách Sạn</title>
+	<title>Trang Chủ | Site Khách Sạn</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/tim-khach-san.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style-thanh-toan.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/javascript.js"></script>
+	<script src="js/thanh-toan.js"></script>
 	<style>
 		/* Add a gray background color and some padding to the footer */
 		footer {
@@ -39,22 +41,24 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="TrangChu.html">Site Khách Sạn</a>
+				<a class="navbar-brand" href="#">Logo</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
 					<li><a href="TrangChu.html">Trang Chủ</a></li>
 					<li><a href="KhachSan.html">Khách Sạn</a></li>
-					<li><a href="ThanhToan.html">Đặt Phòng</a></li>
-					<li class="active"><a href="LienHe.html">Liên Hệ</a></li>
+					<li><a href="DatPhong.html">Đặt Phòng</a></li>
+					<li><a href="LienHe.html">Liên Hệ</a></li>
+					<li class="active"><a href="ThanhToan.html">Thanh Toán</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Ký</button>
-					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
+					<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Kí</button>
+					<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
 				</ul>
 			</div>
 		</div>
 	</nav>
+
 	<!-- Đăng Kí -->
 	<div id = "myModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -68,7 +72,7 @@
 									<form>
 										<div class="well">
 											<div class="panel panel-primary">
-												<div class="panel-heading">Đăng Ký</div>
+												<div class="panel-heading"">Đăng Nhập</div>
 											</div>
 
 											<div class="form-group">
@@ -153,7 +157,7 @@
 	</div>
 	<!-- End Đăng Nhập -->
 <div class="container-fluid">
-  <div class="row content">
+  <div class="container">
         <div class="col-sm-3 sidenav">
 			<hr>
             <ul class="nav nav-pills nav-stacked">
@@ -168,7 +172,7 @@
             <div id="GioiThieu" class="tab-pane fade in active">
                 <div class="col-sm-9">
                   <hr>
-                  <h2><center> GIỚI THIỆU<center> </h2>
+                  <h2 style="color: #0000ff"><center> GIỚI THIỆU<center> </h2>
                   <br>
                   
                     <h>    Thế Giới Khách Sạn - hệ thống đặt phòng khách sạn trực tuyến, cung cấp giải pháp tối ưu giúp người dùng tìm kiếm và đặt phòng với hệ thống xác nhận và giữ phòng tức thời, phương thức   thanh toán đa dạng, dịch vụ chăm sóc khách hàng 24/7.
@@ -186,7 +190,7 @@
             <div id="DieuKien" class="tab-pane fade">
                 <div class="col-sm-9">
                   <hr>
-                  <h2><center> ĐIỀU KIỆN VÀ ĐIỀU KHOẢN <center> </h2>
+                  <h2><center style="color: #0000ff"> ĐIỀU KIỆN VÀ ĐIỀU KHOẢN <center> </h2>
                   <br>
                   <p> Khi thực hiện đặt phòng khách sạn, Quý Khách cần phải thỏa mãn những điều kiện sau:
                     <br>
@@ -232,7 +236,7 @@
             <div id="TuyenDung" class="tab-pane fade">
                 <div class="col-sm-9">
                   <hr>
-                  <h2><center> TUYỂN DỤNG <center> </h2>
+                  <h2 style="color: #0000ff"><center> TUYỂN DỤNG <center> </h2>
                   <br>
                   <p> <center> Hiện tại không có nhu cầu tuyển dụng </center></p>
                   <br><br>
@@ -241,7 +245,7 @@
             <div id="GiaiDap" class="tab-pane fade">
                 <div class="col-sm-9">
                   <hr>
-                  <h2><center> GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP<center> </h2>
+                  <h2 style="color: #0000ff"><center> GIẢI ĐÁP CÁC CÂU HỎI THƯỜNG GẶP<center> </h2>
                   <br>
                     
                       <div class="panel-group" id="accordion">
@@ -320,7 +324,7 @@
 			<div class="container text-center">
 				<h3 style="color: #0000FF">CÁC CÔNG TY LIÊN KẾT</h3>
 				<br>
-				<div class="row">
+				<div class="container row">
 					<div class="col-sm-2">
 						<img src="Images/lk-priceline.jpg" class="img-responsive" style="width:100%" alt="Image">
 						<p>PriceLine</p>
@@ -352,7 +356,7 @@
 			<!--Liên Hệ-->
 			<div class="container text-center">
 				<h2 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-				<div class="row">
+				<div class="container row">
 					<div class="col-sm-5 text-left">
 						<p>Nhóm 4- Giao Tiếp Người Máy</p>
 						<p><span class="glyphicon glyphicon-map-marker"></span> Trường Đại học Công Nghệ Thông Tin</p>
