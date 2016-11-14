@@ -6,9 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/tim-khach-san.css">
+	<link rel="stylesheet" type="text/css" href="css/style-thanh-toan.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/javascript.js"></script>
+	<script src="js/thanh-toan.js"></script>
 	<style>
 		/* Add a gray background color and some padding to the footer */
 		footer {
@@ -30,176 +32,663 @@
 	</style>
 </head>
 <body>
-	<div id="header"></div>
-	<h2 style="color: #0000ff; margin-left: 600px";>THANH TOÁN</h2>
+	<!-- Menu -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="TrangChu.html">Trang Chủ</a></li>
+					<li><a href="KhachSan.html">Khách Sạn</a></li>
+					<li><a href="DatPhong.html">Đặt Phòng</a></li>
+					<li><a href="LienHe.html">Liên Hệ</a></li>
+					<li class="active"><a href="ThanhToan.html">Thanh Toán</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Kí</button>
+					<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Đăng Kí -->
+	<div id = "myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Kí -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Họ và Tên Đệm:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Tên:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Nhập Lại Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Kí -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Kí -->
+	<!-- Đăng Nhập -->
+	<div id = "myModaldki" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Nhập -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Remember me</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Nhập -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Nhập -->
+	<h2 style="color: #0000ff"><center>THANH TOÁN</center></h2>
 	<!-- Thanh Toán -->
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Bước 1: Chi Tiết Thanh Toán</div>
-					<form >
-						<div class="panel-body">
-							<label class="control-noi-den">Họ và Tên Đệm:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-								<input type = "text" class = "form-control" placeholder="Nhập Họ và Tên Đệm...">
-							</div>
+			<section>
+				<div class="wizard">
+					<div class="wizard-inner">
+						<div class="connecting-line"></div>
+						<ul class="nav nav-tabs" role="tablist">
 
-							<label class="control-noi-den">Tên:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-								<input type = "text" class = "form-control" placeholder="Nhập Tên ...">
-							</div>
+							<li role="presentation" class="active">
+								<a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+									<span class="round-tab">
+										<i class="glyphicon glyphicon-user"></i>
+									</span>
+								</a>
+							</li>
 
-							<label class="control-noi-den">Tên Công Ty (Nếu có):</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-								<input type = "text" class = "form-control" placeholder="Nhập Tên Công Ty nếu có....">
-							</div>
+							<li role="presentation" class="disabled">
+								<a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+									<span class="round-tab">
+										<i class="glyphicon glyphicon-shopping-cart"></i>
+									</span>
+								</a>
+							</li>
+							<li role="presentation" class="disabled">
+								<a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+									<span class="round-tab">
+										<i class="glyphicon glyphicon-list"></i>
+									</span>
+								</a>
+							</li>
 
-							<label class="control-noi-den">CMND:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-								<input type = "number" class = "form-control" placeholder="Nhập Số Điện Thoại...">
-							</div>
-
-							<label class="control-noi-den">Email:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-								<input type = "Email" class = "form-control" placeholder="Nhập Email...">
-							</div>
-
-							<label class="control-noi-den">Số Điện Thoại:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
-								<input type = "number" class = "form-control" placeholder="Nhập Số Điện Thoại...">
-							</div>
-
-							<label class="control-noi-den">Quốc Gia:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
-								<input type = "number" class = "form-control" placeholder="Nhập Quốc Gia...">
-							</div>
-
-							<label class="control-noi-den">Địa Chỉ:</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
-								<input type = "number" class = "form-control" placeholder="Nhập Địa Chỉ...">
-							</div>
-
-							<label class="control-noi-den">Mã Giảm Giá (Nếu có):</label>
-							<div class = "input-group">
-								<span class = "input-group-addon"><i class="glyphicon glyphicon-gift"></i></span>
-								<input type = "number" class = "form-control" placeholder="Nhập Số Điện Thoại...">
-							</div>
-						</div>
-						<div class="panel-footer">Vui lòng xem kĩ lại thông tin và chuyển sang bước 2</div>
-					</form>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="panel panel-danger">
-					<div class="panel-heading">Bước 2: Thông Tin Đặt Phòng Khách Sạn ABC</div>
-					<div class="panel-body">
-						<label for="so-phong">Loại Phòng:</label>
-						<select class="form-control" id="so-phong">
-							<option>Thường - Không Máy Lạnh</option>
-							<option>Thường - Có Máy Lạnh</option>
-							<option>VIP</option>
-						</select>
-						<label class="control-noi-den">Ngày Nhận Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
-
-						<label class="control-noi-den">Ngày Trả Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
-
-						<label class="control-noi-den">Số Khách:</label>
-						<div class = "input-group">
-							<label>Người lớn: </label>
-							<input type="number" name="nguoi-lon" min="0" max="10" >
-							<label>Trẻ em(dưới 18)</label>
-							<input type="number" name="tre-em" min="0" max="10">
-						</div>
-
-						<label for="so-phong">Số Phòng:</label>
-						<select class="form-control" id="so-phong">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-						</select>
-
-						<label for="so-phong">Số Giường Đơn:</label>
-						<select class="form-control" id="so-phong">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-						</select>
-
-						<label for="so-phong">Số Giường Đôi:</label>
-						<select class="form-control" id="so-phong">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-						</select>
-
-						<label for="so-phong">Ẩm Thực:</label>
-						<select class="form-control" id="so-phong">
-							<option>Lẩu Nước</option>
-							<option>Rồng Xanh Lội Nước</option>
-							<option>Ngà Voi Chấm Ốc Khỉ</option>
-							<option>Canh Đại Dương</option>
-						</select>
-
-						<label for="so-phong">Tiện ích:</label>
-						<select class="form-control" id="so-phong">
-							<option>Gọi Quốc Tế</option>
-							<option>Hồ Bơi</option>
-							<option>Golf</option>
-							<option>Thuê Xe</option>
-						</select>
+							<li role="presentation" class="disabled">
+								<a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+									<span class="round-tab">
+										<i class="glyphicon glyphicon-ok"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class="panel-footer">Vui lòng xem kĩ lại thông tin và chuyển sang bước 3</div>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="panel panel-success">
-					<div class="panel-heading">Bước 3: Hình Thức Thanh Toán</div>
-					<div class="panel-body">
-						<label class="control-noi-den">TỔNG TIỀN:</label>
-						<div class = "input-group">
-							<input type = "text" value="2.000.000" class = "form-control" placeholder="Nhập Họ và Tên Đệm...">
-						</div>
-						<form>
-							<div class="radio">
-								<label><input type="radio" name="optradio">Visa</label>
+					<!-- Step 1 -->
+					<form role="form">
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="step1">
+								<div class="step33">
+									<h5><strong>Thông Tin Cá Nhân</strong></h5>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="control-noi-den">Họ và Tên Đệm:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+												<input type = "text" class = "form-control" placeholder="Nhập Họ và Tên Đệm...">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">Tên:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+												<input type = "text" class = "form-control" placeholder="Nhập Tên ...">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="control-noi-den">Tên Công Ty (Nếu có):</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+												<input type = "text" class = "form-control" placeholder="Nhập Tên Công Ty nếu có....">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">CMND:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+												<input type = "number" class = "form-control" placeholder="Nhập Số Điện Thoại...">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="control-noi-den">Email:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+												<input type = "Email" class = "form-control" placeholder="Nhập Email...">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">Số Điện Thoại:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+												<input type = "number" class = "form-control" placeholder="Nhập Số Điện Thoại...">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label class="control-noi-den">Quốc Gia:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
+												<input type = "number" class = "form-control" placeholder="Nhập Quốc Gia...">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">Địa Chỉ:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
+												<input type = "number" class = "form-control" placeholder="Nhập Địa Chỉ...">
+											</div>
+										</div>
+									</div>
+									<br>
+								</div>
+								<ul class="list-inline pull-right">
+									<li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+								</ul>
 							</div>
-							<div class="radio">
-								<label><input type="radio" name="optradio">Paypal</label>
+							<!-- End Step 1 -->
+							<!-- Step 2 -->
+							<div class="tab-pane" role="tabpanel" id="step2">
+								<div class="step33">
+									<h5><strong>Chi Tiết Đặt Phòng</strong></h5>
+									<hr>
+									<div class="row">
+										<div class="col-md-6">
+											<label for="so-phong">Loại Phòng:</label>
+											<select class="form-control" id="so-phong">
+												<option>Thường - Không Máy Lạnh</option>
+												<option>Thường - Có Máy Lạnh</option>
+												<option>VIP</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">Ngày Nhận Phòng:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
+												<input type = "Date" class = "form-control">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<label class="control-noi-den">Ngày Trả Phòng:</label>
+											<div class = "input-group">
+												<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
+												<input type = "Date" class = "form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label class="control-noi-den">Số Khách:</label>
+											<div class = "input-group">
+												<label>Người lớn: </label>
+												<input type="number" name="nguoi-lon" min="0" max="10">
+												<label>Trẻ em(dưới 18)</label>
+												<input type="number" name="tre-em" min="0" max="10">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<label for="so-phong">Số Phòng:</label>
+											<select class="form-control" id="so-phong">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label for="so-phong">Số Giường Đơn:</label>
+											<select class="form-control" id="so-phong">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<label for="so-phong">Số Giường Đôi:</label>
+											<select class="form-control" id="so-phong">
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label for="so-phong">Ẩm Thực:</label>
+											<select class="form-control" id="so-phong">
+												<option>Lẩu Nước</option>
+												<option>Rồng Xanh Lội Nước</option>
+												<option>Ngà Voi Chấm Ốc Khỉ</option>
+												<option>Canh Đại Dương</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-6">
+											<label for="so-phong">Tiện ích:</label>
+											<select class="form-control" id="so-phong">
+												<option>Gọi Quốc Tế</option>
+												<option>Hồ Bơi</option>
+												<option>Golf</option>
+												<option>Thuê Xe</option>
+											</select>
+										</div>
+										<div class="col-md-6">
+											<label for="so-phong">Kiêu Phòng:</label>
+											<select class="form-control" id="so-phong">
+												<option>1 giờ</option>
+												<option>2 Giờ</option>
+												<option>Dài hạn</option>
+											</select>
+										</div>
+									</div>
+									<br>
+								</div>
+								<ul class="list-inline pull-right">
+									<li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+									<li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+								</ul>
 							</div>
-							<div class="radio">
-								<label><input type="radio" name="optradio">Master Card</label>
+							<!-- End Step 2 -->
+							<!-- Step 3 -->
+							<div class="tab-pane" role="tabpanel" id="step3">
+								<div class="step33">
+									<h5><strong>Thanh Toán</strong></h5>
+									<hr>
+									<h5><strong>Tên Khách Sạn: Khách Sạn New World</strong></h5>
+									<table class="table">
+										<thead>
+											<tr>
+												<th>Chi Tiết Đặt Phòng </th>
+												<th>Thông Tin</th>
+												<th>Thành Tiền</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="success">
+												<td>Loại Phòng</td>
+												<td>VIP</td>
+												<td>0</td>
+											</tr>
+											<tr class="danger">
+												<td>Ngày Nhận Phòng</td>
+												<td>10/1/2017</td>
+												<td>0</td>
+											</tr>
+											<tr class="info">
+												<td>Ngày Trả Phòng</td>
+												<td>117/1/2017</td>
+												<td>0</td>
+											</tr>
+											<tr class="success">
+												<td>Số Khách</td>
+												<td>3</td>
+												<td>0</td>
+											</tr>
+											<tr class="danger">
+												<td>Sô Phòng</td>
+												<td>1</td>
+												<td>1.500.000</td>
+											</tr>
+											<tr class="info">
+												<td>Số Giường Đơn</td>
+												<td>Không Có</td>
+												<td>0</td>
+											</tr>
+											<tr class="success">
+												<td>Số Giường Đôi</td>
+												<td>2</td>
+												<td>0</td>
+											</tr>
+											<tr class="danger">
+												<td>Ẩm Thực</td>
+												<td>Lẩu Nước</td>
+												<td>100.000</td>
+											</tr>
+											<tr class="info">
+												<td>Tiện Tích</td>
+												<td>Không có</td>
+												<td>0</td>
+											</tr>
+											<tr class="success">
+												<td>Kiểu Phòng</td>
+												<td>Dài Hạn</td>
+												<td>0</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="row">
+										<div class="col-md-6">
+											<label style="color: #FF0000; font-size: 20px">Thành Tiền: 1.600.000 VNĐ</label>
+										</div>
+										<div class="col-md-6">
+											
+										</div>
+									</div>
+								</div>
+								<ul class="list-inline pull-right">
+									<li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+									<li><button type="button" class="btn btn-default next-step">Skip</button></li>
+									<li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+								</ul>
+							</div>
+							<!-- Step Complete -->
+							<div class="tab-pane" role="tabpanel" id="complete">
+								<div class="step33">
+									<h4>Chúc Mừng Bạn Đã Đặt Phòng <strong style="color: #FF0000; font-size: 20px">THÀNH CÔNG</strong>. Mã Đặt Phòng của bạn là <strong style="color: #FF0000; font-size: 20px">
+										MP01234</strong>. Vui lòng khai báo Mã Đặt Phòng để nhận phòng tại khách sạn. Xin cảm ơn</h4>
+									</div>
+								</div>
+								<div class="clearfix"></div>
 							</div>
 						</form>
 					</div>
-					<div class="panel-footer">
-						<button type="button" class="btn btn-primary">Thanh Toán</button>
+				</section>
+			</div>
+		</div>
+		<<!-- End Step Complete -->
+		<!-- End Thanh Toán -->
+
+		<!--Đối Tác-->
+		<div class="container text-center">
+			<h3 style="color: #0000FF">CÁC CÔNG TY LIÊN KẾT</h3>
+			<br>
+			<div class="row">
+				<div class="col-sm-2">
+					<img src="Images/lk-priceline.jpg" class="img-responsive" style="width:100%" alt="Image">
+					<p>PriceLine</p>
+				</div>
+				<div class="col-sm-2">
+					<img src="Images/lk-kayak.jpg" class="img-responsive" style="width:100%" alt="Image">
+					<p>Kayak</p>
+				</div>
+				<div class="col-sm-2">
+					<img src="Images/lk-rentalcars.png" class="img-responsive" style="width:100%" alt="Image">
+					<p>Rentalcars</p>
+				</div>
+				<div class="col-sm-2">
+					<img src="Images/lk-booking.png" class="img-responsive" style="width:100%" alt="Image">
+					<p>Booking</p>
+				</div>
+				<div class="col-sm-2">
+					<img src="Images/lk-open.jpg" class="img-responsive" style="width:100%" alt="Image">
+					<p>OpenTable</p>
+				</div>
+				<div class="col-sm-2">
+					<img src="Images/lk-agoda.png" class="img-responsive" style="width:100%" alt="Image">
+					<p>Agoda</p>
+				</div>
+			</div>
+		</div><br>
+		<!--End Đối Tác-->
+		<!--Liên Hệ-->
+		<div class="container-lien-he">
+			<h2 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+			<div class="row" style="margin-right: 100px">
+				<div class="col-sm-5" style="">
+					<p style="margin-left: 110px">Nhóm 4- Giao Tiếp Người Máy</p>
+					<p style="margin-left: 110px"><span class="glyphicon glyphicon-map-marker"></span> Trường Đại học Công Nghệ Thông Tin</p>
+					<p style="margin-left: 110px"><span class="glyphicon glyphicon-phone"></span> 0969696969</p>
+					<p style="margin-left: 110px"><span class="glyphicon glyphicon-envelope"></span> thegioikhachsan@gmail.com</p>
+				</div>
+				<div class="col-sm-7 slideanim">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="name" name="name" placeholder="Nhập đầy đủ họ và tên" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email" placeholder="Email của bạn..." type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" id="comments" name="comments" placeholder="Bạn cần hỗ trợ gì từ chúng tôi..." rows="5"></textarea><br>
+					<div class="row">
+						<div class="submit-contact">
+							<button class="btn btn-default pull-right" type="submit" style="color: #FFFFFF; background-color: #0000FF; margin-right: 15px">Send</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div><br>
-	<!-- End Thanh Toán -->
-    <div id="footer"></div>
-    <div id="chat"></div>
+	</div>
+	<!--End Liên Hệ-->
+	<!--Footer-->
+	<footer class="container-fluid text-center">
+		<div class="container">
+			<div class="footer-bottom-top-grids">
+				<div class="col-md-4 footer-bottom-left">
+					<h4>Tải ứng dụng trên di động:</h4>
+					<div class="d-apps">
+						<ul>
+							<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
+							<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 footer-bottom-left">
+					<h4>Chấp nhận thanh toán qua: </h4>
+					<div class="a-cards">
+						<ul>
+							<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
+							<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
+							<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 footer-bottom-left">
+					<h4>Theo dõi chúng tôi: </h4>
+					<div class="social">
+						<ul>
+							<li><a href="#" class="facebook"> </a></li>
+							<li><a href="#" class="facebook twitter"> </a></li>
+							<li><a href="#" class="facebook chrome"> </a></li>
+							<li><a href="#" class="facebook dribbble"> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+				<div class="copyright">
+					<p>Bản quyền © 2016 Thế Giới Khách Sạn . Thiết kế bởi <a href="https://www.facebook.com/NguyenVanNguyen.UIT">Nhóm 4 - Môn: Giao Tiếp Người Máy</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+
+	<!-- Chat -->
+	<div class="container">
+		<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:900px;">
+			<div class="col-xs-12 col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-heading top-bar">
+						<div class="col-md-8 col-xs-8">
+							<h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
+						</div>
+						<div class="col-md-4 col-xs-4" style="text-align: right;">
+							<a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+							<a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+						</div>
+					</div>
+					<div class="panel-body msg_container_base">
+						<div class="row msg_container base_sent">
+							<div class="col-md-10 col-xs-10">
+								<div class="messages msg_sent">
+									<p>Hello baby</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+						</div>
+						<div class="row msg_container base_receive">
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+							<div class="col-md-10 col-xs-10">
+								<div class="messages msg_receive">
+									<p>Hi Baby</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+						</div>
+						<div class="row msg_container base_receive">
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+							<div class="col-xs-10 col-md-10">
+								<div class="messages msg_receive">
+									<p>Bye Baby</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+						</div>
+						<div class="row msg_container base_sent">
+							<div class="col-xs-10 col-md-10">
+								<div class="messages msg_sent">
+									<p>Bye Baby</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+						</div>
+						<div class="row msg_container base_receive">
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+							<div class="col-xs-10 col-md-10">
+								<div class="messages msg_receive">
+									<p>Hoho</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+						</div>
+						<div class="row msg_container base_sent">
+							<div class="col-md-10 col-xs-10 ">
+								<div class="messages msg_sent">
+									<p>Hehe</p>
+									<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+								</div>
+							</div>
+							<div class="col-md-2 col-xs-2 avatar">
+								<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+							</div>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="input-group">
+							<input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+							<span class="input-group-btn">
+								<button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Chat -->
 </body>
 </html>
