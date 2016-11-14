@@ -1,3 +1,4 @@
+/*Xử lí Hộp Thoại Chat*/
 $(document).on('click', '.panel-heading span.icon_minim', function (e) {
     var $this = $(this);
     if (!$this.hasClass('panel-collapsed')) {
@@ -29,15 +30,4 @@ $(document).on('click', '.icon_close', function (e) {
     //$(this).parent().parent().parent().parent().remove();
     $( "#chat_window_1" ).remove();
 });
-$(document).ready(function(e) {
-    if ($('#header').length) {
-        $('#header').load('partials/header.html');
-    }
-    if ($('#footer').length) {
-        $('#footer').load('partials/footer.html');
-    }
-    if ($('#chat').length) {
-        $('#chat').load('partials/chat.html');
-    }
-    
-});
+/*Kết Thúc Xử lí Hộp Thoại Chat*/
