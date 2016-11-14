@@ -1,0 +1,122 @@
+<!-- Menu -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="TrangChu.html">Site Khách Sạn</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="TrangChu.html">Trang Chủ</a></li>
+					<li><a href="KhachSan.html">Khách Sạn</a></li>
+					<li><a href="DatPhong.html">Đặt Phòng</a></li>
+					<li><a href="LienHe.html">Liên Hệ</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Ký</button>
+					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Đăng Kí -->
+	<div id = "myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Kí -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Ký</div>
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Họ và Tên Đệm:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Tên:</label>
+												<input type="text" class="form-control" id="email">
+											</div>
+
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Nhập Lại Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Kí -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Kí -->
+	<!-- Đăng Nhập -->
+	<div id = "myModaldki" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="dropdown-grids">
+				<div id="loginBox">                
+					<form id="loginForm">
+						<!--Form Đăng Nhập -->
+						<div class="signin">  
+							<div class="login-grids">
+								<div class="login-grid-left">
+									<form>
+										<div class="well">
+											<div class="panel panel-primary">
+												<div class="panel-heading"">Đăng Nhập</div>
+											</div>
+											<div class="form-group">
+												<label for="email" style="color: #0000FF">Email address:</label>
+												<input type="email" class="form-control" id="email">
+											</div>
+											<div class="form-group">
+												<label for="pwd" style="color: #0000FF">Password:</label>
+												<input type="password" class="form-control" id="pwd">
+											</div>
+											<div class="checkbox">
+												<label style="color: #0000FF"><input type="checkbox"> Remember me</label>
+											</div>
+											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Form Đăng Nhập -->
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- End Đăng Nhập -->
