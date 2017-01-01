@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cổng đăng nhập</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/DangKy.css" rel="stylesheet" />
+</head>
+<body class=" login">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="Images/logo (2).png" alt="">
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+
+    <div class="container">
+        <div class="content">
+            <form class="login-form" action="" method="post" novalidate="novalidate">
+                <h3 class="form-title">Đăng nhập</h3>
+                <!--
+                -->
+                <input type="hidden" name="_csrf" value="">
+                <div class="form-group">
+                    <label class="control-label">Tên tài khoản</label>
+                    <div class="input-icon">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" id="username" placeholder="" name="username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Mật khẩu</label>
+                    <div class="input-icon">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" id="password" placeholder="" name="password">
+                    </div>
+                </div>
+                <div class="alert alert-danger" style="display: none;"></div>
+                <div class="form-actions">
+                    <button type="submit" id="btnLogin" class="btn btn-success pull-right btn-block active-skin"> Đăng nhập </button>
+                </div>
+                <div class="">
+                    <p>
+                        Quên mật khẩu?
+                        <a href="QuenMatKhau.html">Tạo lại mật khẩu</a>
+                    </p>
+                </div>
+                <div class="">
+                    <p>
+                        Chưa có tài khoản?
+                        <a href="DangKy.html" id="register-btn"> Tạo tài khoản </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

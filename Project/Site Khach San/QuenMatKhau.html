@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Quên Mật Khẩu</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/DangKy.css" rel="stylesheet" />
+</head>
+<body class=" login">
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="Images/logo (2).png" alt="">
+        </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+
+    <div class="container">
+        <div class="content">
+            <form class="forget-form" action="" method="post" style="display:block;" novalidate="novalidate">
+                <input type="hidden" name="_csrf" value="">
+                <h3>Quên Mật Khẩu?</h3>
+                <p> Vui lòng điền địa chỉ email, Chudu24 sẽ gởi hướng dẫn thay đổi mật khẩu đến địa chỉ email của bạn. </p>
+                <div class="form-group">
+                    <div class="input-icon">
+                        <i class="fa fa-envelope"></i>
+                        <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" value="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="alert alert-danger" style="display: none;"></div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="btn-forget-pass" class="btn btn-success btn-block active-skin"> Gửi mật khẩu mới </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

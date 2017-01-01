@@ -1,974 +1,2126 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-	<title>Trang Chủ | Site Khách Sạn</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/tim-khach-san.css">
-	<link rel="stylesheet" type="text/css" href="css/style-khach-san.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/javascript.js"></script>
-	<style>
-		/* Add a gray background color and some padding to the footer */
-		footer {
-			background-color: #f2f2f2;
-			padding: 25px;
-		}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="Title1">Đặt phòng khách sạn Việt Nam</title>
+    <link rel="icon" href="/nassets/favicon.ico" type="image/x-icon">
 
-		.carousel-inner img {
-			width: 100%; /* Set width to 100% */
-			min-height: 200px;
-		}
+    <link href="css/min.css" rel="stylesheet" />
+    <link href="css/search_hotels.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/css.css" rel="stylesheet" />
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
-		/* Hide the carousel text when the screen is less than 600 pixels wide */
-		@media (max-width: 600px) {
-			.carousel-caption {
-				display: none;
-			}
-		}
-	</style>
+    <script src="js/0777.js" async="" type="text/javascript"></script>
+
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.chudu24.com",
+        "logo": "https://www.chudu24.com/img/Logo-Chudu24-300-77.png"
+        }
+
+    </script>
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol +
+                "//script.crazyegg.com/pages/scripts/0032/0777.js?" +
+                Math.floor(new Date().getTime() / 3600000);
+            a.async = true;
+            a.type = "text/javascript";
+            b.parentNode.insertBefore(a, b);
+        },
+            1);
+    </script>
+    <script src="js/min.js" type="text/javascript"></script>
+    <script src="js/home.js" type="text/javascript"></script>
+    <script src="js/linkid.js" type="text/javascript"></script>
+    <script src="js/analytics.js" type="text/javascript"></script>
 </head>
 <body>
-	<!-- Menu -->
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="TrangChu.html">Site Khách Sạn</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li><a href="TrangChu.html">Trang Chủ</a></li>
-					<li class="active"><a href="KhachSan.html">Khách Sạn</a></li>
-					<li ><a href="ThanhToan.html">Đặt Phòng & Thanh Toán</a></li>
-					<li><a href="LienHe.html">Liên Hệ</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal" style="margin-top: 9px">Đăng Kí</button>
-					<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModaldki" style="margin-top: 9px">Đăng Nhập</button>
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <header id="header">
+        <span style="position: absolute; top: 0; left: 0; color: #86B817;"></span>
+        <div class="top-head">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 head-left col-xs-12">
+                        <ul>
+                            <li>
+                                <a href="#" id="btnBookQuick">Đặt phòng nhanh</a>
+                            </li>
+                            <li>
+                                <a href="#" id="btnBookGroup">Đặt phòng đoàn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-7 head-right col-xs-12">
+                        <div class="headlang-usd">
+                            <ul id="login-panel" class="lang-usd">
+                                <div>
+                                    <li>
+                                        <a href="DangKy.html">Đăng ký thành viên</a>
+                                    </li>
+                                    <li>
+                                        <a href="DangNhap.html">Đăng nhập</a>
+                                    </li>
+                                    <li>
+                                        <a href="QuenMatKhau.html">Quên mật khẩu</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <div class="logo">
+                            <a href="index.html" title="Khách Sạn, Đánh Giá, Khuyến Mãi">
+                                <img alt="Khách Sạn, Đánh Giá, Khuyến Mãi" src="Images/logo (2).png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-xs-12 main-menu">
+                        <div class="navbar-collapse nav-main-collapse collapse">
+                            <nav class="nav-main mega-menu">
+                                <ul class="nav nav-pills nav-main" id="mainMenu">
 
-	<!-- Đăng Kí -->
-	<div id = "myModal" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<div class="dropdown-grids">
-				<div id="loginBox">                
-					<form id="loginForm">
-						<!--Form Đăng Kí -->
-						<div class="signin">  
-							<div class="login-grids">
-								<div class="login-grid-left">
-									<form>
-										<div class="well">
-											<div class="panel panel-primary">
-												<div class="panel-heading"">Đăng Ki</div>
-											</div>
+                                    <li class="">
+                                        <a class="" href="#" title="Trang chủ">
+                                            Trang chủ
+                                        </a>
 
-											<div class="form-group">
-												<label for="email" style="color: #0000FF">Họ và Tên Đệm:</label>
-												<input type="text" class="form-control" id="email">
-											</div>
+                                        <ul class="dropdown-menu">
+                                            <li class="active">
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
 
-											<div class="form-group">
-												<label for="email" style="color: #0000FF">Tên:</label>
-												<input type="text" class="form-control" id="email">
-											</div>
+                                                        <div class="col-md-3">
+                                                            <span class="mega-menu-sub-title">Trang chủ</span>
+                                                            <ul class="sub-menu"></ul>
+                                                        </div>
 
-											<div class="form-group">
-												<label for="email" style="color: #0000FF">Email address:</label>
-												<input type="email" class="form-control" id="email">
-											</div>
-											<div class="form-group">
-												<label for="pwd" style="color: #0000FF">Password:</label>
-												<input type="password" class="form-control" id="pwd">
-											</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown mega-menu-item mega-menu-fullwidth">
+                                        <a class="dropdown-toggle custom-menu" href="" title="Khách sạn">
+                                            Khách sạn <i class="fa fa-angle-down"></i>
+                                        </a>
 
-											<div class="form-group">
-												<label for="pwd" style="color: #0000FF">Nhập Lại Password:</label>
-												<input type="password" class="form-control" id="pwd">
-											</div>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
 
-											<div class="checkbox">
-												<label style="color: #0000FF"><input type="checkbox"> Đăng Nhập Ngay Bây Giờ</label>
-											</div>
-											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Đăng Kí Tài Khoản</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End Form Đăng Kí -->
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- End Đăng Kí -->
-	<!-- Đăng Nhập -->
-	<div id = "myModaldki" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-			<div class="dropdown-grids">
-				<div id="loginBox">                
-					<form id="loginForm">
-						<!--Form Đăng Nhập -->
-						<div class="signin">  
-							<div class="login-grids">
-								<div class="login-grid-left">
-									<form>
-										<div class="well">
-											<div class="panel panel-primary">
-												<div class="panel-heading"">Đăng Nhập</div>
-											</div>
-											<div class="form-group">
-												<label for="email" style="color: #0000FF">Email address:</label>
-												<input type="email" class="form-control" id="email">
-											</div>
-											<div class="form-group">
-												<label for="pwd" style="color: #0000FF">Password:</label>
-												<input type="password" class="form-control" id="pwd">
-											</div>
-											<div class="checkbox">
-												<label style="color: #0000FF"><input type="checkbox"> Remember me</label>
-											</div>
-											<button type="submit" class="btn btn-default" style="background-color: #0000FF; color: #FFFFFF">Submit</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End Form Đăng Nhập -->
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!-- End Đăng Nhập -->
+                                                        <div class="col-md-3">
+                                                            <span class="mega-menu-sub-title">Khách sạn</span>
+                                                            <ul class="sub-menu">
+                                                                <li>
+                                                                    <ul class="sub-menu">
+                                                                        <li><a href="KhuyenMai.html" title="Khuyến mãi">Khuyến mãi</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <ul class="sub-menu">
+                                                                        <li><a href="KhuyenMai.html" title="Khuyến mãi theo danh mục">Khuyến mãi theo danh mục</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <ul class="sub-menu">
+                                                                        <li><a href="KhuyenMai.html" title="Khuyến mãi theo thành phố">Khuyến mãi theo thành phố</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
 
-	<!-- End Menu -->
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-					</ol>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-					<!-- Slider Khách Sạn -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="Images/Anh-Khach-San-5.jpg" alt="Image">
-						</div>
+                                    <li class="">
+                                        <a class="" href="DanhGia.html" title="Đánh giá">
+                                            NHẬN XÉT
+                                        </a>
 
-						<div class="item">
-							<img src="Images/Anh-Khach-San-4.jpg" alt="Image">
-						</div>
-					</div>
-					<!-- End Slider Khách Sạn -->
-					<!-- Control slider -->
-					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-			<!-- End Control slider -->
-			<!--Tìm và đặt phòng-->
-			<div class="col-sm-4" >
-				<div class="well-4" >
-					<div class="col-sm-4-lable">
-						<h3>Tìm và đặt phòng khách sạn</h3>
-						<label class="control-noi-den">Nơi đến:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-map-marker"></i></span>
-							<input type = "text" class = "form-control" placeholder="Thành Phố, Địa Điểm, Tên Khách Sạn">
-						</div>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
 
-						<label class="control-noi-den">Ngày Nhận Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
+                                                        <div class="col-md-3">
+                                                            <span class="mega-menu-sub-title">NHẬN XÉT</span>
+                                                            <ul class="sub-menu"></ul>
+                                                        </div>
 
-						<label class="control-noi-den">Ngày Trả Phòng:</label>
-						<div class = "input-group">
-							<span class = "input-group-addon"><i class="glyphicon glyphicon glyphicon glyphicon-calendar"></i></span>
-							<input type = "Date" class = "form-control">
-						</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="LoiKhen.html" title="Lời khen">
+                                            LỜI KHEN
+                                        </a>
 
-						<label class="control-noi-den">Số Khách:</label>
-						<div class = "input-group">
-							<label>Người lớn: </label>
-							<input type="number" name="nguoi-lon" min="0" max="10" >
-							<label>Trẻ em(dưới 18)</label>
-							<input type="number" name="tre-em" min="0" max="10">
-						</div>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
 
-						<div class="form-group">
-							<label for="so-phong">Số Phòng:</label>
-							<select class="form-control" id="so-phong">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-							</select>
-							<label for="muc-gia">Mức giá</label>
-							<select class="form-control" id="muc-gia">
-								<option>0-200000 VNĐ</option>
-								<option>200000-500000 VNĐ</option>
-								<option>500000-750000 VNĐ</option>
-								<option>Trên 750000 VNĐ</option>
-							</select>
-						</div>
-						<div>
-							<button type="button" class="btn btn-primary">Tìm Kiếm</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr>
-		</div>
-		<!--End Tìm và đặt phòng-->
-		<br>
-		<h1>CÁC KHÁCH SẠN Ở THÀNH PHỐ HỒ CHÍ MINH</h1>
-		<br>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 well">
-					<div class="h-class" style="margin-bottom: 10px;">
-						<div class="h-class-title">
-							<h5>TÌM KIẾM THEO TÊN KHÁCH SẠN</h5>
-						</div>
-						<div class="h-class-content">
-							<div class="hotel-price" style="color:black;">
-								<div class="news-letter-grid">
-									<form>
-										<input type="text">
-										<input type="submit" value="Tìm kiếm">
-									</form>
-								</div>
-							</div>			
-						</div>									
-					</div>
+                                                        <div class="col-md-3">
+                                                            <span class="mega-menu-sub-title">LỜI KHEN</span>
+                                                            <ul class="sub-menu"></ul>
+                                                        </div>
 
-					<div class="clearfix"> </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                        <a class="" href="" title="ChuduInfo">
+                                            THÔNG TIN CỦA 3 MIỀN HOTEL
+                                        </a>
+
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="mega-menu-content">
+                                                    <div class="row">
+
+                                                        <div class="col-md-3">
+                                                            <span class="mega-menu-sub-title">Thông Tin</span>
+                                                            <ul class="sub-menu"></ul>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="block-text">
+                            <h3>
+                                <i class="fa fa-phone">&nbsp;</i>
+                                <span id="contact">Liên hệ</span>
+                            </h3>
+                            <div class="text-content">
+                                <!--<p class="small">0902 680 719 | 0903 827 534</p>-->
+                                <p class="small">0969696969 | 099696969</p>
+                                <p><a style="color: #888" href="">khachsan.booking@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--BODY-->
+    <div id="content">
 
 
-					<div class="h-class">
-						<div class="h-class-title">
-							<h5>XẾP HẠNG SAO</h5>
-						</div>
-						<div class="h-class-content">
-							<div class="hotel-price" style="color:black;">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">(18)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">(28)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>			
-									<span class="starTextLabel">(108)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">(12)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>				
-									<span class="starTextLabel">(1)</span>
-								</label>
-							</div>			
-						</div>									
-					</div>
-
-					<div class="h-class p-day">
-						<div class="h-class-title">
-							<h5> GIÁ PHÒNG (1 ĐÊM)</h5>
-						</div>
-						<div class="h-class-content">
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">Nhỏ hơn 100.000 VNĐ (76)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">100.000 VNĐ USD - 300.000 VNĐ (132)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">300.000 VNĐ - 500.000 VNĐ(223)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">500.000 VNĐ - 1.000.000 VNĐ (84)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">Hơn 1.000.000 VNĐ (23)</span>
-								</label>
-							</div>
-						</div>
-					</div>
-
-					<div class="h-class">
-						<div class="h-class-title">
-							<h5>KHU VỰC</h5>
-						</div>
-						<div class="h-class-content">
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" checked="checked" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Đà Nẳng</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Hà Nội</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Hồ Chí Minh</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Huế</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Nha Trang</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Phan Thiết</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Buôn Mê Thuột</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Quảng Bình</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" data-track="HOT:SR:Area">
-									<span class="p-day-grid">Hải Phòng</span>
-								</label>
-							</div>								
-						</div>
-					</div>
-
-					<div class="h-class p-day">
-						<div class="h-class-title">
-							<h5>LOẠI KHÁCH SẠN</h5>
-						</div>
-						<div class="h-class-content">
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">Khu Nghĩ Dưỡng (67)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Khách Sạn (84)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Nhà Khách (24)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Căn hộ (34)</span>
-								</label>
-							</div>
-
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Nhà Trọ (32)</span>
-								</label>
-							</div>
-						</div>
-					</div>	
-
-				</div>
-				<div class="col-sm-9">
-					<div class="col-md-9 product-right">		
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img">
-										<a href="#"></a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="ChiTiet.html">Khách Sạn New Worl Sài Gòn</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Chợ Bến Thành, Quận 1, Hồ Chí Minh</p>
-										<p class="p-call">+84 08 4567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Đánh giá : 4.1/5</h6>
-										<p>(890) Đã xem</p>
-										<span class="p-offer">140.000 VNĐ</span><span class="p-last-price">230.000 VNĐ</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div><div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img1">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Majetic Sài Gòn</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Chợ Lớn, Quận 5, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 159 120</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(123) Đã xem</p>
-									<span class="p-offer">340.000 VNĐ</span><span class="p-last-price">430.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img2">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Windsor Plaza</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Chợ Lớn, Quận 5, Hồ Chí Minh</p>
-									<p class="p-call">+1 234 567 890</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(123) Đã xem</p>
-									<span class="p-offer">220.000 VNĐ</span><span class="p-last-price">310.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img3">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Golden Center</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Ngã Tư An Sương, Quận 12, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 236 090</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(289) Đã xem</p>
-									<span class="p-offer">500.000 VNĐ</span><span class="p-last-price">630.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img5">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Easy Center</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Ngã Tư Bà Điểm, Quận 12, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 236 090</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(289) Đã xem</p>
-									<span class="p-offer">400.000 VNĐ</span><span class="p-last-price">530.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img1">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn November</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>97B Cộng Hòa, Quận Tân Bình, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 654 090</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(289) Đã xem</p>
-									<span class="p-offer">900.000 VNĐ</span><span class="p-last-price">1.130.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img2">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Leona House</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Trung tâm quận 1, Quận 12, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 236 090</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(289) Đã xem</p>
-									<span class="p-offer">450.000 VNĐ</span><span class="p-last-price">530.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img1">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="Images/1.jpg">Khách sạn Lan Lan 2</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Chợ Bến Thành, Quận 1, Hồ Chí Minh</p>
-									<p class="p-call">+84 08 3567 890</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(123) Đã xem</p>
-									<span class="p-offer">1.380.000 VNĐ</span><span class="p-last-price">1.540.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>	
-					</div>
-					<div class="product-right-grids">
-						<div class="product-right-top">
-							<div class="p-left">
-								<div class="p-right-img p-right-img2">
-									<a href="#"> </a>
-								</div>
-							</div>
-							<div class="p-right">
-								<div class="col-md-6 p-right-left">
-									<a href="#">Khách Sạn Caravelle SaiGon</a>
-									<div class="p-right-price">
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									</div>
-									<p>Trung Tâm Quận 1, Hồ Chí Minh</p>
-									<p class="p-call">+84 083 365 489</p>
-								</div>
-								<div class="col-md-6 p-right-right">
-									<h6>Đánh giá : 4.1/5</h6>
-									<p>(89) Đã xem</p>
-									<span class="p-offer">1.200.000 VNĐ</span><span class="p-last-price">1.500.000 VNĐ</span>
-								</div>
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>			
-				</div>	
-			</div>
-		</div>
-	</div>
-</div>
-<!--Số Trang- Pagination-->
-<div class="container">
-	<ul class="pagination" style="margin-left: 400px">
-		<li><a href="#">Trang Đầu</a></li>
-		<li class="active"><a href="#">1</a></li>
-		<li><a href="#">2</a></li>
-		<li><a href="#">3</a></li>
-		<li><a href="#">4</a></li>
-		<li><a href="#">5</a></li>
-		<li><a href="#">Trang Kế Tiếp</a></li>
-	</ul>
-</div>
-<!--End Số Trang- Pagination-->
-<hr>
-
-<!--Đối Tác-->
-<div class="container text-center">
-	<h3 style="color: #0000FF">CÁC CÔNG TY LIÊN KẾT</h3>
-	<br>
-	<div class="row">
-		<div class="col-sm-2">
-			<img src="Images/lk-priceline.jpg" class="img-responsive" style="width:100%" alt="Image">
-			<p>PriceLine</p>
-		</div>
-		<div class="col-sm-2">
-			<img src="Images/lk-kayak.jpg" class="img-responsive" style="width:100%" alt="Image">
-			<p>Kayak</p>
-		</div>
-		<div class="col-sm-2">
-			<img src="Images/lk-rentalcars.png" class="img-responsive" style="width:100%" alt="Image">
-			<p>Rentalcars</p>
-		</div>
-		<div class="col-sm-2">
-			<img src="Images/lk-booking.png" class="img-responsive" style="width:100%" alt="Image">
-			<p>Booking</p>
-		</div>
-		<div class="col-sm-2">
-			<img src="Images/lk-open.jpg" class="img-responsive" style="width:100%" alt="Image">
-			<p>OpenTable</p>
-		</div>
-		<div class="col-sm-2">
-			<img src="Images/lk-agoda.png" class="img-responsive" style="width:100%" alt="Image">
-			<p>Agoda</p>
-		</div>
-	</div>
-</div><br>
-<!--End Đối Tác-->
-<hr>
-<!--Liên Hệ-->
-<div class="container text-center">
-	<h2 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-	<div class="row">
-		<div class="col-sm-5 text-left">
-			<p>Nhóm 4- Giao Tiếp Người Máy</p>
-			<p><span class="glyphicon glyphicon-map-marker"></span> Trường Đại học Công Nghệ Thông Tin</p>
-			<p><span class="glyphicon glyphicon-phone"></span> 0969696969</p>
-			<p><span class="glyphicon glyphicon-envelope"></span> thegioikhachsan@gmail.com</p>
-		</div>
-
-		<div class="col-sm-7 slideanim">
-			<div class="row">
-				<div class="col-sm-6 form-group">
-					<input class="form-control" id="name" name="name" placeholder="Nhập đầy đủ họ và tên" type="text" required>
-				</div>
-				<div class="col-sm-6 form-group">
-					<input class="form-control" id="email" name="email" placeholder="Email của bạn..." type="email" required>
-				</div>
-			</div>
-			<textarea class="form-control" id="comments" name="comments" placeholder="Bạn cần hỗ trợ gì từ chúng tôi..." rows="5"></textarea><br>
-			<div class="row">
-				<div class="submit-contact">
-					<button class="btn btn-default pull-right" type="submit" style="color: #FFFFFF; background-color: #0000FF">Send</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-<!--End Liên Hệ-->
-<!--Footer-->
-<footer class="container-fluid text-center">
-
-	<div class="footer-bottom-top-grids">
-		<div class="col-md-4 footer-bottom-left">
-			<h4>Tải ứng dụng trên di động:</h4>
-			<div class="d-apps">
-				<ul>
-					<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
-					<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
-					<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-4 footer-bottom-left">
-			<h4>Chấp nhận thanh toán qua: </h4>
-			<div class="a-cards">
-				<ul>
-					<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
-					<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
-					<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-4 footer-bottom-left">
-			<h4>Theo dõi chúng tôi: </h4>
-			<div class="social">
-				<ul>
-					<li><a href="#" class="facebook"> </a></li>
-					<li><a href="#" class="facebook twitter"> </a></li>
-					<li><a href="#" class="facebook chrome"> </a></li>
-					<li><a href="#" class="facebook dribbble"> </a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="clearfix"> </div>
-		<div class="copyright">
-			<p>Bản quyền © 2016 Thế Giới Khách Sạn . Thiết kế bởi <a href="https://www.facebook.com/NguyenVanNguyen.UIT">Nhóm 4 - Môn: Giao Tiếp Người Máy</a></p>
-		</div>
-	</div>
-
-</footer>
-<!-- End Footer -->
-
-<!-- Chat -->
-<div class="container">
-	<div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:900px;">
-		<div class="col-xs-12 col-md-12">
-			<div class="panel panel-default">
-				<div class="panel-heading top-bar">
-					<div class="col-md-8 col-xs-8">
-						<h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
-					</div>
-					<div class="col-md-4 col-xs-4" style="text-align: right;">
-						<a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
-						<a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
-					</div>
-				</div>
-				<div class="panel-body msg_container_base">
-					<div class="row msg_container base_sent">
-						<div class="col-md-10 col-xs-10">
-							<div class="messages msg_sent">
-								<p>Hello baby</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-					</div>
-					<div class="row msg_container base_receive">
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-						<div class="col-md-10 col-xs-10">
-							<div class="messages msg_receive">
-								<p>Hi Baby</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-					</div>
-					<div class="row msg_container base_receive">
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-						<div class="col-xs-10 col-md-10">
-							<div class="messages msg_receive">
-								<p>Bye Baby</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-					</div>
-					<div class="row msg_container base_sent">
-						<div class="col-xs-10 col-md-10">
-							<div class="messages msg_sent">
-								<p>Bye Baby</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-					</div>
-					<div class="row msg_container base_receive">
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-						<div class="col-xs-10 col-md-10">
-							<div class="messages msg_receive">
-								<p>Hoho</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-					</div>
-					<div class="row msg_container base_sent">
-						<div class="col-md-10 col-xs-10 ">
-							<div class="messages msg_sent">
-								<p>Hehe</p>
-								<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-							</div>
-						</div>
-						<div class="col-md-2 col-xs-2 avatar">
-							<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-						</div>
-					</div>
-				</div>
-				<div class="panel-footer">
-					<div class="input-group">
-						<input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
-						<span class="input-group-btn">
-							<button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="list-inline list-breadcrumbs">
+                    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="index.html" title="Đặt phòng khách sạn" itemprop="url">
+                            <span itemprop="title" style="margin-right: -5px;">Trang chủ</span>
+                        </a>
+                    </span>
+                    <span style="color:#86b817">&nbsp; <i class="fa fa-angle-double-right"></i> &nbsp;</span>
+                    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="KhachSan.html" title="Khách sạn" itemprop="url">
+                            <span itemprop="title" style="margin-right: -5px;">Khách sạn</span>
+                        </a>
+                    </span>
+                    <span style="color:#86b817">&nbsp; <i class="fa fa-angle-double-right"></i> &nbsp;</span>
+                    <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                        <a href="KhachSan.html" title="Khách sạn Hồ Chí Minh (Sài Gòn)" itemprop="url">
+                            <span itemprop="title" style="margin-right: -5px;">Khách sạn Hồ Chí Minh (Sài Gòn)</span>
+                        </a>
+                    </span>
+                </ul>
+            </div>
+        </div>
 
 
-</div>
-<!-- Chat -->
+
+
+        <div role="main" class="main">
+
+            <!-- breadcrumbs content -->
+            <!-- body content -->
+            <div class="content-body container">
+                <div class="row">
+
+                    <div id="primary" class="col-lg-9 col-md-9 page-search-result ">
+                        <div class="page-top" id="ResultsList">
+                            <h1><a href="#" title="Khách sạn Hồ Chí Minh (Sài Gòn)">Khách sạn Hồ Chí Minh (Sài Gòn)</a></h1>
+                            <p><b>Khách sạn tại TP Hồ Chí Minh( đặt phòng khách sạn Sài gòn) giá rẻ</b>- khách sạn giá rẻ 1-5 sao tại Sài Gòn, <b>khu nghỉ dưỡng, hotel resort giá rẻ TP Hồ Chí Minh</b> qua Chudu24. Các khách sạn tại Tp HCM luôn hướng đến mục tiêu mang lại cảm giác thoải mái và thân thiện nhất cho khách hàng của mình. Khi đã đặt phòng qua Chudu24, bạn hãy yên tâm chiêm ngưỡng nét đẹp độc đáo của thành phố cùng sự tấp nập của chốn thị thành cả ban ngày lẫn ban đêm.</p>
+                        </div>
+
+                        <div id="search-result">
+                            <div class="page-top search-result">
+
+                                <div class="text-result">
+                                    
+                                    <div style="clear: both"></div>
+
+                                    <div class="group-filter-top hidden">
+                                        <span class="filter-title">Lọc theo:</span>
+                                        <span class="filter-publish"></span>
+                                        <a class="clear-all" title="Xóa tất cả">Xóa tất cả</a>
+                                    </div>
+
+                                    <div style="clear: both"></div>
+                                </div>
+
+
+                                <nav class="navbar navbar-default">
+                                    <div class="container-fluid">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only">Toggle navigation</span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand">Sắp xếp:</a>
+                                        </div>
+
+
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav" id="sort-bar">
+                                                <li class="dropdown active" value="">
+                                                    <a class="dropdown-toggle btn-ordBy" orderby="" role="button" aria-haspopup="true" aria-expanded="false">Phổ biến</a>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tiêu chuẩn</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li value="StarDESC"><a class="btn-ordBy" orderby="StarDESC">Tiêu chuẩn 5-1</a></li>
+                                                        <li value="Star"><a class="btn-ordBy" orderby="Star">Tiêu chuẩn 1-5</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Giá </a>
+                                                    <ul class="dropdown-menu">
+                                                        <li value="LowRateDESC"><a class="btn-ordBy" orderby="LowRateDESC">Giá từ cao-thấp</a></li>
+                                                        <li value="LowRate"><a class="btn-ordBy" orderby="LowRate">Giá từ thấp-cao</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="dropdown" value="Promotion">
+                                                    <a class="dropdown-toggle btn-ordBy" orderby="Promotion" role="button" aria-haspopup="true" aria-expanded="false">Khuyến mãi</a>
+                                                </li>
+                                                <li class="dropdown" value="Review">
+                                                    <a class="dropdown-toggle btn-ordBy" orderby="Review" role="button" aria-haspopup="true" aria-expanded="false">Đánh giá</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </nav>
+
+                            </div>
+
+                            <div class="page-body">
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="2850" hotel-name="Khách sạn The Reverie Saigon" itemcounter="1">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="ChiTiet.html" title="Khách sạn The Reverie Saigon">
+                                                <img src="Images/khach-san-1.jpg" data-original="Images/khach-san-1.jpg" alt="Khách sạn The Reverie Saigon" style="display: inline;">
+                                            </a>
+
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn The Reverie Saigon" href="ChiTiet.html">Khách sạn The Reverie Saigon</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn The Reverie Saigon" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn The Reverie Saigon">
+                                                            <a href="ChiTiet.html" class="lnkReview" title="Đánh Giá Khách sạn The Reverie Saigon">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn The Reverie Saigon'" wraplink="#">
+                                                                    2
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    22-36 Nguyễn Huệ, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="ChiTiet.html" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="DatPhong.html" title="Đặt phòng Khách sạn The Reverie Saigon" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="679" hotel-name="Khách sạn Sheraton Saigon" itemcounter="2">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="ChiTiet.html" title="Khách sạn Sheraton Saigon">
+                                                <img src="Images/khach-san-2.jpg" data-original="Images/khach-san-2.jpg" alt="Khách sạn Sheraton Saigon" style="display: inline;">
+                                            </a>
+
+                                            <div class="post-badge badge-popular" title="" data-original-title="Thiết kế sang trọng, chuẩn quốc tế 5 sao, vị trí trung tâm">Yêu thích</div>
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Sheraton Saigon" href="#">Khách sạn Sheraton Saigon</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn Sheraton Saigon" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Sheraton Saigon">
+                                                            <a href="ChiTiet.html" class="lnkReview" title="Đánh Giá Khách sạn Sheraton Saigon">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Sheraton Saigon'" wraplink="#">
+                                                                    40
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    88 Đồng Khởi, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="ChiTiet.html" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="DatPhong.html" title="Đặt phòng Khách sạn Sheraton Saigon" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="45" hotel-name="Khách Sạn Rex Sài Gòn" itemcounter="3">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="ChiTiet.html" title="Khách Sạn Rex Sài Gòn">
+                                                <img src="Images/khach-san-3.jpg" data-original="Images/khach-san-3.jpg" alt="Khách Sạn Rex Sài Gòn" style="display: inline;">
+                                            </a>
+
+                                            <div class="post-badge badge-popular" title="" data-original-title="Giá tốt so với chất lượng dịch vụ và phòng ốc.">Yêu thích</div>
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách Sạn Rex Sài Gòn" href="ChiTiet.html">Khách Sạn Rex Sài Gòn</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách Sạn Rex Sài Gòn" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="ChiTiet.html" class="lnkReview" title="Đánh Giá Khách Sạn Rex Sài Gòn">
+                                                            <a href="ChiTiet.html" class="lnkReview" title="Đánh Giá Khách Sạn Rex Sài Gòn">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách Sạn Rex Sài Gòn'" wraplink="#">
+                                                                    40
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    141 Nguyễn Huệ, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="//khachsan.chudu24.com/ks.45.khach-san-rex-sai-gon.html#maplocation" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="MemberSaleOffAmount" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="DatPhong.html" title="Đặt phòng Khách Sạn Rex Sài Gòn" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+         
+                                <article class="post-hotel-list-item hotel-item" idint="2687" hotel-name="Khách sạn Le Meridien Sài Gòn" itemcounter="4">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="ChiTiet.html" title="Khách sạn Le Meridien Sài Gòn">
+                                                <img src="Images/khach-san-4.jpg" data-original="Images/khach-san-4.jpg" alt="Khách sạn Le Meridien Sài Gòn" style="display: inline;">
+                                            </a>
+
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Le Meridien Sài Gòn" href="//khachsan.chudu24.com/ks.2687.khach-san-le-meridien-sai-gon.html">Khách sạn Le Meridien Sài Gòn</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn Le Meridien Sài Gòn" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Le Meridien Sài Gòn">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn Le Meridien Sài Gòn">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Le Meridien Sài Gòn'" wraplink="#">
+                                                                    7
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    3C Tôn Đức Thắng, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="//khachsan.chudu24.com/ks.2687.khach-san-le-meridien-sai-gon.html#maplocation" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn Le Meridien Sài Gòn" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="667" hotel-name="Khách sạn InterContinental Asiana Saigon" itemcounter="5">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Khách sạn InterContinental Asiana Saigon">
+                                                <img src="Images/khach-san-5.jpg" data-original="#" alt="Khách sạn InterContinental Asiana Saigon" style="display: inline;">
+                                            </a>
+
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn InterContinental Asiana Saigon" href="#">Khách sạn InterContinental Asiana Saigon</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn InterContinental Asiana Saigon" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn InterContinental Asiana Saigon">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn InterContinental Asiana Saigon">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn InterContinental Asiana Saigon'" wraplink="#">
+                                                                    41
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    Ngã tư Hai Bà Trưng và Lê Duẩn, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="#" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn InterContinental Asiana Saigon" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+                                <article class="post-hotel-list-item hotel-item" idint="671" hotel-name="Khách sạn Park Hyatt Saigon" itemcounter="9">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Khách sạn Park Hyatt Saigon">
+                                                <img src="Images/khach-san-6.jpg" data-original="Images/khach-san-6.jpg" alt="Khách sạn Park Hyatt Saigon" style="display: inline;">
+                                            </a>
+
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Park Hyatt Saigon" href="#">Khách sạn Park Hyatt Saigon</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn Park Hyatt Saigon" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Park Hyatt Saigon">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn Park Hyatt Saigon">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Park Hyatt Saigon'" wraplink="#">
+                                                                    21
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    Số 2, Công trường Lam Sơn, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="//khachsan.chudu24.com/ks.671.khach-san-park-hyatt-saigon.html#maplocation" class="lnkMap">
+                                                        <a href="#" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn Park Hyatt Saigon" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="1051" hotel-name="Khách sạn Novotel Saigon Centre" itemcounter="10">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Khách sạn Novotel Saigon Centre">
+                                                <img src="Images/khach-san-7.jpg" data-original="Images/khach-san-7.jpg" alt="Khách sạn Novotel Saigon Centre" style="display: inline;">
+                                            </a>
+
+                                            <div class="post-badge badge-popular" title="" data-original-title="Nhân viên chuyên nghiệp, nhiệt tình, chuẩn 4 sao, thuộc quản lý của tập đoàn Accor.">Yêu thích</div>
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Novotel Saigon Centre" href="#">Khách sạn Novotel Saigon Centre</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>4</b>-->
+                                                        <img border="0" alt="Khách sạn Novotel Saigon Centre" src="Images/star-yellow-4.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Novotel Saigon Centre">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn Novotel Saigon Centre">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Novotel Saigon Centre'" wraplink="#">
+                                                                    28
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    165 - 167 Hai Bà Trưng, Quận 3,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="//khachsan.chudu24.com/ks.1051.khach-san-novotel-saigon-centre.html#maplocation" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn Novotel Saigon Centre" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="1055" hotel-name="Khách sạn Pullman Saigon Centre" itemcounter="11">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Khách sạn Pullman Saigon Centre">
+                                                <img src="Images/khach-san-8.jpg" data-original="Images/khach-san-8.jpg" alt="Khách sạn Pullman Saigon Centre" style="display: inline;">
+                                            </a>
+
+                                            <div class="post-badge badge-popular" title="" data-original-title="Thiết kế sang trọng, giá tốt, khách sạn mới, nhân viên nhiệt tình, thân thiện...">Yêu thích</div>
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Pullman Saigon Centre" href="#">Khách sạn Pullman Saigon Centre</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn Pullman Saigon Centre" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Pullman Saigon Centre">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn Pullman Saigon Centre">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Pullman Saigon Centre'" wraplink="#">
+                                                                    43
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    148 Trần Hưng Đạo,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="#" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn Pullman Saigon Centre" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="675" hotel-name="Khách sạn Caravelle" itemcounter="12">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Khách sạn Caravelle">
+                                                <img src="Images/khach-san-9.jpg" data-original="Images/khach-san-9.jpg" alt="Khách sạn Caravelle" style="display: inline;">
+                                            </a>
+
+                                            <div class="post-badge badge-popular" title="" data-original-title="Vị trí thuận lợi, khách sạn đẹp, nhân viên chuyện nghiệp &amp;amp; thân thiện, buffet sáng ngon.">Yêu thích</div>
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Khách sạn Caravelle" href="#">Khách sạn Caravelle</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Khách sạn Caravelle" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Khách sạn Caravelle">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Khách sạn Caravelle">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Khách sạn Caravelle'" wraplink="#">
+                                                                    21
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    19 Công Trường Lam Sơn, Quận 1,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="#" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Khách sạn Caravelle" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+
+
+                                <article class="post-hotel-list-item hotel-item" idint="2901" hotel-name="Hotel Des Arts Saigon MGallery Collection" itemcounter="13">
+                                    <div class="row-height">
+                                        <div class="post-thumbnail">
+                                            <a href="#" title="Hotel Des Arts Saigon MGallery Collection">
+                                                <img src="Images/khach-san-10.jpg" data-original="Images/khach-san-10.jpg" alt="Hotel Des Arts Saigon MGallery Collection" style="display: inline;">
+                                            </a>
+
+
+                                        </div>
+                                        <div class="post-features">
+                                            <h2><a title="Hotel Des Arts Saigon MGallery Collection" href="#">Hotel Des Arts Saigon MGallery Collection</a></h2>
+
+                                            <div class="post-rating">
+                                                <ul class="list-inline">
+                                                    <li>
+                                                        <!--<b>5</b>-->
+                                                        <img border="0" alt="Hotel Des Arts Saigon MGallery Collection" src="Images/star-yellow-5.gif">
+                                                    </li>
+                                                </ul>
+                                                <div class="post-rating-reviews">
+                                                    <span>
+                                                        <i class="fa fa-thumbs-up">&nbsp;</i><a href="#" class="lnkReview" title="Đánh Giá Hotel Des Arts Saigon MGallery Collection">
+                                                            <a href="#" class="lnkReview" title="Đánh Giá Hotel Des Arts Saigon MGallery Collection">
+                                                                <span class="generateWrapLink" other="class='lnkReview' title='Đánh Giá Hotel Des Arts Saigon MGallery Collection'" wraplink="#">
+                                                                    3
+                                                                    đánh giá
+                                                                </span>
+                                                            </a>
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="post-location">
+                                                <span>
+                                                    76 - 78 Nguyễn Thị Minh Khai, Quận 3,&nbsp;Hồ Chí Minh (Sài Gòn)&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="lnkMap">
+                                                        <a href="#" class="lnkMap">
+                                                            <span class="generateWrapLink" wraplink="#" other="class='lnkMap'" style="margin-left: -6.5px;">
+                                                                <i class="fa fa-map-marker">&nbsp;</i>Bản đồ
+                                                            </span>
+                                                        </a>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <hr>
+                                            <div class="post-features-list">
+                                                <ul class="list-unstyled list-icon">
+                                                    <li><i class="fa fa-check-square-o"></i> Ăn sáng miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Wifi miễn phí</li>
+                                                    <li><i class="fa fa-check-square-o"></i> Hồ bơi</li>
+
+                                                    <li><i class="fa fa-check-square-o"></i> Dịch vụ hội họp</li>
+                                                </ul>
+                                            </div>
+                                            <a class="view-imgs-link btnPriceDetail" isshowprice="false" showpricetype="RealPrice" isshowpromotionprice="false">Xem chi tiết giá phòng <i class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                        <div class="post-desc">
+                                            <div class="price-zone">
+
+                                                <div class="hotel-price-box col-hotel-price-box">
+                                                    <a class="clicklaygia" title="" data-original-title="Giá rất tốt tại khách sạn này không được công bố trên website, vui lòng click và điền địa chỉ email để nhận báo giá">
+                                                        <span>Click Để Lấy Giá</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-hotel-price-assistance">
+                                                <p class="hotel-price-assistance">
+                                                    Giá thành viên, gọi<br>
+                                                    <a href="tel:1900 5454 40">1900 5454 40</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-hotel-post-link">
+                                                <p class="hotel-post-link">
+
+                                                    <a href="#" title="Đặt phòng Hotel Des Arts Saigon MGallery Collection" class="btn btn-primary btnReser">Đặt phòng</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-price-detail">
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="paging-bottom-center">
+
+                                <div id="ctl00_MainContent_HotelsList1_ucPaging2_divPages">
+                                    <nav class="pagination-main" data-page-count="9">
+                                        <ul class="pagination">
+                                            <div id="divPages" visible="false">
+                                                <nav class="pagination-main" data-page-count="8">
+                                                    <ul class="pagination">
+
+                                                        <li class="disabled" title=""><a href="javascript:;" aria-label="Previous"><i class="fa fa-chevron-left"></i></a></li>
+                                                        <li class="page active" value="1"><a href="javascript:;">1</a></li>
+                                                        <li class="page" value="2"><a href="javascript:;">2</a></li>
+                                                        <li class="page et"><a href="javascript:;">...</a></li>
+                                                        <li class="page" value="8"><a href="javascript:;">8</a></li>
+                                                        <li class="page" value="2" title="Xem trang tiếp theo"><a href="javascript:;" aria-label="Next"><i class="fa fa-chevron-right"></i></a></li>
+
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--diadanhid=""-->
+                        <div id="params" textid="ho-chi-minh" cityid="13170" attractiontextid="" attractionid="" facilityid="" pagenum="1" orderby="" starrating="" facility="" attraction="" diadanhid="" price="" type="" landing="" style="display: none;">
+                        </div>
+                    </div>
+
+
+                    <div id="secondary" class="sidebar-snippets col-lg-3 col-md-3">
+                        <div class="snippet search-panel">
+                            <h3 class="snippet-title">Tìm khách sạn</h3>
+
+                            <div class="snippet-content">
+                                <div class="form search-filter">
+
+                                    <div class="form-group">
+                                        <label>Thành phố</label>
+
+                                        <div class="input-group input-search">
+                                            <select id="optAttraction" class="form-control">
+                                                <option value="" style="display: none;"></option>
+
+                                                <option value="ho-chi-minh" data-id="13170" attraction="">
+                                                    Hồ Chí Minh (Sài Gòn)
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="38" attraction="quan-1" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="32" attraction="quan-1-khu-tay-balo" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1 - Khu Tây Balô
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="6" attraction="quan-1-gan-nha-hat-lon" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1 - Gần Nhà Hát Lớn
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="37" attraction="quan-1-gan-nha-tho-duc-ba" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1 - Gần Nhà Thờ Đức Bà
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="35" attraction="quan-1-ven-song" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1 - Ven Sông
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="5" attraction="quan-1-gan-cho-ben-thanh" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 1 - Gần Chợ Bến Thành
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="33" attraction="quan-2" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 2
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="34" attraction="quan-3" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 3
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="3" attraction="quan-5-khu-nguoi-hoa" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 5 - Khu người Hoa
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="36" attraction="quan-7" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Quận 7
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="4" attraction="gan-san-bay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần sân bay
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="42" attraction="gan-ga-sai-gon" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Ga Sài Gòn
+                                                </option>
+                                                <option value="ho-chi-minh" data-id="13170" idint="65" attraction="binh-duong" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bình Dương
+                                                </option>
+                                                <option value="hanoi" data-id="2758" attraction="">
+                                                    Hà Nội
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="1" attraction="pho-co" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Phố Cổ
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="28" attraction="trung-tam-thanh-pho" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Trung tâm thành phố
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="2" attraction="ho-tay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Hồ Tây
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="7" attraction="ho-hoan-kiem" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Hồ Hoàn Kiếm
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="39" attraction="gan-cho-dong-xuan" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần chợ Đồng Xuân
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="40" attraction="gan-ga-ha-noi" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Ga Hà Nội
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="41" attraction="gan-san-bay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Sân Bay
+                                                </option>
+                                                <option value="hanoi" data-id="2758" idint="62" attraction="giang-vo-trung-tam-hoi-nghi" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Giảng Võ - Trung Tâm Hội Nghị
+                                                </option>
+                                                <option value="an-giang" data-id="80070" attraction="">
+                                                    An Giang
+                                                </option>
+                                                <option value="an-giang" data-id="80070" idint="68" attraction="chau-doc" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Châu Đốc
+                                                </option>
+                                                <option value="ba-vi" data-id="80095" attraction="">
+                                                    Ba Vì
+                                                </option>
+                                                <option value="ba-vi" data-id="80095" idint="71" attraction="thac-da" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Thác Đa
+                                                </option>
+                                                <option value="bao-loc" data-id="80103" attraction="">
+                                                    Bảo Lộc
+                                                </option>
+                                                <option value="ben-tre" data-id="80104" attraction="">
+                                                    Bến Tre
+                                                </option>
+                                                <option value="bien-hoa" data-id="80105" attraction="">
+                                                    Biên Hòa
+                                                </option>
+                                                <option value="buon-me-thuot" data-id="19603" attraction="">
+                                                    Buôn Ma Thuột
+                                                </option>
+                                                <option value="ca-mau" data-id="80109" attraction="">
+                                                    Cà Mau
+                                                </option>
+                                                <option value="can-tho" data-id="16079" attraction="">
+                                                    Cần Thơ
+                                                </option>
+                                                <option value="cat-ba" data-id="80072" attraction="">
+                                                    Cát Bà
+                                                </option>
+                                                <option value="con-dao" data-id="80098" attraction="">
+                                                    Côn Đảo
+                                                </option>
+                                                <option value="dalat" data-id="15932" attraction="">
+                                                    Đà Lạt
+                                                </option>
+                                                <option value="dalat" data-id="15932" idint="78" attraction="gan-cho-da-lat" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần chợ Đà Lạt
+                                                </option>
+                                                <option value="dalat" data-id="15932" idint="77" attraction="ho-tuyen-lam" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Hồ Tuyền Lâm
+                                                </option>
+                                                <option value="dalat" data-id="15932" idint="79" attraction="thung-lung-tinh-yeu" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Thung lũng Tình Yêu
+                                                </option>
+                                                <option value="dalat" data-id="15932" idint="80" attraction="trung-tam-thanh-pho" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Trung tâm thành phố
+                                                </option>
+                                                <option value="da-nang" data-id="16440" attraction="">
+                                                    Đà Nẵng
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="10" attraction="trung-tam-thanh-pho" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Trung tâm thành phố
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="11" attraction="ban-dao-son-tra" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bán đảo Sơn Trà
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="12" attraction="nui-ba-na" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Núi Bà Nà
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="13" attraction="san-bay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần sân bay
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="29" attraction="bai-bien-my-khe" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Mỹ Khê
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="43" attraction="gan-song-han" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Sông Hàn
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="47" attraction="bai-bien-bac-my-an" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Bắc Mỹ An
+                                                </option>
+                                                <option value="da-nang" data-id="16440" idint="48" attraction="bai-bien-non-nuoc" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Non Nước
+                                                </option>
+                                                <option value="do-son" data-id="80091" attraction="">
+                                                    Đồ Sơn
+                                                </option>
+                                                <option value="dong-nai" data-id="80099" attraction="">
+                                                    Đồng Nai
+                                                </option>
+                                                <option value="halong" data-id="17182" attraction="">
+                                                    Hạ Long
+                                                </option>
+                                                <option value="halong" data-id="17182" idint="8" attraction="dao-tuan-chau" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đảo Tuần Châu
+                                                </option>
+                                                <option value="halong" data-id="17182" idint="9" attraction="bai-chay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Cháy
+                                                </option>
+                                                <option value="halong" data-id="17182" idint="44" attraction="thanh-pho-ha-long" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Thành phố Hạ Long
+                                                </option>
+                                                <option value="ha-noi-mo-rong" data-id="80093" attraction="">
+                                                    Hà Nội mở rộng
+                                                </option>
+                                                <option value="ha-noi-mo-rong" data-id="80093" idint="73" attraction="ha-tay-cu" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Hà Tây (cũ)
+                                                </option>
+                                                <option value="ha-tinh" data-id="80101" attraction="">
+                                                    Hà Tĩnh
+                                                </option>
+                                                <option value="ha-tinh" data-id="80101" idint="31" attraction="thien-cam" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Biển Thiên Cầm
+                                                </option>
+                                                <option value="ha-tinh" data-id="80101" idint="74" attraction="son-tay" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Sơn Tây
+                                                </option>
+                                                <option value="hai-duong" data-id="80073" attraction="">
+                                                    Hải Dương
+                                                </option>
+                                                <option value="haiphong" data-id="17161" attraction="">
+                                                    Hải Phòng
+                                                </option>
+                                                <option value="hoa-binh" data-id="80088" attraction="">
+                                                    Hòa Bình
+                                                </option>
+                                                <option value="hoi-an" data-id="16552" attraction="">
+                                                    Hội An
+                                                </option>
+                                                <option value="hoi-an" data-id="16552" idint="27" attraction="bien-cua-dai" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Biển Cửa Đại
+                                                </option>
+                                                <option value="hoi-an" data-id="16552" idint="57" attraction="trung-tam-thanh-pho" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Trung tâm thành phố
+                                                </option>
+                                                <option value="hue" data-id="3738" attraction="">
+                                                    Huế
+                                                </option>
+                                                <option value="hue" data-id="3738" idint="24" attraction="trung-tam-thanh-pho" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Trung tâm thành phố
+                                                </option>
+                                                <option value="hue" data-id="3738" idint="25" attraction="ven-song-huong" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Ven Sông Hương
+                                                </option>
+                                                <option value="hue" data-id="3738" idint="26" attraction="bien-lang-co" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Biển Lăng Cô
+                                                </option>
+                                                <option value="hue" data-id="3738" idint="45" attraction="bien-thuan-an" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Biển Thuận An
+                                                </option>
+                                                <option value="kien-giang" data-id="80074" attraction="">
+                                                    Kiên Giang
+                                                </option>
+                                                <option value="kien-giang" data-id="80074" idint="69" attraction="rach-gia" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Rạch Giá
+                                                </option>
+                                                <option value="kon-tum" data-id="80075" attraction="">
+                                                    Kon Tum
+                                                </option>
+                                                <option value="lao-cai" data-id="80102" attraction="">
+                                                    Lào Cai
+                                                </option>
+                                                <option value="nghe-an" data-id="80076" attraction="">
+                                                    Nghệ An
+                                                </option>
+                                                <option value="nghe-an" data-id="80076" idint="67" attraction="cua-lo" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Cửa Lò
+                                                </option>
+                                                <option value="nghe-an" data-id="80076" idint="66" attraction="vinh" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Vinh
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" attraction="">
+                                                    Nha Trang
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="14" attraction="duong-tran-phu" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đường Trần Phú
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="51" attraction="dao-hon-tam" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đảo Hòn Tằm
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="50" attraction="dao-hon-tre" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đảo Hòn Tre
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="52" attraction="gan-san-bay-cam-ranh" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần Sân Bay Cam Ranh
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="49" attraction="vinh-ninh-van" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Vịnh Ninh Vân
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="60" attraction="cho-dam" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Chợ Đầm
+                                                </option>
+                                                <option value="nha-trang" data-id="2679" idint="58" attraction="gan-duong-tran-phu" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Gần đường Trần Phú
+                                                </option>
+                                                <option value="ninh-binh" data-id="80077" attraction="">
+                                                    Ninh Bình
+                                                </option>
+                                                <option value="ninh-thuan" data-id="80078" attraction="">
+                                                    Ninh Thuận
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" attraction="">
+                                                    Phan Thiết
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="30" attraction="mui-ne" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Mũi Né
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="15" attraction="thanh-pho-phan-thiet" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Thành phố Phan Thiết
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="16" attraction="bai-bien-phu-hai" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Phú Hải
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="17" attraction="duong-nguyen-dinh-chieu" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đường Nguyễn Đình Chiểu
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="18" attraction="khu-doi-cat" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Khu Đồi Cát
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="19" attraction="mui-ke-ga" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Mũi Kê Gà
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="20" attraction="lagi" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Lagi
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="46" attraction="khu-suoi-nuoc" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Khu Suối Nước
+                                                </option>
+                                                <option value="phan-thiet" data-id="16264" idint="61" attraction="bai-bien-tien-thanh" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Tiến Thành
+                                                </option>
+                                                <option value="phu-quoc" data-id="17188" attraction="">
+                                                    Phú Quốc
+                                                </option>
+                                                <option value="phu-quoc" data-id="17188" idint="53" attraction="bai-bien-duong-dong" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Dương Đông
+                                                </option>
+                                                <option value="phu-quoc" data-id="17188" idint="54" attraction="bai-bien-cua-lap" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Cửa Lấp
+                                                </option>
+                                                <option value="phu-quoc" data-id="17188" idint="55" attraction="bai-bien-ong-lang" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Biển Ông Lãng
+                                                </option>
+                                                <option value="phu-yen" data-id="78908" attraction="">
+                                                    Phú Yên
+                                                </option>
+                                                <option value="phu-yen" data-id="78908" idint="64" attraction="tuy-hoa" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Tuy Hòa
+                                                </option>
+                                                <option value="pleiku" data-id="78906" attraction="">
+                                                    Pleiku
+                                                </option>
+                                                <option value="quang-binh" data-id="80080" attraction="">
+                                                    Quảng Bình
+                                                </option>
+                                                <option value="quang-binh" data-id="80080" idint="72" attraction="dong-hoi" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đồng Hới
+                                                </option>
+                                                <option value="quang-ngai" data-id="80100" attraction="">
+                                                    Quãng Ngãi
+                                                </option>
+                                                <option value="quang-ninh" data-id="80110" attraction="">
+                                                    Quảng Ninh
+                                                </option>
+                                                <option value="quang-tri" data-id="80111" attraction="">
+                                                    Quảng Trị
+                                                </option>
+                                                <option value="quy-nhon" data-id="17242" attraction="">
+                                                    Quy Nhơn
+                                                </option>
+                                                <option value="sapa" data-id="17160" attraction="">
+                                                    Sapa
+                                                </option>
+                                                <option value="soc-trang" data-id="80112" attraction="">
+                                                    Sóc Trăng
+                                                </option>
+                                                <option value="tam-dao" data-id="80089" attraction="">
+                                                    Tam Đảo
+                                                </option>
+                                                <option value="tam-ky" data-id="80082" attraction="">
+                                                    Tam Kỳ
+                                                </option>
+                                                <option value="thac-da" data-id="80097" attraction="">
+                                                    Thác Đa
+                                                </option>
+                                                <option value="thanh-hoa" data-id="80083" attraction="">
+                                                    Thanh Hóa
+                                                </option>
+                                                <option value="thanh-hoa" data-id="80083" idint="70" attraction="sam-son" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Sầm Sơn
+                                                </option>
+                                                <option value="tien-giang" data-id="80087" attraction="">
+                                                    Tiền Giang
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" attraction="">
+                                                    Vũng Tàu
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="21" attraction="bai-truoc" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Trước
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="22" attraction="bai-sau" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Sau
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="23" attraction="long-hai" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Long Hải
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="63" attraction="bai-dau" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bãi Dâu
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="59" attraction="ben-tau-canh-ngam" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Bến tàu cánh ngầm
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="56" attraction="duong-thuy-van" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Đường Thùy Vân
+                                                </option>
+                                                <option value="vung-tau" data-id="17190" idint="75" attraction="ho-tram" class="Attractions">
+                                                    &nbsp;&nbsp;&nbsp;Hồ Tràm
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group relative">
+                                        <label for="hotelName">Tên khách sạn</label>
+                                        <input type="text" class="form-control ui-autocomplete-input" id="hotelName" autocomplete="off">
+                                        <i class="fa fa-spinner fa-spin green hotelloading"></i>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Ngày nhận phòng</label>
+                                        <div class="input-group datepicker">
+                                            <input id="txtDateCheckin" type="text" class="form-control readonlyBookingDay hasDatepicker" readonly="readonly">
+                                            <span class="input-group-addon datepicker-btn">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Ngày trả phòng</label>
+                                        <div class="input-group datepicker">
+                                            <input id="txtDateCheckout" type="text" class="form-control readonlyBookingDay hasDatepicker" readonly="readonly">
+                                            <span class="input-group-addon datepicker-btn">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <br>
+                                        <button id="btnSearch" type="submit" class="btn btn-primary">Tìm Kiếm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>          <div class="snippet snippet-amenities fac" id="filterAttr">
+                            <h3 class="snippet-title">Khu vực</h3>
+                            <div class="snippet-content search-filter">
+
+                                <ul class="list-unstyled">
+                                    <li class="liAttraction" value="quan-1">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-1-khu-tay-balo">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1 - Khu Tây Balô</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-1-gan-nha-hat-lon">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1 - Gần Nhà Hát Lớn</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-1-gan-nha-tho-duc-ba">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1 - Gần Nhà Thờ Đức Bà</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-1-ven-song">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1 - Ven Sông</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-1-gan-cho-ben-thanh">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 1 - Gần Chợ Bến Thành</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-2">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 2</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-3">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 3</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-5-khu-nguoi-hoa">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 5 - Khu người Hoa</a>
+                                    </li>
+                                    <li class="liAttraction" value="quan-7">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Quận 7</a>
+                                    </li>
+                                    <li class="liAttraction" value="gan-san-bay">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Gần sân bay</a>
+                                    </li>
+                                    <li class="liAttraction" value="gan-ga-sai-gon">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Gần Ga Sài Gòn</a>
+                                    </li>
+                                    <li class="liAttraction" value="binh-duong">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Bình Dương</a>
+                                    </li>
+                                </ul>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btnClear" style="display: none;">Chọn lại</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="snippet snippet-accomodation" id="filterAdvance">
+                            <h3 class="snippet-title" data-title="Loại hình">Loại</h3>
+                            <div class="snippet-content search-filter">
+
+                                <ul class="list-unstyled">
+                                    <li class="liType" value="resort">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Resort</a>
+                                    </li>
+                                    <li class="liType" value="villa">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Villa</a>
+                                    </li>
+                                    <li class="liType" value="khachsan">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn</a>
+                                    </li>
+                                    <li class="liType" value="canho">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Căn hộ</a>
+                                    </li>
+                                </ul>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btnClear" style="display: none;">Chọn lại</button>
+                                </div>
+                            </div>
+                        </div>        <div class="snippet snippet-rating" id="filterStar">
+                            <h3 class="snippet-title" data-title="Tiêu chuẩn xếp hạng">Tiêu chuẩn</h3>
+
+                            <div class="snippet-content search-filter">
+                                <ul class="list-unstyled">
+
+                                    <li class="liStar" value="5">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn 5 sao</a>
+                                    </li>
+                                    <li class="liStar" value="4">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn 4 sao</a>
+                                    </li>
+                                    <li class="liStar" value="3">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn 3 sao</a>
+                                    </li>
+                                    <li class="liStar" value="2">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn 2 sao</a>
+                                    </li>
+                                    <li class="liStar" value="1">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Khách sạn 1 sao</a>
+                                    </li>
+                                </ul>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btnClear" style="display: none;">Chọn lại</button>
+                                </div>
+                            </div>
+                        </div>        <div class="snippet snippet-amenities" id="filterPrice">
+                            <h3 class="snippet-title" data-title="Mức giá vnđ/đêm">Giá</h3>
+                            <div class="snippet-content search-filter">
+
+                                <ul class="list-unstyled">
+                                    <li class="liPrice" value="khuyenmai">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Đang có khuyến mãi</a>
+                                    </li>
+                                    <li class="liPrice" value="500">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Dưới 500.000</a>
+                                    </li>
+                                    <li class="liPrice" value="500-1000">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Từ 500.000 - 1000.000</a>
+                                    </li>
+                                    <li class="liPrice" value="1000-2000">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Từ 1000.000 - 2000.000</a>
+                                    </li>
+                                    <li class="liPrice" value="2000-5000">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Từ 2000.000 - 5000.000</a>
+                                    </li>
+                                    <li class="liPrice" value="5000">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Trên 5000.000</a>
+                                    </li>
+                                </ul>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btnClear" style="display: none;">Chọn lại</button>
+                                </div>
+                            </div>
+                        </div>        <div class="snippet snippet-amenities fac" id="filterFac">
+                            <h3 class="snippet-title" data-title="Tiện nghi trang thiết bị">Tiện nghi</h3>
+                            <div class="snippet-content search-filter">
+
+                                <ul class="list-unstyled">
+
+                                    <li class="liFac" value="5">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Hội họp</a>
+                                    </li>
+
+                                    <li class="liFac" value="36">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Bãi biển riêng</a>
+                                    </li>
+
+                                    <li class="liFac" value="43">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Bãi đậu xe ôtô tại khách sạn</a>
+                                    </li>
+
+                                    <li class="liFac" value="65">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Điều hòa nhiệt độ</a>
+                                    </li>
+
+                                    <li class="liFac" value="56">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Đưa đón sân bay</a>
+                                    </li>
+
+                                    <li class="liFac" value="58">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Giặt ủi</a>
+                                    </li>
+
+                                    <li class="liFac" value="59">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Hồ bơi</a>
+                                    </li>
+
+                                    <li class="liFac" value="15">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Karaoke</a>
+                                    </li>
+
+                                    <li class="liFac" value="30">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Két an toàn</a>
+                                    </li>
+
+                                    <li class="liFac" value="19">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Massage</a>
+                                    </li>
+
+                                    <li class="liFac" value="20">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Nhà hàng khu ăn uống</a>
+                                    </li>
+
+                                    <li class="liFac" value="12">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Phòng tập thể dục</a>
+                                    </li>
+
+                                    <li class="liFac" value="44">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Phòng tiện nghi cho người khuyết tật</a>
+                                    </li>
+
+                                    <li class="liFac" value="55">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Thang máy</a>
+                                    </li>
+
+                                    <li class="liFac" value="7">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Trông giữ trẻ</a>
+                                    </li>
+
+                                    <li class="liFac" value="8">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Trung tâm thương vụ</a>
+                                    </li>
+
+                                    <li class="liFac" value="10">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Wifi / Internet có tính phí</a>
+                                    </li>
+
+                                    <li class="liFac" value="32">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Wifi / Internet miễn phí tại sảnh</a>
+                                    </li>
+
+                                    <li class="liFac" value="26">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Wifi / Internet miễn phí trong phòng</a>
+                                    </li>
+
+                                    <li class="liFac" value="11">
+                                        <span class="glyphicon glyphicon-ok-circle cr-icon"></span>
+                                        <a class="title">Xe bus ra trung tâm</a>
+                                    </li>
+                                </ul>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btnClear" style="display: none;">Chọn lại</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- facebook like -->
+        <div id="fb-root"></div>
+        <div id="topbar_facebook_like" style="top: -150px; transition-duration: 0.5s;">
+            <div class="share">
+                <div class="facebook">
+                    <div class="fb-like" data-href="https://www.facebook.com/NguyenVanNguyen.UIT" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+                </div>
+                <p class="title">
+                    <span>Like 3 Miền Hotel để</span> Nhận được khuyến mãi và phòng giá rẻ sớm
+                </p>
+            </div>
+        </div>
+        <!-- end facebook like -->
+        <!--END PAGE CONTENT-->
+    </div>
+<!--KET THUC BODY-->
+<!--FOOTER-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-widget1 block">
+                        <a title="Khách Sạn, Đánh Giá, Khuyến Mãi">
+                            <img alt="Khách Sạn, Đánh Giá, Khuyến Mãi" class="logo" src="Images/logo (2).png">
+                        </a>
+                        <br>
+                        <p>3 miền Hotel luôn không ngừng đẩy mạnh hoạt động và phát triển, cả về sản phẩm, dịch vụ và đội ngũ, nhằm đáp ứng rất tốt nhu cầu của khách hàng.</p>
+                        <i class="fa fa-phone"></i>&nbsp;Hotline:<span class="phone">1900 69 69 69</span>
+                        <a href="">datphong@3mienhotel.com</a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-widget2 block">
+                        <h3>3 MIỀN HOTEL</h3>
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Hợp Tác Với Chudu24" href="">Hợp Tác Với Chudu24</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Nói Về Chudu24" href="">Nói Về 3 miền hotel</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Hướng Dẫn Du Lịch" href="">Hướng Dẫn Du Lịch</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Blog Du Lịch" href="#">Blog Du Lịch</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Hình Ảnh Du Lịch" href="">Hình Ảnh Du Lịch</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Voucher quà tặng" href="">Voucher quà tặng</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-widget3 block">
+                        <h3>
+                            Liên kết nhanh
+                        </h3>
+                        <ul>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Tất Cả Khách Sạn" href="">Tất Cả Khách Sạn</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Địa Điểm" href="">Địa Điểm</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Dịch Vụ Du Lịch" href="">Dịch Vụ Du Lịch</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Khu Vực" href="">Khu Vực</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Resort" href="">Resort</a></li>
+                            <li><i class="fa fa-angle-double-right"></i><a title="Villa" href="">Villa</a></li>
+                        </ul>
+                    </div>
+                    <div class="block-payment">
+                        <h3>Hỗ trợ thanh toán thẻ</h3>
+                        <ul class="list-inline list-payment-methods">
+                            <li>
+                                <img src="Images/visa.png" alt="Visa">
+                            </li>
+                            <li>
+                                <img src="Images/mastercard.png" alt="Master Card">
+                            </li>
+                            <li>
+                                <img src="Images/american-express.png" alt="American Express">
+                            </li>
+                            <li>
+                                <img src="Images/onepay.png" alt="OnePay">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-widget4 block">
+                        <h3>Liên hệ</h3>
+                        <ul class="menu-contact">
+                            <li>
+                                <i class="fa fa-building-o"></i>
+                                <p>KTX Khu B Đại Học Quốc Gia</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-map-marker"></i>
+                                <p><a href="">Bản đồ 3 miền hotel</a></p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>1900 69 69 69</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o"></i>
+                                <p><a href="">hotelbooking@gmail.com</a></p>
+                            </li>
+                            <li>
+                                <i class="fa fa-copyright"></i>
+                                <p>2008 Công Ty Cổ Phần Dịch Vụ<br>3 miền hotel.</p>
+
+                            </li>
+                        </ul>
+                        <ul class="socail-link">
+                            <li><a target="_blank" href=""><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a target="_blank" href=""><i class="fa fa-google-plus-square"></i></a></li>
+                            <li><a target="_blank" href=""><i class="fa fa-youtube-square"></i></a></li>
+                            <li><a target="_blank" href=""><i class="fa fa-twitter-square"></i></a></li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-mobile toast-top-center mobile-view hide">
+            <div class="toast toast-warning" style="display: flex;">
+                <div class="toast-message col-xs-4"><a class="mobile-view">GIAO DIỆN MOBILE</a></div>
+                <div class="toast-message col-xs-4 text-center"><a class="mobile-view">GIAO DIỆN MOBILE</a></div>
+                <div class="toast-message col-xs-4 pull-right text-right"><a class="mobile-view">GIAO DIỆN MOBILE</a></div>
+            </div>
+        </div>
+    </footer>
+<!--KET THUC FOOTER-->
+    <!--Button quay lại đầu trang-->
+
+    <style type='text/css'>
+        #bttop {
+            border: 1px solid #4adcff;
+            background: #24bde2;
+            text-align: center;
+            padding: 5px;
+            position: fixed;
+            bottom: 45px;
+            right: 10px;
+            cursor: pointer;
+            display: none;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 900;
+        }
+
+            #bttop:hover {
+                border: 1px solid #ffa789;
+                background: #ff6734;
+            }
+    </style>
+
+    <!--<script src="js/jquery.min.js" type='text/javascript'></script>-->
+    <script type='text/javascript'>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#bttop').fadeIn();
+                } else {
+                    $('#bttop').fadeOut();
+                }
+            });
+            $('#bttop').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+        });
+    </script>
+    <div id='bttop'>VỀ ĐẦU TRANG</div>
+    <!--Ket Thuc button quay lại đầu trang-->
+    <!--Chat-->
+    <link href="css/Chat.css" rel="stylesheet" />
+    <div class="from_webim">
+        <script src="js/f_home_index_43a260f2c1e7864c5aadaab7a4c15d4f.js"></script>
+        <span class="del_webim"><i class="fa fa-times"><i class="icon-remove"></i></i> </span>
+        <div class="note_from_webim">Hỗ trợ trực tuyến</div>
+        <div class="clr"></div>
+        <div class="webim">Chat</div>
+        <input type="hidden" id="isSupport" value="1">
+        <div class="from_phone_hotline" style="margin-top: 1em;">
+            <i class="fa fa-phone" style="top: -1px;"><i class="icon-phone"></i></i>
+            <div class="phone_webim" style="display: inline-block;">
+                096969696 <span style="color: red;">(8-17.30)</span>
+            </div>
+            <hr style="margin: 0; width: 12.3em; margin: .2em 0 .3em .7em; height: 0px">
+            <span style="display: none;">
+                <i class="fa fa-mobile"><i class="icon-mobile-phone"></i></i>
+                <span class="phone_webim icon_phone_webim">096969696</span>
+            </span>
+        </div>
+    </div>
+
+    <!--Kết thúc chat-->
 </body>
 </html>
