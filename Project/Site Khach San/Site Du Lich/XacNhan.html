@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Đặt Tour Du Lịch | Xác nhận</title>
+    <meta name="description" content="The Travel Booking">
+    <meta name="author" content="Umit Karaosmanoglu">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css"  rel="stylesheet">
+    <link href="css/layout.css"  rel="stylesheet">
+    <link href="css/responsive.css"  rel="stylesheet">
+    <link href="css/user_change.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="" >
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="" >
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="" >
+    <link rel="apple-touch-icon-precomposed" href="" >
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <!-- HEADER ================================================== -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="dropdownMenus clearfix">
+                        <div class="dropdown language">
+                            <a class="dropTrigger" id="dLabelLang" data-toggle="dropdown" href="#"><img alt="language-en" src="Images/language-en.png" /><span>EN</span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelLang">
+                                <li><a class="clearfix" href="#" title="EN"><img alt="language-en" src="Images/language-en.png" /><span>EN</span></a></li>
+                                <li><a class="clearfix" href="#" title="CH"><img alt="language-ch" src="Images/language-ch.png" /><span>CH</span></a></li>
+                                <li><a class="clearfix" href="#" title="RU"><img alt="language-ru" src="Images/language-ru.png" /><span>RU</span></a></li>
+                                <li><a class="clearfix" href="#" title="JP"><img alt="language-jp" src="Images/language-jp.png" /><span>JP</span></a></li>
+                            </ul>
+                        </div><!-- /language -->
+                        <div class="dropdown currency">
+                            <a class="dropTrigger" id="dLabelCur" data-toggle="dropdown" href="#">US</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelCur">
+                                <li><a class="clearfix" href="#" title="US">US</a></li>
+                                <li><a class="clearfix" href="#" title="EUR">EUR</a></li>
+                                <li><a class="clearfix" href="#" title="STERLIN">STERLIN</a></li>
+                                <li><a class="clearfix" href="#" title="YEN">YEN</a></li>
+                            </ul>
+                        </div><!-- /currency -->
+                    </div><!-- /clearfix -->
+                    <div class="callUsTop">
+                        <h4>GỌI NGAY</h4>
+                        <span>Số điện thoại đường dây nóng: <a href="tel:84868868888" title="(84) - 868 868 888">(84) - 969 696 999</a></span>
+                    </div><!-- /callUsTop -->
+                </div><!-- /col -->
+
+                <div class="col-sm-8">
+                    <div class="col-sm-8">
+                        <div id="logo"><a href="#" title="Travel Booking"><img src="Images/logo.png" alt="Travel Booking" /></a></div>
+                        <div class="topmenu clearfix">
+                            <ul>
+                                <li><a href="#" title="About Us">Thông Tin Chúng Tôi</a></li>
+                                <li><a href="#" title="News">Tin tức mới nhất</a></li>
+                                <li><a href="#" title="Service">Dịch vụ</a></li>
+                                <li><a href="#" title="Recruiment">Tuyển dụng</a></li>
+                                <li><a href="#" title="Media">Hình Ảnh</a></li>
+                                <li><a href="#" title="Support">Hỗ trợ</a></li>
+                            </ul>
+                        </div><!-- /topmenu -->
+                    </div><!-- /col -->
+                    <div class="col-sm-4 clearfix">
+                        <div class="Từight pRev">
+                            <div class="topRightLinks clearfix">
+                                <a class="login" href="#">Login</a>
+                                <a class="register" href="#">Register</a>
+                            </div>
+                            <div class="social clearfix">
+                                <ul>
+                                    <li><a class="rss" href="#">RSS</a></li>
+                                    <li><a class="twitter" href="#">Twitter</a></li>
+                                    <li><a class="facebook" href="#">Facebook</a></li>
+                                </ul>
+                            </div><!-- /topSocial -->
+                            <form id="topSearch" class="clearfix" action="#" method="post">
+                                <input type="text" name="keyword">
+                                <input type="submit" name="submit">
+                            </form><!-- /topSearch -->
+                        </div><!-- /Từight -->
+                    </div><!-- /col -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </header><!-- /header -->
+    <!-- MAIN MENU ================================================== -->
+    <div class="mainMenuContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mainMenu clearfix">
+                        <em class="mobDropdown"></em>
+                        <ul>
+                            <li class="active"><a href="#" title="Home">Trang Chủ | Menu</a></li>
+                            <li><a href="#" title="Hotels">Tour Khuyến Mãi</a></li>
+                            <li>
+                                <a href="#" title="Tours">Tours</a>
+                                <ul>
+                                    <li><a href="#">Bắc Mỹ</a></li>
+                                    <li><a href="#">Nam Mỹ</a></li>
+                                    <li><a href="#">Châu Phi</a></li>
+                                    <li><a href="#">Châu Á</a></li>
+                                    <li><a href="#">Châu Âu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Vacations">Cẩm Nang Du Lịch</a></li>
+                            <li><a href="#" title="Vacations">Shop</a></li>
+                            <li><a href="#" title="Guide Book">Liên Hệ</a></li>
+                        </ul>
+                    </div><!-- /mainMenu -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /mainMenuContainer -->
+    <!-- MAIN CONTENT ================================================== -->
+    <div class="container">
+
+        <div class="bookingContainer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="bookingHead">
+                        <h2>Cảm ơn, <em>Bạn đã đặt Tour của chúng tôi</em></h2>
+                        <strong>Mã xác nhận của bạn là <em>6969</em></strong>
+                    </div><!-- /bookingHead -->
+                </div><!-- /col -->
+
+                <form id="bookingForm" class="generalForm" action="#" method="post">
+                    <div class="col-sm-7">
+                        <div class="bookingInfos bookingInfos3">
+                            <h3>Thông Tin Tour</h3>
+                            <h4>Người Đặt Tour</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12"><label>Họ & Tên Đệm</label></div>
+                                <div class="col-md-8 col-sm-12"><span>NGUYỄN VĂN</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12"><label>Tên</label></div>
+                                <div class="col-md-8 col-sm-12"><span>NGUYỆN</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12"><label>Email</label></div>
+                                <div class="col-md-8 col-sm-12"><span>nvnguyenhcbl@gmail.com</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12"><label>Địa chỉ</label></div>
+                                <div class="col-md-8 col-sm-12"><span>KTX Khu B</span></div>
+                            </div><!-- /row -->
+
+                            <h4 class="marginTop20">HÌNH THỨC THANH TOÁN</h4>
+                            <p>Thẻ MASTER CARD VỚI SỐ TÀI KHOẢN 123456789</p>
+                            <h4 class="marginTop20">SPECIAL REQUEST</h4>
+                            <p class="lastRow">Không.</p>
+                            <div class="row grandtotal">
+                                <div class="col-md-4 col-sm-12"><label>Tổng Thanh Toán</label></div>
+                                <div class="col-md-8 col-sm-12"><span>$200.00</span></div>
+                            </div><!-- /row -->
+                            <div class="row cleafix marginTop20">
+                                <div class="col-md-6 col-sm-12"><a class="btn fRight" href="#" title="RESERVATION">ĐẶT TOUR </a></div>
+                                <div class="col-md-6 col-sm-12"><a class="btn fLeft" href="#" title="PRINT RECEPT">IN XÁC NHẬN </a></div>
+                            </div><!-- /row -->
+                        </div><!-- bookingInfos -->
+                    </div><!-- /col -->
+                    <div class="col-sm-5">
+                        <div class="bookingInfos bookingInfos2 bookingInfos5">
+                            <h3>Thông Tin Khách Sạn</h3>
+                            <div class="bookingHead">
+                                <h2>Vịnh Hạ Long và Khách Sạn</h2>
+                                <span>Ninh Bình - Việt Nam</span>
+                                <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                            </div><!-- /bookingHead -->
+
+                            <h4>SUMMARY</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Phòng</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="room" value="Single Room" /><span>Phòng đôi</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Giá/Đêm</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="price" value="$360" /><span>$100</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Check in </label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="checkin" value="20 - Feb - 2013" /><span>1/1/2017</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Check out</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="checkout" value="22 - Feb - 2013" /><span>2/1/2017</span></div>
+                            </div><!-- /row -->
+
+                            <h4 class="marginTop20">CHARGES</h4>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>1 Nights</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="nights" value="Single Room" /><span>Phòng Đôi</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>VAT</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="vat" value="10%" /><span>10%</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Fees</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="fees" value="Included" /><span>Included</span></div>
+                            </div><!-- /row -->
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-xs-6"><label>Thành Tiền</label></div>
+                                <div class="col-md-8 col-sm-12 col-xs-6"><input type="hidden" name="total" value="$680.00" /><span>$100.00</span></div>
+                            </div><!-- /row -->
+                        </div><!-- bookingInfos -->
+                    </div><!-- /col -->
+                </form><!-- /bookingForm -->
+                <div class="loaderImg"></div>
+            </div><!-- /row -->
+        </div><!-- /bookingContainer -->
+
+    </div><!-- /container -->
+    <!-- FOOTER ================================================== -->
+    <div id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><a class="logoBottom" href="#" title=""><img src="Images/logo-bottom.png" alt="logo" /></a></div>
+                    <div class="col-sm-3">
+                        <h5>Thông Tin <span>Liên Hệ</span></h5>
+                        <p>KTX Khu B Đại Học Quốc Gia HCM</p>
+                        <p>Call Us: <a href="tel:08419001008" title="Call Us">(084) 6969 6969s</a></p>
+                        <p>Email: <a href="mailto:michael@leebros.us" title="Email us">dulich@gmail.com</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Khách Hàng <span>Support</span></h5>
+                        <div class="footerLinkList">
+                            <ul>
+                                <li><a href="#" title="FAQ">FAQ</a></li>
+                                <li><a href="#" title="Payment Option">Hình Thức Thanh Toán</a></li>
+                                <li><a href="#" title="Booking Tips">Mẹo Đặt Tour</a></li>
+                                <li><a href="#" title="Infomation">Thông Tin</a></li>
+                            </ul>
+                        </div><!-- /footerLinkList -->
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Nhận <span>Bản Tin</span></h5>
+                        <p>Bản Tin Về Du Lịch</p>
+                        <form id="newsletter" class="clearfix" action="#" method="post">
+                            <input type="text" name="email" class="required email" value="Your Email..." />
+                            <input type="submit" name="send" value="SIGNUP" />
+                        </form>
+                        <div class="loader"></div>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /footerTop -->
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="footerMenu clearfix">
+                            <ul>
+                                <li><a href="#" title="About Us">About Us</a></li>
+                                <li><a href="#" title="News">Tin Tức</a></li>
+                                <li><a href="#" title="Service">Dịch Vụ</a></li>
+                                <li><a href="#" title="Recruiment">Tuyển Dụng</a></li>
+                                <li><a href="#" title="Media">Hình Ảnh</a></li>
+                                <li><a href="#" title="Support">Support</a></li>
+                            </ul>
+                        </div><!-- /footerMenu -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="copy">Copyright © 2013. Designed by <span>Team 04</span>. Giao Tiếp Người Máy</div><!-- /copy -->
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /footerBottom -->
+    </div><!-- /footer -->
+    <!-- modal content -->
+    <div id="loginModal">
+        <h6>ĐĂNG NHẬP</h6>
+        <form id="loginForm" class="generalForm">
+            <input class="loginName required" value="" type="text" placeholder="Username" name="loginName" />
+            <input class="loginPass required" value="" type="password" placeholder="Password" name="loginPass" />
+            <div class="loginInner clearfix">
+                <input type="submit" value="LOG IN" />
+                <input type="checkbox" class="customCheck" checked /><span>Ghi Nhớ Đăng Nhập?</span>
+            </div>
+        </form>
+        <a href="#" title="Lost Your Pass Word?">Quên Mật Khẩu?</a>
+        <div class="loaderImg"></div>
+    </div>
+
+
+    <!-- modal content -->
+    <div id="registerModal">
+        <h6>ĐĂNG KÍ</h6>
+        <form id="registerForm" class="generalForm">
+            <input class="required" type="text" placeholder="First Name *" name="registerName" />
+            <input class="required" type="text" placeholder="Last Name *" name="registerLastName" />
+            <input class="required email" type="text" placeholder="E-mail Address *" name="registerEmail" />
+            <input class="required" type="password" placeholder="Password *" name="registerPass" />
+            <input class="required" id="confirmPass" type="password" placeholder="Confirm Password *" name="registerPassAgain" />
+            <input class="required number" type="text" placeholder="Mobile Number*" name="registerPhone" />
+            <div id="captcha-wrap">
+                <img src="Images/reTừesh.jpg" alt="reTừesh captcha" id="reTừesh-captcha" /> <img src="Images/captcha.png" alt="" id="captcha" />
+            </div>
+            <input class="narrow text input required" id="captcha" name="captcha" type="text" placeholder="Verification Code *">
+            <div class="loginInner clearfix">
+                <input type="submit" value="REGISTER NOW" />
+            </div>
+        </form>
+        <div class="loaderImg"></div>
+    </div>
+
+    <!-- JAVASRICPTS
+    ================================================== -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/respond.min.js" ></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.touchSwipe.min.js" ></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/jquery-tinyNav.js"></script>
+    <script src="js/easyResponsiveTabs.js" ></script>
+    <script src="js/jquery-validation.js" ></script>
+    <script src="js/jquery.datepick.min.js" ></script>
+    <script src="js/jquery.customSelect.min.js"></script>
+    <script src="js/owl.carousel.min.js" ></script>
+    <script src="js/jquery.simplemodal.js" ></script>
+    <script src="js/jRating.jquery.js" ></script>
+    <script src="js/jquery.screwdefaultbuttonsV2.min.js"></script>
+    <script src="js/jquery-hoverIntent.js" ></script>
+    <script src="js/global.js" ></script>
+</body>
+</html>

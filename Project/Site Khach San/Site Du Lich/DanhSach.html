@@ -1,0 +1,583 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Đăt Tour Du Lịch | Danh Sách</title>
+    <meta name="description" content="The Travel Booking">
+    <meta name="author" content="Umit Karaosmanoglu">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- styles -->
+    <link href="css/bootstrap.min.css"  rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css"  rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/responsive.css"  rel="stylesheet">
+    <link href="css/user_change.css"  rel="stylesheet">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="" >
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+    <link rel="apple-touch-icon-precomposed" href="" >
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <!-- HEADER ================================================== -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="dropdownMenus clearfix">
+                        <div class="dropdown language">
+                            <a class="dropTrigger" id="dLabelLang" data-toggle="dropdown" href="#"><img alt="language-en" src="Images/language-en.png" /><span>EN</span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelLang">
+                                <li><a class="clearfix" href="#" title="EN"><img alt="language-en" src="Images/language-en.png" /><span>EN</span></a></li>
+                                <li><a class="clearfix" href="#" title="CH"><img alt="language-ch" src="Images/language-ch.png" /><span>CH</span></a></li>
+                                <li><a class="clearfix" href="#" title="RU"><img alt="language-ru" src="Images/language-ru.png" /><span>RU</span></a></li>
+                                <li><a class="clearfix" href="#" title="JP"><img alt="language-jp" src="Images/language-jp.png" /><span>JP</span></a></li>
+                            </ul>
+                        </div><!-- /language -->
+                        <div class="dropdown currency">
+                            <a class="dropTrigger" id="dLabelCur" data-toggle="dropdown" href="#">US</a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabelCur">
+                                <li><a class="clearfix" href="#" title="US">US</a></li>
+                                <li><a class="clearfix" href="#" title="EUR">EUR</a></li>
+                                <li><a class="clearfix" href="#" title="STERLIN">STERLIN</a></li>
+                                <li><a class="clearfix" href="#" title="YEN">YEN</a></li>
+                            </ul>
+                        </div><!-- /currency -->
+                    </div><!-- /clearfix -->
+                    <div class="callUsTop">
+                        <h4>GỌI NGAY</h4>
+                        <span>Số điện thoại đường dây nóng: <a href="tel:84868868888" title="(84) - 868 868 888">(84) - 969 696 999</a></span>
+                    </div><!-- /callUsTop -->
+                </div><!-- /col -->
+
+                <div class="col-sm-8">
+                    <div class="col-sm-8">
+                        <div id="logo"><a href="index.html" title="Travel Booking"><img src="Images/logo.png" alt="Travel Booking" /></a></div>
+                        <div class="topmenu clearfix">
+                            <ul>
+                                <li><a href="LienHe.html" title="About Us">Thông Tin Chúng Tôi</a></li>
+                                <li><a href="#" title="News">Tin tức mới nhất</a></li>
+                                <li><a href="#" title="Service">Dịch vụ</a></li>
+                                <li><a href="#" title="Recruiment">Tuyển dụng</a></li>
+                                <li><a href="#" title="Media">Hình Ảnh</a></li>
+                                <li><a href="LienHe.html" title="Support">Hỗ trợ</a></li>
+                            </ul>
+                        </div><!-- /topmenu -->
+                    </div><!-- /col -->
+                    <div class="col-sm-4 clearfix">
+                        <div class="Từight pRev">
+                            <div class="topRightLinks clearfix">
+                                <a class="login" href="#">Login</a>
+                                <a class="register" href="#">Register</a>
+                            </div>
+                            <div class="social clearfix">
+                                <ul>
+                                    <li><a class="rss" href="#">RSS</a></li>
+                                    <li><a class="twitter" href="#">Twitter</a></li>
+                                    <li><a class="facebook" href="https://www.facebook.com/NguyenVanNguyen.UIT">Facebook</a></li>
+                                </ul>
+                            </div><!-- /topSocial -->
+                            <form id="topSearch" class="clearfix" action="#" method="post">
+                                <input type="text" name="keyword">
+                                <input type="submit" name="submit">
+                            </form><!-- /topSearch -->
+                        </div><!-- /Từight -->
+                    </div><!-- /col -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </header><!-- /header -->
+    <!-- MAIN MENU ================================================== -->
+    <div class="mainMenuContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mainMenu clearfix">
+                        <em class="mobDropdown"></em>
+                        <ul>
+                            <li class="active"><a href="index.html" title="Home">Trang Chủ | Menu</a></li>
+                            <li><a href="DanhSach.html" title="Hotels">Tour Khuyến Mãi</a></li>
+                            <li>
+                                <a href="DanhSach.html" title="Tours">Tours</a>
+                                <ul>
+                                    <li><a href="DanhSach.html">Bắc Mỹ</a></li>
+                                    <li><a href="DanhSach.html">Nam Mỹ</a></li>
+                                    <li><a href="DanhSach.html">Châu Phi</a></li>
+                                    <li><a href="DanhSach.html">Châu Á</a></li>
+                                    <li><a href="DanhSach.html">Châu Âu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="Vacations">Cẩm Nang Du Lịch</a></li>
+                            <li><a href="#" title="Vacations">Shop</a></li>
+                            <li><a href="LienHe.html" title="Guide Book">Liên Hệ</a></li>
+                        </ul>
+                    </div><!-- /mainMenu -->
+                </div><!-- /col -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </div><!-- /mainMenuContainer -->
+    <!-- MAIN CONTENT ================================================== -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="breadcrumb clearfix">
+                    <ul>
+                        <li><a href="index.html" title="Home">Trang Chủ</a></li>
+                        <li>/</li>
+                        <li class="active">Danh Sách</li>
+                    </ul>
+                </div><!-- /breadcrumb -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+        <div class="row">
+            <!-- SIDEBAR ================================================== -->
+            <div class="col-sm-3">
+                <div class="vacationFilterContainer">
+                    <div class="filter">
+                        <h5 class="active">THỂ LOẠI</h5>
+                        <div class="filterInner">
+                            <div class="linkList">
+                                <ul>
+                                    <li><a href="LienHe.html" title="FAQ">FAQ</a></li>
+                                    <li><a href="#" title="Payment Option">Hình Thức Thanh Toán</a></li>
+                                    <li><a href="#" title="Booking Tips">Mẹo Đặt Phòng</a></li>
+                                    <li><a href="LienHe.html" title="Infomation">Thông Tin Khác</a></li>
+                                </ul>
+                            </div><!-- /linkList -->
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5 class="active">GIÁ</h5>
+                        <div class="filterInner">
+                            <div class="row">
+                                <form class="generalForm clearfix" id="priceFilter" action="#" method="post">
+                                    <div class="col col-sm-12 col-md-12 col-lg-4 clearfix">
+                                        <label></label><input type="text" name="minprice" placeholder ="Giá từ" />
+                                    </div><!-- /col -->
+                                    <div class="col col-sm-12 col-md-12 col-lg-4 clearfix">
+                                        <span>-</span><label></label><input type="text" name="maxprice" placeholder ="Đến" />
+                                    </div><!-- /col -->
+                                    <div class="col col-sm-12 col-md-12 col-lg-2 clearfix">
+                                        <input type="submit" name="submit" value="GO" />
+                                    </div><!-- /col -->
+                                </form>
+                            </div><!-- /row -->
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5 class="active">ĐÁNH GIÁ</h5>
+                        <div class="filterInner">
+                            <div class="ratingBasic" data-average="3" data-id="1"></div>
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5 class="active">CHẤT LƯỢNG TOUR</h5>
+                        <div class="filterInner">
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="FAQ" /> <span>FAQ</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Payment Option" /> <span>Payment Option</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Booking Tips" /> <span>Booking Tips</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Infomation" /> <span>Infomation</span></div><!-- /col -->
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5 class="active">CƠ SỞ VẬT CHẤT PHÒNG</h5>
+                        <div class="filterInner">
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="FAQ" /> <span>FAQ</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Payment Option" /> <span>Payment Option</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Booking Tips" /> <span>Booking Tips</span></div><!-- /col -->
+                            <div class="col-sm-12 checkFilter clearfix"><input type="checkbox" class="customCheck" name="hotel_facilities" value="Infomation" /> <span>Infomation</span></div><!-- /col -->
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5 class="active">TÙY CHỌN</h5>
+                        <div class="filterInner sideSelect">
+                            <select name="child" class="customSelectInput required">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                            </select>
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+
+                    <div class="filter">
+                        <h5>KHÁC</h5>
+                        <div class="filterInner">
+                            <p>KHÁC</p>
+                        </div><!-- /filterInner -->
+                    </div><!-- /filter -->
+                </div><!-- /vacationFilterContainer -->
+            </div><!-- /col -->
+            <!-- VACATIONS ================================================== -->
+            <div class="col-sm-9">
+                <div class="row listHead">
+                    <div class="col-md-7 col-sm-12"><div class="show">HIỂN THỊ <span>09</span> OF <span>12</span></div></div><!-- /col -->
+                    <div class="col-md-5 col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <span class="fLeft sortTitle">SẮP XẾP:</span>
+                                <div class="dropdownFilter">
+                                    <em class="clearfix"><span>Default</span><i></i></em>
+                                    <ul>
+                                        <li>Giá Tăng</li>
+                                        <li>Giá Giảm</li>
+                                        <li>Địa điểm</li>
+                                        <li>Đánh giá</li>
+                                    </ul>
+                                </div>
+                            </div><!-- /col -->
+                            <div class="col-sm-5">
+                                <div class="fRight">
+                                    <span class="listLayout">Danh Sách</span>
+                                    <span class="gridLayout active">Lưới</span>
+                                </div>
+                            </div><!-- /col -->
+                        </div><!-- /row -->
+                    </div><!-- /col -->
+                </div><!-- /listHead -->
+
+                <div class="featuredOffers offers offersGrid clearfix">
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-3.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>10 Đánh giá</em>
+                                </div>
+                                <p>Hình ảnh kênh sông nước thật thú vị với những cảnh đẹp 2 bên kênh...</p>
+                            </div>
+                            <span>KÊNH NHIÊU LỘC -THỊ NGHÈ</span>
+                            <div class="priceTag"><em>Từ</em> $50</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-4.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Với các lễ hội lướt ván, Thả diều hằng năm thu hút hàng triệu khách du lịch...</p>
+                            </div>
+                            <span>VỊNH HẠ LONG</span>
+                            <div class="priceTag"><em>Fr</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-2.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Chùa Ba Lai nơi thu hút nhiều lượt với nhiều lễ hội đặc trưng thú vị phù hợp với...</p>
+                            </div>
+                            <span>CHÙA BA LAI</span>
+                            <div class="priceTag"><em>Từ</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="#" class="item">
+                            <img src="Images/ft-offer-3.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>10 Đánh giá</em>
+                                </div>
+                                <p>Hình ảnh kênh sông nước thật thú vị với những cảnh đẹp 2 bên kênh...</p>
+                            </div>
+                            <span>KÊNH NHIÊU LỘC -THỊ NGHÈ</span>
+                            <div class="priceTag"><em>Từ</em> $50</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-4.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Với các lễ hội lướt ván, Thả diều hằng năm thu hút hàng triệu khách du lịch...</p>
+                            </div>
+                            <span>BÃI BIỂN VŨNG TÀU</span>
+                            <div class="priceTag"><em>Fr</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-2.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Chùa Ba Lai nơi thu hút nhiều lượt với nhiều lễ hội đặc trưng thú vị phù hợp với...</p>
+                            </div>
+                            <span>CHÙA BA LAI</span>
+                            <div class="priceTag"><em>Từ</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-3.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>10 Đánh giá</em>
+                                </div>
+                                <p>Hình ảnh kênh sông nước thật thú vị với những cảnh đẹp 2 bên kênh...</p>
+                            </div>
+                            <span>KÊNH NHIÊU LỘC -THỊ NGHÈ</span>
+                            <div class="priceTag"><em>Từ</em> $50</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-4.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Với các lễ hội lướt ván, Thả diều hằng năm thu hút hàng triệu khách du lịch...</p>
+                            </div>
+                            <span>BÃI BIỂN VŨNG TÀU</span>
+                            <div class="priceTag"><em>Fr</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                    <div class="col-sm-4">
+                        <a href="ChiTiet.html" class="item">
+                            <img src="Images/ft-offer-2.png" alt="special offer">
+                            <div class="offerInfo">
+                                <div class="reviews clearfix">
+                                    <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                    <em>12 Đánh giá</em>
+                                </div>
+                                <p>Chùa Ba Lai nơi thu hút nhiều lượt với nhiều lễ hội đặc trưng thú vị phù hợp với...</p>
+                            </div>
+                            <span>CHÙA BA LAI</span>
+                            <div class="priceTag"><em>Từ</em> $350</div>
+                        </a>
+                    </div><!-- /col -->
+                </div><!-- /featuredOffers -->
+
+                <div class="featuredOffers offers offersList clearfix">
+                    <div class="col-sm-12">
+                        <div class="item row clearfix">
+                            <div class="col-sm-4"><img src="Images/offer-list-1.png" alt="special offer"></div>
+                            <div class="col-sm-8">
+                                <div class="offerInfo">
+                                    <h6>SYDNEY</h6>
+                                    <div class="reviews clearfix">
+                                        <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                        <em>12 Reviews</em>
+                                    </div>
+                                    <p>Nơi thiên đường về cảnh đẹp cho những cặp đôi muốn chụp hình, check in. Cơ hooik cho cả gia đình tham gia các mùa lễ hội...</p>
+                                    <span class="map">Thiên đường Sydney</span>
+                                    <a class="more" href="ChiTiet.html" title="MALAWI NATIONAL PARK">Xem Chi Tiết</a>
+                                </div>
+                                <div class="priceTag"><em>Từ</em> $350</div>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-sm-12">
+                        <div class="item row clearfix">
+                            <div class="col-sm-4"><img src="Images/offer-list-2.png" alt="special offer"></div>
+                            <div class="col-sm-8">
+                                <div class="offerInfo">
+                                    <h6>VỊNH HẠ LONG</h6>
+                                    <div class="reviews clearfix">
+                                        <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                        <em>12 Reviews</em>
+                                    </div>
+                                    <p>Nơi thiên đường về cảnh đẹp cho những cặp đôi muốn chụp hình, check in. Cơ hooik cho cả gia đình tham gia các mùa lễ hội đặc sắc...</p>
+                                    <span class="map">Ha Long Bay</span>
+                                    <a class="more" href="ChiTiet.html" title="MALAWI NATIONAL PARK">Xem Chi Tiết</a>
+                                </div>
+                                <div class="priceTag"><em>Từ</em> $50</div>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-sm-12">
+                        <div class="item row clearfix">
+                            <div class="col-sm-4"><img src="Images/offer-list-3.png" alt="special offer"></div>
+                            <div class="col-sm-8">
+                                <div class="offerInfo">
+                                    <h6>BIỂN NHA TRANG</h6>
+                                    <div class="reviews clearfix">
+                                        <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                        <em>12 Reviews</em>
+                                    </div>
+                                    <p>Nơi thiên đường về cảnh đẹp cho những cặp đôi muốn chụp hình, check in. Cơ hooik cho cả gia đình tham gia các mùa lễ hội...</p>
+                                    <span class="map">Nha Trang Beach</span>
+                                    <a class="more" href="ChiTiet.html" title="MALAWI NATIONAL PARK">Xem Chi Tiết</a>
+                                </div>
+                                <div class="priceTag"><em>Từ</em> $350</div>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                    <div class="col-sm-12">
+                        <div class="item row clearfix">
+                            <div class="col-sm-4"><img src="Images/offer-list-4.png"  alt="special offer"></div>
+                            <div class="col-sm-8">
+                                <div class="offerInfo">
+                                    <h6>Ninh Kiều - Cần Thơ</h6>
+                                    <div class="reviews clearfix">
+                                        <div class="ratingDisabled" data-average="3" data-id="1"></div>
+                                        <em>12 Reviews</em>
+                                    </div>
+                                    <p>Nơi thiên đường về cảnh đẹp cho những cặp đôi muốn chụp hình, check in. Cơ hooik cho cả gia đình tham gia các mùa lễ hội...</p>
+                                    <span class="map">Bến Ninh Kiều</span>
+                                    <a class="more" href="ChiTiet.html" title="MALAWI NATIONAL PARK">Xem Chi Tiết</a>
+                                </div>
+                                <div class="priceTag"><em>Từ</em> $350</div>
+                            </div>
+                        </div>
+                    </div><!-- /col -->
+                </div><!-- /featuredOffers -->
+
+                <div class="pager fRight">
+                    <ul>
+                        <li class="prev"><a href="#" title="Previous">Previous</a></li>
+                        <li class="active"><a href="#" title="1">1</a></li>
+                        <li><a href="#" title="2">2</a></li>
+                        <li><a href="#" title="3">3</a></li>
+                        <li class="next"><a href="#" title="Next">Next</a></li>
+                    </ul>
+                </div><!-- /pager -->
+            </div><!-- /col -->
+        </div><!-- /row -->
+
+    </div><!-- /container -->
+    <!-- FOOTER ================================================== -->
+    <div id="footer">
+        <div class="footerTop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><a class="logoBottom" href="index.html" title=""><img src="Images/logo-bottom.png" alt="logo" /></a></div>
+                    <div class="col-sm-3">
+                        <h5>Thông Tin <span>Liên Hệ</span></h5>
+                        <p>KTX Khu B Đại Học Quốc Gia HCM</p>
+                        <p>Call Us: <a href="tel:08419001008" title="Call Us">(084) 6969 6969s</a></p>
+                        <p>Email: <a href="mailto:michael@leebros.us" title="Email us">dulich@gmail.com</a></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Khách Hàng <span>Support</span></h5>
+                        <div class="footerLinkList">
+                            <ul>
+                                <li><a href="LienHe.html" title="FAQ">FAQ</a></li>
+                                <li><a href="#" title="Payment Option">Hình Thức Thanh Toán</a></li>
+                                <li><a href="#" title="Booking Tips">Mẹo Đặt Tour</a></li>
+                                <li><a href="LienHe.html" title="Infomation">Thông Tin</a></li>
+                            </ul>
+                        </div><!-- /footerLinkList -->
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Nhận <span>Bản Tin</span></h5>
+                        <p>Bản Tin Về Du Lịch</p>
+                        <form id="newsletter" class="clearfix" action="#" method="post">
+                            <input type="text" name="email" class="required email" value="Your Email..." />
+                            <input type="submit" name="send" value="SIGNUP" />
+                        </form>
+                        <div class="loader"></div>
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /footerTop -->
+        <div class="footerBottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="footerMenu clearfix">
+                            <ul>
+                                <li><a href="#" title="About Us">About Us</a></li>
+                                <li><a href="#" title="News">Tin Tức</a></li>
+                                <li><a href="#" title="Service">Dịch Vụ</a></li>
+                                <li><a href="#" title="Recruiment">Tuyển Dụng</a></li>
+                                <li><a href="#" title="Media">Hình Ảnh</a></li>
+                                <li><a href="#" title="Support">Support</a></li>
+                            </ul>
+                        </div><!-- /footerMenu -->
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="copy">Copyright © 2013. Designed by <span>Team 04</span>. Giao Tiếp Người Máy</div><!-- /copy -->
+                    </div>
+                </div><!-- /row -->
+            </div><!-- /container -->
+        </div><!-- /footerBottom -->
+    </div><!-- /footer -->
+    <!-- modal content -->
+    <div id="loginModal">
+        <h6>ĐĂNG NHẬP</h6>
+        <form id="loginForm" class="generalForm">
+            <input class="loginName required" value="" type="text" placeholder="Username" name="loginName" />
+            <input class="loginPass required" value="" type="password" placeholder="Password" name="loginPass" />
+            <div class="loginInner clearfix">
+                <input type="submit" value="LOG IN" />
+                <input type="checkbox" class="customCheck" checked /><span>Ghi Nhớ Đăng Nhập?</span>
+            </div>
+        </form>
+        <a href="#" title="Lost Your Pass Word?">Quên Mật Khẩu?</a>
+        <div class="loaderImg"></div>
+    </div>
+
+
+    <!-- modal content -->
+    <div id="registerModal">
+        <h6>ĐĂNG KÍ</h6>
+        <form id="registerForm" class="generalForm">
+            <input class="required" type="text" placeholder="First Name *" name="registerName" />
+            <input class="required" type="text" placeholder="Last Name *" name="registerLastName" />
+            <input class="required email" type="text" placeholder="E-mail Address *" name="registerEmail" />
+            <input class="required" type="password" placeholder="Password *" name="registerPass" />
+            <input class="required" id="confirmPass" type="password" placeholder="Confirm Password *" name="registerPassAgain" />
+            <input class="required number" type="text" placeholder="Mobile Number*" name="registerPhone" />
+            <div id="captcha-wrap">
+               <img src="Images/refresh.jpg" alt="reTừesh captcha" id="reTừesh-captcha" /> <img src="Images/captcha.png" alt="" id="captcha" />
+            </div>
+            <input class="narrow text input required" id="captcha" name="captcha" type="text" placeholder="Verification Code *">
+            <div class="loginInner clearfix">
+                <input type="submit" value="REGISTER NOW" />
+            </div>
+        </form>
+        <div class="loaderImg"></div>
+    </div>
+
+
+    <!-- JAVASRICPTS
+    ================================================== -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/respond.min.js" ></script>
+    <script src="js/jquery.easing.1.3.js" ></script>
+    <script src="js/jquery.touchSwipe.min.js" ></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/jquery-tinyNav.js" ></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+    <script src="js/jquery-validation.js"></script>
+    <script src="js/jquery.datepick.min.js"></script>
+    <script src="js/jquery.customSelect.min.js" ></script>
+    <script src="js/owl.carousel.min.js" ></script>
+    <script src="js/jquery.simplemodal.js" ></script>
+    <script src="js/jRating.jquery.js"></script>
+    <script src="js/jquery.screwdefaultbuttonsV2.min.js" ></script>
+    <script src="js/jquery-hoverIntent.js" ></script>
+    <script src="js/global.js" ></script>
+</body>
+</html>

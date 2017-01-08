@@ -1,0 +1,176 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* umit karaosmanoglu */
+
+
+/* #Media Queries
+================================================== */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+	.hotDeal .col {padding-left:0;}
+	
+} /* END__ */
+
+
+/* Large then standart */
+@media (min-width: 960px) {
+
+	.mainMenu ul {display:block !important;}
+	
+} /* END__ */
+ 
+ 
+/* standart desktop */
+@media (max-width: 1200px) {
+	
+	/* main menu */
+	.mainMenu ul li a {padding:19px 15px;}
+	
+	#topSearch {margin-top:50px;}
+	.topmenu ul li {margin-right:7px;padding-right:7px;}
+	
+	.caption {display:none;}
+	.bookingTabsContainer {top:70px;}
+	.shortOffers {position:static;margin-top:30px;}
+	.shortOffer .title h5 {font-size:16px;}
+	.offers .item .priceTag {top: 90px;}
+	.offers .item span {font-size:12px;}
+	#featuredOffers .item .priceTag {top: 90px;}
+	
+	.bottomSliderContainer {margin-top:0;}
+	#bottomSlider {height:140px;}
+	#bottomSlider .caption {display:block;top: 40%;}
+	
+	.bookingInfos {padding:0 50px;}
+	.bookingInfos5 {padding:0 20px;}
+	
+	/* offers */
+	.offersList .item .map, .offersList .item a.more {margin-top:7px;}
+	#priceFilter span {display:none;}
+	
+} /* END__ */
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 990px) {
+	
+	/* main menu */
+	.mainMenu ul {display:block !important;}
+	.mainMenu ul li a {padding:20px 8px 21px 8px;font-size:16px;}
+	.mainMenu ul li.first a {padding:21px 15px 20px 15px;}
+	.mainMenu ul li a.arrow {background:none;}
+	
+	#topSearch {margin-top:50px;}
+	.topmenu ul {display:none;}
+	.tinynav {display:block;width:75%;}
+	
+	.mainSliderNav a {top:20%;}
+	.caption {display:none;}
+	.bookingTabsContainer {position:static;margin-top:30px;}
+	.bookingTabsContainer .bookingTabsCol {float:none;margin:0 auto;}
+	.shortOffers {position:static;margin-top:30px;}
+	.shortOffer .title {margin-bottom:10px;}
+	.shortOffer .title, .shortOffer .price {float:none;width:100%;}
+	
+	.offers .item span {font-size: 13px;padding: 10px 5% 10px 30px;text-indent:0;}
+	#featuredOffers .item .priceTag {top: 50px;}
+	
+	.bookingInfos {padding:0 50px;}
+	
+	/* offers */
+	.listHead .show {margin-bottom:20px;}
+	.offersList .offerInfo p {display:none;}
+	.offersList .item .map {padding-left:25px;}
+	
+} /* END__ */
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	
+	/* main menu */
+	.mainMenuContainer {position:relative;}
+	.mainMenu .mobDropdown {display:block;padding:14px 0;font-size:26px;color:#fff;text-align:center;background:url(main-menu-mobile-arrow.png)/*tpa=http://www.umitkaraosmanoglu.com/works/travel_bookingg/assets/images/main-menu-mobile-arrow.png*/ 95% center no-repeat;}
+	.mainMenu .mobDropdown:hover {cursor:pointer;}
+	.mainMenu ul {display:none;position:absolute;top:60px;left:0;z-index:9999;width:100%;}
+	.mainMenu ul li {float:none;}
+	.mainMenu ul li.first a {background:none;text-indent:0;padding:14px 0;}
+	.mainMenu ul li.active a {display:none;}
+	.mainMenu ul li a {width:100%;text-align:center;padding:14px 0;background-color:#ff5313;/* background-image:linear-gradient(to bottom, #ff5313 0px, #df3c00 100%);background-repeat:repeat-x; */border-bottom:1px solid #df3c00;}
+	.mainMenu ul li a.arrow {background:#ff5313 url(../Images/submenu-arrow.png)/*tpa=http://www.umitkaraosmanoglu.com/works/travel_bookingg/assets/images/submenu-arrow.png*/ no-repeat 90% center;}
+	.mainMenu ul li a:hover, .mainMenu ul li.active a {background-color:#d83b00;background-image:none;background-repeat:no-repeat;}
+	.mainMenu ul li a.arrow:hover {background:#d83b00 url(../Images/submenu-arrow.png)/*tpa=http://www.umitkaraosmanoglu.com/works/travel_bookingg/assets/images/submenu-arrow.png*/ no-repeat 90% center;}
+	
+	.mainMenu ul li ul {width:100%;position:relative;top:0;height:0;padding:0;}
+	.mainMenu ul li ul li a {width:100%;text-align:center;padding:14px 0;background-color:#none;background-image:none;background-repeat:none;border-bottom:1px solid rgba(0,0,0,0.1);}
+	.mainMenu ul li ul li.first a {padding:14px 0;}
+	
+	
+	/* header */
+	.topmenu ul {display:none;}
+	.tinynav {display:block;width:100%;padding:10px 0;font-size:20px;}
+	.callUsTop, #logo a {text-align:center;}
+	#logo a {margin:30px 0;}
+	.dropdownMenus {width:105px;margin:0 auto;}
+	.topRightLinks {position:relative;width:120px;margin:10px auto;text-align:center;}
+	.topRightLinks a {font-size:15px;}
+	.fRight.pRev {float:none !important;}
+	.social {float:none;width:78px;margin:20px auto;}
+	#topSearch {float:none;margin-top:30px;}
+	#topSearch input[type="text"] {width:100%;}
+	
+	.caption {font-size:20px;}
+	.bookingTabsContainer {position:static;margin-top:50px;}
+	.shortOffers {position:static;margin-top:50px;}
+	.shortOffer {margin-bottom:20px;}
+	
+	#featuredOffers .item .priceTag {top:70%;}
+	
+	.footerMenu, .copy {float:none;margin:20px 0;text-align:center;}
+	
+	.bookingInfos {padding:0 50px;}
+	
+	/* offers */
+	#priceFilter input[type="text"] {width:90%;}
+	#priceFilter input[type="submit"] {width:90%;}
+	.listHead .show {margin-top:50px;margin-bottom:20px;}
+	.offersList .offerInfo {padding-bottom:20px;}
+	.offersList .item .map, .offersList .item a.more {float:none;}
+	.offersList .item .map {width:100%;}
+	.offersList .item a.more {font-size:15px;}
+	
+	#registerForm input[type="text"], #registerForm input[type="password"] {width:48%;float:left;margin-right:2%;}
+	#captcha-wrap {float:left;}
+	#captcha-wrap img {float:left;}
+	#registerForm .loginInner {float:left;}
+	#registerForm .loginInner input[type="submit"] {padding:8px;}
+	.registerModalContainer {height:305px !important;}
+	
+} /* END__ */
+ 
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.mainSliderNav a {top:10%;}
+	.page404 h1 {font-size:200px;}
+	.registerModalContainer {top:7px !important;}
+	#registerForm input[type="text"], #registerForm input[type="password"] {margin-bottom:5px;}
+	
+} /* END__ */
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+	.mainSliderNav a {top:7%;}
+	#featuredOffers .item .priceTag {top:60%;}
+	.page404 h1 {font-size:150px;}
+	#simplemodal-container {width:305px !important;}
+	.loginInner span {line-height:13px;margin-left:0;}
+	.loginInner input[type="checkbox"] {margin-right:10px;}
+	.registerModalContainer {top:100px !important;}
+	
+} /* END__ */
