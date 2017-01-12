@@ -1,0 +1,643 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cruises page - Travel agency bootstrap template</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Your description">
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"><meta name="author" content="Your name">
+
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/font-awesome.css" rel="stylesheet" />
+<link href="css/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+<link href="css/select2.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/animate.css" rel="stylesheet" />
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/jquery.parallax-1.1.3.resize.js"></script>
+<script src="js/SmoothScroll.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/jquery.caroufredsel.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/js-sensor=false.js"></script>
+<script src="js/googlemap2.js"></script>
+<script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9HmkfuZVoZJ1uhD_rPYa8wF9ZO7Nxw-U&callback=initMap"
+            type="text/javascript"></script>
+</head>
+<body class="not-front page-pages page-cruises">
+
+<div id="main">
+
+<div class="top2_wrapper">
+    <div class="container">
+        <div class="top2 clearfix">
+            <header>
+                <div class="logo_wrapper">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="" class="img-responsive">
+                    </a>
+                </div>
+            </header>
+            <div class="navbar navbar_ navbar-default">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-collapse navbar-collapse_ collapse">
+                    <ul class="nav navbar-nav sf-menu clearfix">
+                        <li class="active"><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="about.html">Về Chúng Tôi</a></li>
+                        <li><a href="gallery.html">Bộ Sưu Tập</a></li>
+                        <li class="sub-menu sub-menu-1">
+                            <a href="#">Trang<em></em></a>
+                            <ul>
+                                <li><a href="flights.html">Chuyến Bay</a></li>
+                                <li><a href="hotels.html">Khách Sạn</a></li>
+                                <li><a href="cars.html">Thuê Xe</a></li>
+                                <li><a href="cruises.html">Du Lịch Biển</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="left-blog.html">Cẩm Nang Du Lịch</a></li>
+                        <li><a href="contacts.html">Liên Hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="google_map2_wrapper"><div id="google_map2"></div></div>
+
+<div class="breadcrumbs1_wrapper">
+  <div class="container">
+    <div class="breadcrumbs1"><a href="index.html">Trang Chủ</a><span>/</span><a href="index.html">Trang</a><span>/</span>Danh Sách Tour</div>
+  </div>
+</div>
+
+
+<div id="content">
+  <div class="container">
+
+    <div class="tabs_wrapper tabs1_wrapper">
+      <div class="tabs tabs2">
+        
+        <div class="tabs_content tabs1_content">
+            <div id="tabs-4">
+              <form action="javascript:;" class="form1">
+                <div class="row">
+                  <div class="col-sm-4 col-md-2">
+                    <div class="select1_wrapper">
+                      <label>Sail To:</label>
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">All destinations</option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Bahamas</option>
+                          <option value="4">Bermuda</option>
+                          <option value="5">Canada</option>
+                          <option value="6">Caribbean</option>
+                          <option value="7">Europe</option>
+                          <option value="8">Hawaii</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-2">
+                    <div class="select1_wrapper">
+                      <label>Sail From:</label>
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">All ports</option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Bahamas</option>
+                          <option value="4">Bermuda</option>
+                          <option value="5">Canada</option>
+                          <option value="6">Caribbean</option>
+                          <option value="7">Europe</option>
+                          <option value="8">Hawaii</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-4 col-md-2">
+                    <div class="input1_wrapper">
+                      <label>Start Date:</label>
+                      <div class="input1_inner">
+                        <input type="text" class="input datepicker" value="From any month">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-2">
+                    <div class="input1_wrapper">
+                      <label>End of Date:</label>
+                      <div class="input1_inner">
+                        <input type="text" class="input datepicker" value="To any month">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-2">
+                    <div class="select1_wrapper">
+                      <label>Cruise Ship:</label>
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">All Ships</option>
+                          <option value="2">Alaska</option>
+                          <option value="3">Bahamas</option>
+                          <option value="4">Bermuda</option>
+                          <option value="5">Canada</option>
+                          <option value="6">Caribbean</option>
+                          <option value="7">Europe</option>
+                          <option value="8">Hawaii</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-4 col-md-2">
+                    <div class="button1_wrapper">
+                      <button type="submit" class="btn-default btn-form1-submit">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="row">
+                <div class="col-sm-3">
+
+                  <form action="javascript:;" class="form2 form2_flights">
+                    <div class="select1_wrapper clearfix">
+                      <label>Passenger:</label>
+                      <div class="select1_inner">
+                        <select class="select2 select select3" style="width: 100%">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+
+                  <ul class="ul3">
+                    <li><a href="#">Star Raiting</a></li>
+                    <li><a href="#">Price Range</a></li>
+                    <li><a href="#">Departure Ports</a></li>
+                    <li><a href="#">Trip Duration</a></li>
+                    <li><a href="#">Ships</a></li>
+                  </ul>
+
+                  <div class="sm_slider sm_slider4">
+                    <a class="sm_slider_prev" href="#"></a>
+                    <a class="sm_slider_next" href="#"></a>
+                    <div class="">
+                      <div class="carousel-box">
+                        <div class="inner">
+                          <div class="carousel main">
+                            <ul>
+                              <li>
+                                <div class="sm_slider_inner">
+                                  <div class="txt1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</div>
+                                  <div class="txt2">George Smith</div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="sm_slider_inner">
+                                  <div class="txt1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</div>
+                                  <div class="txt2">Adam Parker</div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-sm-9">
+
+                  <form action="javascript:;" class="form3 clearfix">
+                    <div class="select1_wrapper txt">
+                      <label>Sort by:</label>
+                    </div>
+                    <div class="select1_wrapper sel">
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">Ships</option>
+                          <option value="2">Ships2</option>
+                          <option value="2">Ships3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="select1_wrapper sel">
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">Duration</option>
+                          <option value="2">Duration2</option>
+                          <option value="2">Duration3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="select1_wrapper sel">
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">Price</option>
+                          <option value="2">Price2</option>
+                          <option value="2">Price3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="select1_wrapper sel">
+                      <div class="select1_inner">
+                        <select class="select2 select" style="width: 100%">
+                          <option value="1">Name</option>
+                          <option value="2">Name2</option>
+                          <option value="2">Name3</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="select1_wrapper buttons">
+                      <a href="#" class="btn-default s1"></a>
+                      <a href="#" class="btn-default s2"></a>
+                      <a href="#" class="btn-default s3"></a>
+                    </div>
+                  </form>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises01.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Bahamas <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">6 Days Bahamas</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$590.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises02.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Mediterranean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">14 Days Mediterranean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$999.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises03.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Caribbean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">5 Days Caribbean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$360.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hl1"></div>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises04.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Greece <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">4 Days Greece</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$236.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises05.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Australia <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">9 Days Australia</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$990.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises06.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Mediterranean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">12 Days Mediterranean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$560.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hl1"></div>
+
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises07.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Caribbean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">4 Day Caribbean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$36.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises08.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Caribbean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">6 Day Caribbean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$90.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb6">
+                        <div class="thumbnail clearfix">
+                          <figure>
+                            <img src="images/cruises09.jpg" alt="" class="img-responsive">
+                            <div class="over">
+                              <div class="v1">Caribbean <span>17 Deal Offers</span></div>
+                              <div class="v2">Lorem ipsum dolor sit amet, concateus.</div>
+                            </div>
+                          </figure>
+                          <div class="caption">
+                            <div class="txt1">5 Day Caribbean</div>
+                            <div class="txt3 clearfix">
+                              <div class="left_side">
+                                <div class="price">$160.00</div>
+                                <div class="nums">per/Day</div>
+                              </div>
+                              <div class="right_side"><a href="#" class="btn-default btn1">Details</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pager_wrapper">
+                    <ul class="pager clearfix">
+                      <li class="prev"><a href="#">Previous</a></li>
+                      <li class="li"><a href="#">1</a></li>
+                      <li class="active"><a href="#">2</a></li>
+                      <li class="li"><a href="#">3</a></li>
+                      <li class="li"><a href="#">4</a></li>
+                      <li class="li"><a href="#">5</a></li>
+                      <li class="li"><a href="#">6</a></li>
+                      <li class="li"><a href="#">7</a></li>
+                      <li class="li"><a href="#">8</a></li>
+                      <li class="li"><a href="#">9</a></li>
+                      <li class="li"><a href="#">10</a></li>
+                      <li class="next"><a href="#">Next</a></li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="bot1_wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="logo2_wrapper">
+          <a href="index.html" class="logo2">
+            <img src="images/logo2.png" alt="" class="img-responsive">
+          </a>
+        </div>
+        <p>
+          Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+        </p>
+        <p>
+          <a href="#" class="btn-default btn2">Read More</a>
+        </p>
+      </div>
+      <div class="col-sm-3">
+        <div class="bot1_title">Travel Specialists</div>
+        <ul class="ul1">
+          <li><a href="#">First Class Flights</a></li>
+          <li><a href="#">Accessible Travel</a></li>
+          <li><a href="#">Amazing Cruises</a></li>
+        </ul>
+
+        <div class="social2_wrapper">
+          <ul class="social2 clearfix">
+            <li class="nav1"><a href="#"></a></li>
+            <li class="nav2"><a href="#"></a></li>
+            <li class="nav3"><a href="#"></a></li>
+            <li class="nav4"><a href="#"></a></li>
+            <li class="nav5"><a href="#"></a></li>
+            <li class="nav6"><a href="#"></a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-sm-3">
+        <div class="bot1_title">Our Twitter</div>
+        <div class="twits1">
+          <div class="twit1">
+           <a href="#"> @travel</a> Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+           <div class="date">5 minutes ago</div>
+          </div>
+          <div class="twit1">
+           <a href="#">@leo</a> Nam liber tempor cum soluta nobis option congue nihil imperdiet doming id quod mazim.
+           <div class="date">2 days ago</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="bot1_title">Newsletter</div>
+        <div class="newsletter_block">
+          <div class="txt1">Inspiration, ideas, news and your feedback.</div>
+          <div class="newsletter-wrapper clearfix">
+          <form class="newsletter" action="javascript:;">
+            <input type="text" name="s" value='Email Address' onBlur="if(this.value=='') this.value='Email Address'" onFocus="if(this.value =='Email Address' ) this.value=''">
+            <a href="#" class="btn-default btn3">SUBMIT</a>
+          </form>
+        </div>
+        </div>
+        <div class="phone2">1-917-338-6831</div>
+        <div class="support1"><a href="#">support@templates-support.com</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bot2_wrapper">
+  <div class="container">
+    <div class="left_side">
+      Copyright © 2016 <a href="javascript:if(confirm(%27http://gridgum.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://gridgum.com/%27" tppabs="http://gridgum.com/" target="_blank"><strong>GRIDGUM</strong></a>   <span>|</span>   <a href="#">Privacy Policy</a>   <span>|</span>   <a href="#">About Us</a>   <span>|</span>   <a href="#">FAQ</a>   <span>|</span>   <a href="#">Contact Support</a>
+    </div>
+    <div class="right_side">Designed by <a href="javascript:if(confirm(%27http://gridgum.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://gridgum.com/%27" tppabs="http://gridgum.com/" target="_blank"><strong>GRIDGUM</strong></a></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
